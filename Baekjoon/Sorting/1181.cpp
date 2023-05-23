@@ -30,8 +30,8 @@ int compare(string a, string b)
 {
 	//길이가 짧은 것부터
 	//길이가 같으면 사전 순으로
-	if (a.length() == b.length()) return a < b;
-	else return a.length() < b.length();
+	if (a.size() == b.size()) return a < b;
+	else return a.size() < b.size();
 }
 
 int main()
