@@ -22,6 +22,15 @@ Limit: none
 
 int main()
 {
+	for (int i = 2; i <= sqrt(n); i++)
+	{
+		// 소수판별
+		if (n % i == 0) 
+		{
+			return false;
+		}
+		return true;
+	}
 	int testCase = 0;
 	int value;
 	int count = 0;
