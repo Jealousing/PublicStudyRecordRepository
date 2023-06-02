@@ -1,6 +1,5 @@
-<div align=center>
 # Repository for Storing Coding Test Solutions
-   </div>
+   
 ## This repository serves as a storage for my coding test solutions.
 
 ### Structure
