@@ -81,6 +81,22 @@ void Backtracking(int num, int cnt)
     return;
 }
 
+void Backtracking2(int plus, int minus, int multiply, int division, int num, int cnt)
+{
+    if (cnt == n)
+    {
+        if (num > maxValue) maxValue = num;
+        if (num < minValue) minValue = num;
+        return;
+    }
+    if (plus > 0) Backtracking2(plus - 1, minus, multiply, division, num + arr[cnt], cnt + 1);
+    if (minus > 0) Backtracking2(plus, minus - 1, multiply, division, num - arr[cnt], cnt + 1);
+    if (multiply > 0) Backtracking2(plus, minus, multiply - 1, division, num * arr[cnt], cnt + 1);
+    if (division > 0) Backtracking2(plus, minus, multiply, division - 1, num / arr[cnt], cnt + 1);
+    return;
+}
+
+
 
 int main()
 {
@@ -93,7 +109,7 @@ int main()
 	for (int i = 0; i < 4; i++) 	cin >> operators[i];
 
 	Backtracking(arr[0], 1);
-
+    Backtracking2(operators[0], operators[1], operators[2], operators[3], arr[0], 1);
 	cout << maxValue << '\n' << minValue;
 
 	return 0;
