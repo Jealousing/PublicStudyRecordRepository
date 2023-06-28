@@ -3,7 +3,6 @@
 #include <string>
 using namespace std;
 
-const int MAX_SIZE = 1000;
 /*
 Problem Number: 4344
 
@@ -14,7 +13,7 @@ Link: https://www.acmicpc.net/problem/4344
 
 Input:
 첫째 줄에는 테스트 케이스의 개수 C가 주어진다.
-둘째 줄부터 각 테스트 케이스마다 학생의 수 N(1 ≤ N ≤ 1000, N은 정수)이 첫 수로 주어지고, 
+둘째 줄부터 각 테스트 케이스마다 학생의 수 N(1 ≤ N ≤ 1000, N은 정수)이 첫 수로 주어지고,
 이어서 N명의 점수가 주어진다. 점수는 0보다 크거나 같고, 100보다 작거나 같은 정수이다.
 
 Output:
@@ -23,23 +22,26 @@ Output:
 Limit: none
 */
 
+#define MAXSIZE 1001
+
 int main()
 {
     int testCaseCount;
-    
+
     cin >> testCaseCount;
 
     int N;
     for (int i = 0; i < testCaseCount; i++)
     {
         cin >> N;
-        int result[MAX_SIZE];
+        int result[MAXSIZE];
         int temp = 0;
         for (int j = 0; j < N; j++)
         {
             cin >> result[j];
             temp += result[j];
         }
+
         temp = temp / N;
 
         double count = 0;
@@ -50,12 +52,13 @@ int main()
                 count += 1;
             }
         }
+
         cout << fixed;
         cout.precision(3);
 
-        cout << count / N * 100.0f <<"%" << endl;
+        cout << count / N * 100<< "%" << endl;
     }
-    
+
 
     return 0;
 }
