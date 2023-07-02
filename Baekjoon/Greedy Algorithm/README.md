@@ -1,6 +1,6 @@
 단계명 : 그리디 알고리즘    
 설명 : 특정 상황에서 성립하는 그리디 알고리즘을 배워 봅시다.      
-Link : [백준.누적합](https://www.acmicpc.net/step/33)  
+Link : [백준.그리디](https://www.acmicpc.net/step/33)  
 
 ### Key Takeaways   
 선택의 순간마다 당장 눈앞에 보이는 최적의 상황만을 쫓아 최종적인 해답에 도달하는 알고리즘    
