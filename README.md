@@ -33,4 +33,4 @@
 [Singletonlink]: /Singleton
 
 [HPBarlink]: /HPBar
-[GrapplingHookslink] : /GrapplingHooksAndRopeSwing
+[GrapplingHookslink]: /GrapplingHooksAndRopeSwing
