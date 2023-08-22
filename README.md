@@ -13,7 +13,9 @@
  <details>
  <summary><b><em>Design Pattern</em></b> </summary>
    
-* **[Object Pool Pattern][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.    
-[ObjectPoolingBaselink]: /Design%20Pattern/ObjectPoolingBase
+* **[Object Pool Pattern][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.
+
 
  </details>
+
+[ObjectPoolingBaselink]: /Design%20Pattern/ObjectPoolingBase
