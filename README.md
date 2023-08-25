@@ -29,7 +29,7 @@
  </details>
 
 [ObjectPoolingBaselink]: /ObjectPoolingBase
-[FSMlink]: /ObjectPoolingBase
+[FSMlink]: /MonsterAI/FSM
 [Singletonlink]: /Singleton
 
 [HPBarlink]: /HPBar
