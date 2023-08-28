@@ -20,7 +20,7 @@
  더 좋은 개선 방향성이 떠오른다면 적는걸로 하겠습니다.
  
 ## 유튜브
- [![Video Label](http://img.youtube.com/vi/GdsiRnyc37poTetA/0.jpg)](https://youtu.be/GdsiRnyc37poTetA)'
+ [![Video Label](http://img.youtube.com/vi/USTphE5bJI4/0.jpg)](https://youtu.be/USTphE5bJI4)'
 
 ## 참고사이트
  https://gamedev.stackexchange.com/questions/31170/drawing-a-dynamic-indicator-for-a-field-of-view
