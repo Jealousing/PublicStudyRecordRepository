@@ -25,7 +25,12 @@
 
 * **[체력바][HPBarlink]**  : 체력을 가진 오브젝트 머리위에 표시되는 막대로 HP상태를 알려주는 기능.
 * **[로프액션][GrapplingHookslink]**  : 마우스 에임 방향으로 로프를 발사해 그 곳으로 직선이동이나 스윙이동하는 기능.
+* **[Json 데이터 관리][JsonDataManagerlink]**  : Json으로 데이터를 관리 및 저장하는 시스템
 * **[메쉬로 도형그리기][DrawShapeMeshlink]**  : Unity Graphics 시스템을 이용해서 도형모양의 메쉬를 생성해 보여주는 기능
+* **[범위공격 시스템][RangeHitSystemlink]**  : 메쉬로 도형을 그리면서 그 구역내에 있는 오브젝트에 대미지를 주는 방식.
+* **[캐릭터 이동관련 스크립트][Movementlink]**  :  캐릭터가 이동하는 방식에 대한 스크립트.
+* **[파쿠르 시스템][Parkourlink]**  :  캐릭터가 특정 오브젝트와 상호작용해서 구조물을 활용해 이동하는 시스템.
+* **[IK][IKlink]**  : 손과 발의 IK(역운동학) 사용해보는 스크립트.
 
  </details>
 
@@ -35,4 +40,9 @@
 
 [HPBarlink]: /HPBar
 [GrapplingHookslink]: /GrapplingHooksAndRopeSwing
+[JsonDataManagerlink]: /JsonDataManager
 [DrawShapeMeshlink]: /DrawShapeMesh
+[RangeHitSystemlink]: /RangeHitSystem
+[Movementlink]: /Movement&Parkour/Movement
+[Parkourlink]: /Movement&Parkour/Parkour
+[IKlink]: /IK(InverseKinematics)
