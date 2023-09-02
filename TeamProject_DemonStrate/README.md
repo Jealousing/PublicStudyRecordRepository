@@ -1,17 +1,8 @@
-# 기능 및 패턴 이름
-
-## 기능 설명
- 
- ### 장점
-
- ### 단점
- 
-## 어려움과 해결책
- 
-## 느낀 점
- 
-## 추가로 개선하고 싶은 부분
+## 설명
+21.04.13 ~ 21.10.12 학교생활 중 진행한 중단된 팀 프로젝트에서 만들었던 코드입니다.
  
 ## 유튜브
- [![Video Label](http://img.youtube.com/vi/유튜브주소/0.jpg)](https://youtu.be/유튜브주소)
+ [![Video Label](http://img.youtube.com/vi/Fv6cI9yM-qw/0.jpg)](https://youtu.be/shorts/Fv6cI9yM-qw)
+ [![Video Label](http://img.youtube.com/vi/84U81RhHuBA/0.jpg)](https://youtu.be/84U81RhHuBA)
+ [![Video Label](http://img.youtube.com/vi/JxPPfrKhKro/0.jpg)](https://youtu.be/JxPPfrKhKro)
  
