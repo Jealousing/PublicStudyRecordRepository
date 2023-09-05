@@ -19,8 +19,8 @@
 <details>
 <summary><b><em> Chapter 1 C++에 왔으면 C++의 법을 따릅시다 - 2023.09.04 ~ing </em></b> </summary>   
 <blockquote>    
-  * C++를 사용한 효과적인 프로그래밍 규칙은 C++의 하위 언어(C, 객체 지향 개념의 C++, 템플릿 C++, STL)에 따라 달라진다.   
-  * 상수는 #define보다 const or enum 생각하기, 함수처럼 사용하는 매크로는 #define 매크로보다 인라인 함수 생각.   
+  * C++를 사용한 효과적인 프로그래밍 규칙은 C++의 하위 언어(C, 객체 지향 개념의 C++, 템플릿 C++, STL)에 따라 달라진다.<br>
+  * 상수는 #define보다 const or enum 생각하기, 함수처럼 사용하는 매크로는 #define 매크로보다 인라인 함수 생각.<br>
 </blockquote>   
 </details>   
 <details>
