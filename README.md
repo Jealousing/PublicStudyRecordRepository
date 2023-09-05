@@ -22,6 +22,7 @@
 * **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.    
 * **[몬스터 AI FSM][FSMlink]**  : 객체의 동작을 다양한 상태로 나누고, 이 상태들 간의 전환과 각 상태에서의 행동을 관리하는 패턴.    
 * **[싱글톤 패턴][Singletonlink]**  : 특정 클래스가 단 하나의 인스턴스만 가지도록 하는 디자인 패턴이며 전역 접근이 가능하다, 제네릭으로 구현되어있는 스크립트.
+
  </details>
 
  <details>
@@ -38,6 +39,7 @@
 * **[스킬트리][SkillTreelink]**  : Path of Exile 스킬트리처럼 나무가지가 뻣어나가는 형태의 스킬트리 구현
 * **[퀵슬롯스킬][QuickSlotSkilllink]**  : UI에 스킬을 등록해서 스킬을 사용하고 쿨타임같은 사용경험을 높여주는 기능 구현
 * **[반응형UI][UIResolutionAdaptationlink]**  : 해상도가 변경됨에 따라 UI의 위치조정
+
  </details>
 
 <details>
@@ -46,15 +48,19 @@
 * **[카메라][Cameralink]**  : 플레이어의 카메라 구현
 * **[전투시스템][CombatSystemlink]**  : 플레이어의 전투시스템 관련 스크립트 모음
 * **[플레이어스킬구현][PlayerSkilllink]**  : 플레이어가 사용하는 스킬을 구현해보는 부분
+
  </details>
 
 <details>
 <summary><b><em>Books</em></b> </summary>
+
  None
+
  </details>
 
 <details>
 <summary><b><em>팀 프로젝트</em></b> </summary>
+
 * **[TeamDemonStrate][TeamProjectDemonStratelink]**  : 21.04.13 ~ 21.10.12 학교생활 중 진행한 중단된 팀 프로젝트에서 만들었던 코드
  
  </details>
