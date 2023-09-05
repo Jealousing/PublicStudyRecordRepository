@@ -16,15 +16,60 @@
 총 독서기간 : 2023.09.04 ~ ing
 
 **챕터별 기간**   
-Chapter 1 C++에 왔으면 C++의 법을 따릅시다 - 2023.09.04 ~ ing   
-Chapter 2 생성자, 소멸자 및 대입 연산자   
-Chapter 3 자원 관리   
-Chapter 4 설계 및 선언   
-Chapter 5 구현   
-Chapter 6 상속, 그리고 객체 지향 설계   
-Chapter 7 템플릿과 일반화 프로그래밍   
-Chapter 8 new와 delete를 내 맘대로   
-Chapter 9 그 밖의 이야기들   
+<details>    
+<summary><b><em> Chapter 1 C++에 왔으면 C++의 법을 따릅시다 - 2023.09.04 ~ing </em></b> </summary>   
+<blockquote>    
+* C++를 사용한 효과적인 프로그래밍 규칙은 C++의 하위 언어(C, 객체 지향 개념의 C++, 템플릿 C++, STL)에 따라 달라진다.
+</blockquote>   
+</details>   
+<details>   
+<summary><b><em> Chapter 2 생성자, 소멸자 및 대입 연산자 </em></b> </summary>   
+<blockquote>    
+
+</blockquote>   
+</details>     
+<details>   
+<summary><b><em> Chapter 3 자원 관리  </em></b> </summary>   
+<blockquote>    
+
+</blockquote>   
+</details>       
+<details>   
+<summary><b><em> Chapter 4 설계 및 선언  </em></b> </summary>   
+<blockquote>    
+
+</blockquote>   
+</details>   
+<details>   
+<summary><b><em> Chapter 5 구현   </em></b> </summary>   
+<blockquote>    
+
+</blockquote>   
+</details>   
+<details>   
+<summary><b><em> Chapter 6 상속, 그리고 객체 지향 설계 </em></b> </summary>   
+<blockquote>    
+
+</blockquote>   
+</details>   
+<details>   
+<summary><b><em> Chapter 7 템플릿과 일반화 프로그래밍 </em></b> </summary>   
+<blockquote>    
+
+</blockquote>   
+</details>   
+<details>   
+<summary><b><em> Chapter 8 new와 delete를 내 맘대로 </em></b> </summary>   
+<blockquote>    
+
+</blockquote>   
+</details>     
+<details>   
+<summary><b><em> Chapter 9 그 밖의 이야기들 </em></b> </summary>   
+<blockquote>    
+
+</blockquote>   
+</details>     
 
 ## 학습 후 느낀 점
 
