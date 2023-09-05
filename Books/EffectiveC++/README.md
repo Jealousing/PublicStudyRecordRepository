@@ -16,55 +16,56 @@
 총 독서기간 : 2023.09.04 ~ ing
 
 **챕터별 기간**   
-<details>    
+<details>
 <summary><b><em> Chapter 1 C++에 왔으면 C++의 법을 따릅시다 - 2023.09.04 ~ing </em></b> </summary>   
 <blockquote>    
-* C++를 사용한 효과적인 프로그래밍 규칙은 C++의 하위 언어(C, 객체 지향 개념의 C++, 템플릿 C++, STL)에 따라 달라진다.
+  * C++를 사용한 효과적인 프로그래밍 규칙은 C++의 하위 언어(C, 객체 지향 개념의 C++, 템플릿 C++, STL)에 따라 달라진다.
+  * 상수는 #define보다 const or enum 생각하기, 함수처럼 사용하는 매크로는 #define 매크로보다 인라인 함수 생각.
 </blockquote>   
 </details>   
-<details>   
+<details>
 <summary><b><em> Chapter 2 생성자, 소멸자 및 대입 연산자 </em></b> </summary>   
 <blockquote>    
 
 </blockquote>   
 </details>     
-<details>   
+<details>
 <summary><b><em> Chapter 3 자원 관리  </em></b> </summary>   
 <blockquote>    
 
 </blockquote>   
 </details>       
-<details>   
+<details>
 <summary><b><em> Chapter 4 설계 및 선언  </em></b> </summary>   
 <blockquote>    
 
 </blockquote>   
 </details>   
-<details>   
+<details>
 <summary><b><em> Chapter 5 구현   </em></b> </summary>   
 <blockquote>    
 
 </blockquote>   
 </details>   
-<details>   
+<details>
 <summary><b><em> Chapter 6 상속, 그리고 객체 지향 설계 </em></b> </summary>   
 <blockquote>    
 
 </blockquote>   
 </details>   
-<details>   
+<details>
 <summary><b><em> Chapter 7 템플릿과 일반화 프로그래밍 </em></b> </summary>   
 <blockquote>    
 
 </blockquote>   
 </details>   
-<details>   
+<details>
 <summary><b><em> Chapter 8 new와 delete를 내 맘대로 </em></b> </summary>   
 <blockquote>    
 
 </blockquote>   
 </details>     
-<details>   
+<details>
 <summary><b><em> Chapter 9 그 밖의 이야기들 </em></b> </summary>   
 <blockquote>    
 
