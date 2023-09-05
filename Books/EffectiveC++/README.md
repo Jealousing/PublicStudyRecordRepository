@@ -12,30 +12,19 @@
 
 예전부터 학교 교수님에게도 듣고 인터넷에서 책을 추천받을 때도 이름을 많이 들었던 책이지만 펄크루트라는 펄어비스에서 운영하는 채용 유튜브를 보다가 Effective 시리즈를 꼭 읽어보길 추천해서  읽기 시작했다.
 
-## 독서 기간
-
+## 독서 기간   
 총 독서기간 : 2023.09.04 ~ ing
 
-**챕터별 기간**
-Chapter 1 C++에 왔으면 C++의 법을 따릅시다 - 2023.09.04 ~ ing
-
-Chapter 2 생성자, 소멸자 및 대입 연산자
-
-Chapter 3 자원 관리
-
-Chapter 4 설계 및 선언
-
-Chapter 5 구현
-
-Chapter 6 상속, 그리고 객체 지향 설계
-
-Chapter 7 템플릿과 일반화 프로그래밍
-
-Chapter 8 new와 delete를 내 맘대로
-
-Chapter 9 그 밖의 이야기들
-
-
+**챕터별 기간**   
+Chapter 1 C++에 왔으면 C++의 법을 따릅시다 - 2023.09.04 ~ ing   
+Chapter 2 생성자, 소멸자 및 대입 연산자   
+Chapter 3 자원 관리   
+Chapter 4 설계 및 선언   
+Chapter 5 구현   
+Chapter 6 상속, 그리고 객체 지향 설계   
+Chapter 7 템플릿과 일반화 프로그래밍   
+Chapter 8 new와 delete를 내 맘대로   
+Chapter 9 그 밖의 이야기들   
 
 ## 학습 후 느낀 점
 
