@@ -39,12 +39,6 @@
 * **[스킬트리][SkillTreelink]**  : Path of Exile 스킬트리처럼 나무가지가 뻣어나가는 형태의 스킬트리 구현
 * **[퀵슬롯스킬][QuickSlotSkilllink]**  : UI에 스킬을 등록해서 스킬을 사용하고 쿨타임같은 사용경험을 높여주는 기능 구현
 * **[반응형UI][UIResolutionAdaptationlink]**  : 해상도가 변경됨에 따라 UI의 위치조정
-
- </details>
-
-<details>
-<summary><b><em>작성예정 리드미</em></b> </summary>
-
 * **[카메라][Cameralink]**  : 플레이어의 카메라 구현
 * **[전투시스템][CombatSystemlink]**  : 플레이어의 전투시스템 관련 스크립트 모음
 * **[플레이어스킬구현][PlayerSkilllink]**  : 플레이어가 사용하는 스킬을 구현해보는 부분
@@ -54,7 +48,7 @@
 <details>
 <summary><b><em>Books</em></b> </summary>
 
- None
+ * **[Effective C++][EffectiveClink]**
 
  </details>
 
@@ -80,9 +74,10 @@
 [SkillTreelink]: /VariousFunctions/SkillSystem/SkillTree
 [QuickSlotSkilllink]: /VariousFunctions/SkillSystem/QuickSlotSkill
 [UIResolutionAdaptationlink]: /VariousFunctions/UIResolutionAdaptation
-
 [Cameralink]: /VariousFunctions/Camera
 [CombatSystemlink]: /VariousFunctions/CombatSystem
 [PlayerSkilllink]: /VariousFunctions/SkillSystem/PlayerSkill
+
+[EffectiveClink]: /Books/EffectiveC++
 
 [TeamProjectDemonStratelink]: /TeamProject/DemonStrate
