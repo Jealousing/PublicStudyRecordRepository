@@ -8,6 +8,7 @@
   카테고리에 맞는 폴더 안에 그에 대한 공부 한 기록들이 저장되어 있습니다.
  * Design Pattern 폴더 : 디자인 패턴을 공부하며 사용한 스크립트를 저장하는 곳입니다.
  * Various Functions 폴더 : 유니티로 다양한 기능을 제작해서 저장하는 곳입니다.
+ * CodingTest 폴더 : 알고리즘 간단 정리와 코딩테스트 풀었던 문제 저장하는 장소입니다.
  * TeamProject 폴더 : 팀 프로젝트에 참가해서 사용한 코드들 저장하는 곳입니다.
  * Books 폴더 : 책을 공부하면서 간단히 정리하면서 공부하기 위한 저장소입니다.
  * TemporaryFolder 폴더 : 이 저장소의 양식을 만들어 사용하기 위한 폴더입니다.
@@ -19,6 +20,7 @@
  <details>
  <summary><b><em>디자인 패턴</em></b> </summary>
    
+ Unity:     
 * **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.    
 * **[몬스터 AI FSM][FSMlink]**  : 객체의 동작을 다양한 상태로 나누고, 이 상태들 간의 전환과 각 상태에서의 행동을 관리하는 패턴.    
 * **[싱글톤 패턴][Singletonlink]**  : 특정 클래스가 단 하나의 인스턴스만 가지도록 하는 디자인 패턴이며 전역 접근이 가능하다, 제네릭으로 구현되어있는 스크립트.
@@ -28,6 +30,7 @@
  <details>
  <summary><b><em>다양한 기능구현</em></b> </summary>
 
+ Unity:    
 * **[체력바][HPBarlink]**  : 체력을 가진 오브젝트 머리위에 표시되는 막대로 HP상태를 알려주는 기능.
 * **[로프액션][GrapplingHookslink]**  : 마우스 에임 방향으로 로프를 발사해 그 곳으로 직선이동이나 스윙이동하는 기능.
 * **[Json 데이터 관리][JsonDataManagerlink]**  : Json으로 데이터를 관리 및 저장하는 시스템
@@ -42,6 +45,14 @@
 * **[카메라][Cameralink]**  : 플레이어의 카메라 구현
 * **[전투시스템][CombatSystemlink]**  : 플레이어의 전투시스템 관련 스크립트 모음
 * **[플레이어스킬구현][PlayerSkilllink]**  : 플레이어가 사용하는 스킬을 구현해보는 부분
+
+ </details>
+
+<details>
+ <summary><b><em> 코딩테스트 및 알고리즘 </em></b> </summary>
+
+* **[간단한 알고리즘 정리][Algorithmllink]** : 간단하게 알고리즘 정리
+* **[백준][BAEKJOONllink]**  : 코딩테스트 사이트인 백준을 풀고 정리한 폴더
 
  </details>
 
@@ -77,6 +88,9 @@
 [Cameralink]: /VariousFunctions/Camera
 [CombatSystemlink]: /VariousFunctions/CombatSystem
 [PlayerSkilllink]: /VariousFunctions/SkillSystem/PlayerSkill
+
+[Algorithmllink]: /CodingTest
+[BAEKJOONllink]: /CodingTest/Baekjoon
 
 [EffectiveClink]: /Books/EffectiveC++
 
