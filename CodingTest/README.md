@@ -10,9 +10,7 @@
  이 폴더의 주 목적은 코딩 문제를 해결하는 과정을 작성하고 문제 해결 능력을 보여주는 것입니다.
 저는 잘 정리된 폴더를 유지함으로써 다양한 알고리즘, 데이터 구조, 프로그래밍 개념에 대한 이해를 보여주고자 합니다. 
 
-### 알고리즘 간단 정리
-
-#### 정렬
+### 자료구조 및 알고리즘 간단 정리
 
 <details>
  <summary><b><em> 선택 정렬(Selection Sort) </em></b> </summary>
@@ -319,7 +317,6 @@ void countingSort(int arr[])
 
  </details>
 
-#### 탐색
 
 <details>
  <summary><b><em> 이분 탐색(Binary Search) </em></b> </summary>
@@ -381,10 +378,100 @@ int main()
 
  </details>
 
-#### 완전 탐색
+<details>
+ <summary><b><em> 브루트 포스(Brute Force) </em></b> </summary>
 
-브루트 포스
-백트래킹
-재귀
-DFS
-BFS
+ 모든 가능한 경우의 수를 시도하여 문제를 해결하는 간단한 방법
+
+ [풀었던 문제 링크](https://github.com/Jealousing/PublicStudyRecordRepository/tree/main/CodingTest/Baekjoon/BruteForce)
+
+ </details>
+
+<details>
+ <summary><b><em> 백트래킹(backtracking) </em></b> </summary>
+
+ 조건을 만족할 때까지 모든 가능성을 탐색하며, 조건에 맞지 않으면 되돌아가는 알고리즘
+
+ [풀었던 문제 링크](https://github.com/Jealousing/PublicStudyRecordRepository/tree/main/CodingTest/Baekjoon/Backtracking)
+
+ </details>
+
+<details>
+ <summary><b><em> 재귀(Recursive Call) </em></b> </summary>
+
+ 함수 내에서 자기 자신을 호출하여 문제를 해결하는 방법
+
+ [풀었던 문제 링크](https://github.com/Jealousing/PublicStudyRecordRepository/tree/main/CodingTest/Baekjoon/Recursive%20Call)
+
+ </details>
+
+<details>
+ <summary><b><em> 탐욕 알고리즘(Greedy Algorithm) </em></b> </summary>
+
+ 각 단계에서 가장 최선의 선택을 하여 문제를 해결하는 알고리즘
+
+ [풀었던 문제 링크](https://github.com/Jealousing/PublicStudyRecordRepository/tree/main/CodingTest/Baekjoon/Greedy%20Algorithm)
+
+ </details>
+
+<details>
+ <summary><b><em> 우선순위 큐(Priority Queue) </em></b> </summary>
+
+ 우선순위에 따라 요소를 정렬하는 자료 구조로, 자주 사용되는 연산은 빠르게 처리하는 방법
+
+ [풀었던 문제 링크](https://github.com/Jealousing/PublicStudyRecordRepository/tree/main/CodingTest/Baekjoon/Priority%20Queue)
+
+ </details>
+
+<details>
+ <summary><b><em> 깊이 우선 탐색(DFS), 너비 우선 탐색(BFS) </em></b> </summary>
+
+ DFS는 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘, BFS는 그래프에서 가까운 부분부터 우선적으로 탐색하는 알고리즘
+
+ [풀었던 문제 링크](https://github.com/Jealousing/PublicStudyRecordRepository/tree/main/CodingTest/Baekjoon/Graph%20traversal)
+ 
+
+ </details>
+
+<details>
+ <summary><b><em> 투포인터(Two Pointer) </em></b> </summary>
+
+ 두 개의 포인터를 사용하여 배열 내에서 특정 조건을 만족하는 원소를 찾는 알고리즘
+
+ [풀었던 문제 링크](https://github.com/Jealousing/PublicStudyRecordRepository/tree/main/CodingTest/Baekjoon/Two%20Pointers)
+ 
+ </details>
+
+<details>
+ <summary><b><em> 동적 계획법(DP), 최장 증가 수열 (LIS), 최장 공통 부분 수열(LCS) </em></b> </summary>
+
+ DP: 큰 문제를 작은 하위 문제로 나눠 해결하는 알고리즘으로, 중복 계산을 피함
+ LIS: 배열에서 가장 긴 증가하는 부분 수열을 찾는 동적 프로그래밍 알고리즘
+ LCS: 주어진 여러개 수열 모두의 부분수열이 되는 수열들 중에 가장 긴 것을 찾는 알고리즘
+
+ [풀었던 문제 링크](https://github.com/Jealousing/PublicStudyRecordRepository/tree/main/CodingTest/Baekjoon/Dynamic%20Programming)
+
+ </details>
+
+<details>
+ <summary><b><em> 최소 공통 조상 (LCA, Lowest Common Ancestor) </em></b> </summary>
+
+ 트리에서 두 노드의 가장 가까운 공통 조상을 찾는 알고리즘
+
+ </details>
+
+<details>
+ <summary><b><em> 다익스트라(Dijkstra) </em></b> </summary>
+
+ 그래프에서 최단 경로를 찾는 알고리즘으로, 가장 짧은 거리부터 탐색
+
+  [풀었던 문제 링크](https://github.com/Jealousing/PublicStudyRecordRepository/blob/main/CodingTest/Baekjoon/Shortest%20Path/1753.cpp)
+
+ </details>
+
+<details>
+ <summary><b><em> 비트마스크(BitMask) </em></b> </summary>
+
+ 비트 연산을 사용하여 집합을 나타내는 기법으로, 부분집합을 효율적으로 다룰 수 있음
+
+ </details>

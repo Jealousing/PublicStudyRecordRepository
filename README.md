@@ -1,4 +1,4 @@
-# Unity_PublicRepositories
+# PublicStudyRecordRepository
  공부한 것들을 모아두는 공개형 저장소
 
 ## 저장소의 목적
