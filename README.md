@@ -24,6 +24,7 @@
 * **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.    
 * **[몬스터 AI FSM][FSMlink]**  : 객체의 동작을 다양한 상태로 나누고, 이 상태들 간의 전환과 각 상태에서의 행동을 관리하는 패턴.    
 * **[싱글톤 패턴][Singletonlink]**  : 특정 클래스가 단 하나의 인스턴스만 가지도록 하는 디자인 패턴이며 전역 접근이 가능하다, 제네릭으로 구현되어있는 스크립트.
+* **[팩토리 패턴][Factorylink]**  : 객체 생성을 공장(Factory) 클래스로 캡슐화 처리하여 대신 생성하게 하는 생성 디자인 패턴이다.
 
  </details>
 
@@ -73,6 +74,7 @@
 [ObjectPoolingBaselink]: /DesignPattern/ObjectPoolingBase
 [FSMlink]: /DesignPattern/MonsterAI/FSM
 [Singletonlink]: /DesignPattern/Singleton
+[Factorylink]: /DesignPattern/FactoryPattern
 
 [HPBarlink]: /VariousFunctions/HPBar
 [GrapplingHookslink]: /VariousFunctions/GrapplingHooksAndRopeSwing
