@@ -49,6 +49,17 @@
 * **[전투시스템][CombatSystemlink]**  : 플레이어의 전투시스템 관련 스크립트 모음
 * **[플레이어스킬구현][PlayerSkilllink]**  : 플레이어가 사용하는 스킬을 구현해보는 부분
 
+아래의 기능구현 목록은 코드 공개 예정이 없거나 정리가 안돼서 스크립트 업로드가 안된 기능들입니다.
+
+* **[월드 생성 시스템][WorldSystemlink]**  : 청크 단위로 월드를 시드 값을 통해 절차적으로 생성하고 풀링을 통해 관리하는 기능
+* **[씬 전환 시스템][ScenManagerlink]**  : 씬 전환시 로딩 씬으로 진입해 비동기 로딩 및 로딩 화면을 통한 부드러운 씬 전환 구현
+* **[인벤토리][InventorySystemlink]**  : 흔히 플레이어가 사용하는 인벤토리를 구현 ( 정렬, 슬롯 추가 및 슬롯 잠금, 아이템 스왑 등 )
+* **[스캔 시스템][ScanSystemlink]**  : 플레이어 기준으로 특정 오브젝트를 탐지하는 시스템
+* **[공중섬 조종 및 건설][IslandSystemlink]**  : 레프트라는 게임의 배처럼 플레이어가 땅을 늘리고 그 땅덩어리를 방향과 속도 등을 조절할 수 있는 시스템
+* **[포탈 저장서 및 포탈][PortalSystemlink]**  : 플레이어가 저장한 포탈을 관리하고 생성하는 시스템, 포탈은 이동할 위치를 렌더 텍스처을 통해 보여줌
+* **[글라이딩 시스템][GlidingSystemlink]**  : 날개 비행 시스템
+
+
  </details>
 
 <details>
@@ -94,6 +105,13 @@
 [Cameralink]: /VariousFunctions/Camera
 [CombatSystemlink]: /VariousFunctions/CombatSystem
 [PlayerSkilllink]: /VariousFunctions/SkillSystem/PlayerSkill
+[WorldSystemlink]: /VariousFunctions/WorldSystem
+[ScenManagerlink]: /VariousFunctions/ScenManager
+[InventorySystemlink]: /VariousFunctions/InventorySystem
+[ScanSystemlink]: /VariousFunctions/WorldScan
+[IslandSystemlink]: /VariousFunctions/IslandSystem
+[PortalSystemlink]: /VariousFunctions/PortalSystem
+[GlidingSystemlink]: /VariousFunctions/Gliding
 
 [Algorithmllink]: /CodingTest
 [BAEKJOONllink]: /CodingTest/Baekjoon
