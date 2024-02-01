@@ -27,7 +27,8 @@
 * **[팩토리 패턴][Factorylink]**  : 객체 생성을 공장(Factory) 클래스로 캡슐화 처리하여 대신 생성하게 하는 생성 디자인 패턴이다.
 * **[추상 팩토리 패턴][AbstractFactorylink]**  : 객체 군을 생성하는 인터페이스 제공과 서로 다른 종류의 팩토리를 사용하여 객체를 생성하는 디자인패턴.
 * **[빌더 패턴][Builderlink]**  : 빌더 패턴은 복잡한 객체의 생성 및 구성을 단순화하고, 객체의 생성 과정을 분리하여 유연성을 제공하는 디자인 패턴이다.
-
+* **[몬스터 AI BehaviorTree][BehaviorTreelink]**  : 객체의 동작을 트리 구조 내의 노드로 구성하여 객체의 동작과 결정을 효과적으로 관리하는 디자인패턴.  
+ 
  </details>
 
  <details>
@@ -49,16 +50,18 @@
 * **[전투시스템][CombatSystemlink]**  : 플레이어의 전투시스템 관련 스크립트 모음
 * **[플레이어스킬구현][PlayerSkilllink]**  : 플레이어가 사용하는 스킬을 구현해보는 부분
 
-아래의 기능구현 목록은 코드 공개 예정이 없거나 정리가 안돼서 스크립트 업로드가 안된 기능들입니다.
+아래의 목록은 코드 공개 예정이 없거나 정리가 안돼서 스크립트 업로드가 안된 기능들입니다.
 
 * **[월드 생성 시스템][WorldSystemlink]**  : 청크 단위로 월드를 시드 값을 통해 절차적으로 생성하고 풀링을 통해 관리하는 기능
 * **[씬 전환 시스템][ScenManagerlink]**  : 씬 전환시 로딩 씬으로 진입해 비동기 로딩 및 로딩 화면을 통한 부드러운 씬 전환 구현
 * **[인벤토리][InventorySystemlink]**  : 흔히 플레이어가 사용하는 인벤토리를 구현 ( 정렬, 슬롯 추가 및 슬롯 잠금, 아이템 스왑 등 )
 * **[스캔 시스템][ScanSystemlink]**  : 플레이어 기준으로 특정 오브젝트를 탐지하는 시스템
 * **[공중섬 조종 및 건설][IslandSystemlink]**  : 레프트라는 게임의 배처럼 플레이어가 땅을 늘리고 그 땅덩어리를 방향과 속도 등을 조절할 수 있는 시스템
-* **[포탈 저장서 및 포탈][PortalSystemlink]**  : 플레이어가 저장한 포탈을 관리하고 생성하는 시스템, 포탈은 이동할 위치를 렌더 텍스처을 통해 보여줌
+* **[포탈 저장서 및 포탈][PortalSystemlink]**  : 플레이어가 저장한 포탈을 관리하고 생성하는 시스템, 포탈은 이동할 위치를 이미지를 통해 보여줌 (수정)
 * **[글라이딩 시스템][GlidingSystemlink]**  : 날개 비행 시스템
-
+* **[시네머신을 활용한 타이틀씬][CinemachineTitleScreenlink]**  : 시작, 옵션, 끝내기
+* **[게임 사용자 설정 화면][SettingScreenlink]**  : 사용자가 옵션을 설정할 수 있도록 하는 화면  
+* **[뱀서라이크 만들어보기][GamesLikeVampireSurvivorslink]**  : 몹 소환, 레벨링시스템, 스킬관련 등
 
  </details>
 
@@ -90,6 +93,7 @@
 [Factorylink]: /DesignPattern/FactoryPattern
 [AbstractFactorylink]: /DesignPattern/AbstractFactoryPattern
 [Builderlink]: /DesignPattern/BuilderPattern
+[BehaviorTreelink]: /DesignPattern/MonsterAI/BehaviorTree
 
 [HPBarlink]: /VariousFunctions/HPBar
 [GrapplingHookslink]: /VariousFunctions/GrapplingHooksAndRopeSwing
@@ -112,6 +116,10 @@
 [IslandSystemlink]: /VariousFunctions/IslandSystem
 [PortalSystemlink]: /VariousFunctions/PortalSystem
 [GlidingSystemlink]: /VariousFunctions/Gliding
+[CinemachineTitleScreenlink]: /VariousFunctions/CinemachineTitleScreen
+[SettingScreenlink]: /VariousFunctions/SettingScreen
+[GamesLikeVampireSurvivorslink]: /VariousFunctions/GamesLikeVampireSurvivors
+
 
 [Algorithmllink]: /CodingTest
 [BAEKJOONllink]: /CodingTest/Baekjoon
