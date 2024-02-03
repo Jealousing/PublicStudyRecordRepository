@@ -3,8 +3,7 @@
 ## 기능 설명
   사용자가 옵션을 설정할 수 있도록 하는 화면  
  
- <!--
 ## 유튜브
- [![Video Label](http://img.youtube.com/vi/Fk4OVNQ56G4/0.jpg)](https://youtu.be/Fk4OVNQ56G4)
--->
+ [![Video Label](http://img.youtube.com/vi/8lDA43NEMFA/0.jpg)](https://youtu.be/8lDA43NEMFA)
+
 

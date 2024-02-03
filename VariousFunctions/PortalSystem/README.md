@@ -13,7 +13,14 @@
 ## 추가로 개선하고 싶은 부분
  - 카메라가 보여주는 화면을 저장할때 회전값을 기억하여 보여주도록 수정
  - 포탈 주변 이팩트 추가
- 
+
+## 변경 사항
+### [v1.1] - 2024.02.01
+ 다른 씬의 위치까지 저장가능, 이미지 저장으로 포탈보여지도록 변경
+
+### [v1.0] : 첫 번째 업로드 
+
 ## 유튜브
  [![Video Label](http://img.youtube.com/vi/EEXzWC5vgfc/0.jpg)](https://youtu.be/EEXzWC5vgfc)
+ [![Video Label](http://img.youtube.com/vi/fAp7lG9RLXg/0.jpg)](https://youtu.be/fAp7lG9RLXg)
  
