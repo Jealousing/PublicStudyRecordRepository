@@ -6,4 +6,4 @@
 ## 유튜브
  [![Video Label](http://img.youtube.com/vi/xvZb2dl2oRE/0.jpg)](https://youtu.be/xvZb2dl2oRE)
 
-## [웹에서 게임해보기](https://jealousing.itch.io/3d-suikagame){: target="_blank"}
+## [웹에서 게임해보기](https://jealousing.itch.io/3d-suikagame)

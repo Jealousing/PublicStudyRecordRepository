@@ -91,8 +91,9 @@
 
 * **[TeamDemonStrate][TeamProjectDemonStratelink]**  : 21.04.13 ~ 21.10.12 학교생활 중 진행한 중단된 팀 프로젝트에서 만들었던 코드
  
- </details>
-[3dsuikagamelink]: /BuildGame/3DSuikaGame
+ </details>   
+     
+[3dsuikagamelink]: /BuildGame/3DSuikaGame  
 [ObjectPoolingBaselink]: /DesignPattern/ObjectPoolingBase
 [FSMlink]: /DesignPattern/MonsterAI/FSM
 [Singletonlink]: /DesignPattern/Singleton
@@ -101,7 +102,7 @@
 [Builderlink]: /DesignPattern/BuilderPattern
 [BehaviorTreelink]: /DesignPattern/MonsterAI/BehaviorTree
 
-[HPBarlink]: /VariousFunctions/HPBar
+[HPBarlink]: /VariousFunctions/HPBar   
 [GrapplingHookslink]: /VariousFunctions/GrapplingHooksAndRopeSwing
 [JsonDataManagerlink]: /VariousFunctions/JsonDataManager
 [DrawShapeMeshlink]: /VariousFunctions/DrawShapeMesh
@@ -127,8 +128,8 @@
 [GamesLikeVampireSurvivorslink]: /VariousFunctions/GamesLikeVampireSurvivors
 
 
-[Algorithmllink]: /CodingTest
-[BAEKJOONllink]: /CodingTest/Baekjoon
+[Algorithmllink]: /CodingTest   
+[BAEKJOONllink]: /CodingTest/Baekjoon   
 
 [EffectiveClink]: /Books/EffectiveC++
 
