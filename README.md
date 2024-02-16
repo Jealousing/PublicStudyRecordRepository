@@ -6,6 +6,7 @@
  
 ## 저장소 구조 소개
   카테고리에 맞는 폴더 안에 그에 대한 공부 한 기록들이 저장되어 있습니다.
+ * BuildGame 폴더 : 빌드된 게임을 올려두는 폴더입니다.
  * Design Pattern 폴더 : 디자인 패턴을 공부하며 사용한 스크립트를 저장하는 곳입니다.
  * Various Functions 폴더 : 유니티로 다양한 기능을 제작해서 저장하는 곳입니다.
  * CodingTest 폴더 : 알고리즘 간단 정리와 코딩테스트 풀었던 문제 저장하는 장소입니다.
@@ -17,6 +18,11 @@
 
 
 ## 폴더별 간단소개
+ <details>
+ <summary><b><em>빌드된 게임</em></b> </summary>   
+* **[3D 수박게임][3dsuikagamelink]**  : 수박게임을 3d로 바꿔서 제작     
+ </details>   
+
  <details>
  <summary><b><em>디자인 패턴</em></b> </summary>
    
@@ -86,7 +92,7 @@
 * **[TeamDemonStrate][TeamProjectDemonStratelink]**  : 21.04.13 ~ 21.10.12 학교생활 중 진행한 중단된 팀 프로젝트에서 만들었던 코드
  
  </details>
-
+[3dsuikagamelink]: /BuildGame/3DSuikaGame
 [ObjectPoolingBaselink]: /DesignPattern/ObjectPoolingBase
 [FSMlink]: /DesignPattern/MonsterAI/FSM
 [Singletonlink]: /DesignPattern/Singleton
