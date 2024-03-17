@@ -31,19 +31,19 @@
  <summary><b><em>디자인 패턴</em></b> </summary>
    
  Unity:     
-* **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.      
-* **[싱글톤 패턴][Singletonlink]**  : 특정 클래스가 단 하나의 인스턴스만 가지도록 하는 디자인 패턴이며 전역 접근이 가능하다, 제네릭으로 구현되어있는 스크립트.  
-* **[팩토리 패턴][Factorylink]**  : 객체 생성을 공장(Factory) 클래스로 캡슐화 처리하여 대신 생성하게 하는 생성 디자인 패턴이다.   
-* **[추상 팩토리 패턴][AbstractFactorylink]**  : 객체 군을 생성하는 인터페이스 제공과 서로 다른 종류의 팩토리를 사용하여 객체를 생성하는 디자인패턴.      
-* **[빌더 패턴][Builderlink]**  : 빌더 패턴은 복잡한 객체의 생성 및 구성을 단순화하고, 객체의 생성 과정을 분리하여 유연성을 제공하는 디자인 패턴이다.      
-* **[프로토타입 패턴][PrototypePatternlink]**  : 기존 객체를 복사하여 새 객체를 생성하는 디자인 패턴으로, 새로운 객체를 처음부터 만드는 것을 피합니다.      
-* **[어댑터 패턴][AdapterPatternlink]**  : 호환되지 않는 인터페이스를 변환하여 함께 작동하도록 만드는 디자인패턴.     
-* **[브릿지 패턴][BridgePatternlink]**  : 추상화와 구현을 분리하여, 두 요소 간의 결합을 약화시키고, 확장성이 높고 유용한 디자인 패턴.    
+* **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.
+* **[싱글톤 패턴][Singletonlink]**  : 특정 클래스가 단 하나의 인스턴스만 가지도록 하는 디자인 패턴이며 전역 접근이 가능하다, 제네릭으로 구현되어있는 스크립트.
+* **[팩토리 패턴][Factorylink]**  : 객체 생성을 공장(Factory) 클래스로 캡슐화 처리하여 대신 생성하게 하는 생성 디자인 패턴이다.
+* **[추상 팩토리 패턴][AbstractFactorylink]**  : 객체 군을 생성하는 인터페이스 제공과 서로 다른 종류의 팩토리를 사용하여 객체를 생성하는 디자인패턴.
+* **[빌더 패턴][Builderlink]**  : 빌더 패턴은 복잡한 객체의 생성 및 구성을 단순화하고, 객체의 생성 과정을 분리하여 유연성을 제공하는 디자인 패턴이다.
+* **[프로토타입 패턴][PrototypePatternlink]**  : 기존 객체를 복사하여 새 객체를 생성하는 디자인 패턴으로, 새로운 객체를 처음부터 만드는 것을 피합니다.   
+* **[어댑터 패턴][AdapterPatternlink]**  : 호환되지 않는 인터페이스를 변환하여 함께 작동하도록 만드는 디자인패턴.
+* **[브릿지 패턴][BridgePatternlink]**  : 추상화와 구현을 분리하여, 두 요소 간의 결합을 약화시키고, 확장성이 높고 유용한 디자인 패턴.
 * **[컴포지트 패턴][CompositePatternlink]**  : 부분-전체 계층을 나타내기 위해 객체를 트리 구조로 구성하고 개별 객체와 구성을 통일적으로 다룰 수 있는 디자인 패턴입니다.
 * **[데코레이터 패턴][DecoratorPatternlink]**  : 데코레이터 패턴은 객체에 동적으로 새로운 기능을 추가할 수 있는 구조적 디자인 패턴입니다. (객체의 기능을 확장하거나 변경하기 위해 객체의 감싸는 래퍼 클래스를 생성하는 방식으로 작동)
  
-* **[몬스터 AI FSM][FSMlink]**  : 객체의 동작을 다양한 상태로 나누고, 이 상태들 간의 전환과 각 상태에서의 행동을 관리하는 패턴.    
-* **[몬스터 AI BehaviorTree][BehaviorTreelink]**  : 객체의 동작을 트리 구조 내의 노드로 구성하여 객체의 동작과 결정을 효과적으로 관리하는 디자인패턴.  
+* **[몬스터 AI FSM][FSMlink]**  : 객체의 동작을 다양한 상태로 나누고, 이 상태들 간의 전환과 각 상태에서의 행동을 관리하는 패턴.
+* **[몬스터 AI BehaviorTree][BehaviorTreelink]**  : 객체의 동작을 트리 구조 내의 노드로 구성하여 객체의 동작과 결정을 효과적으로 관리하는 디자인패턴.
 
 
  </details>
@@ -120,6 +120,7 @@
 [BridgePatternlinklink]: /DesignPattern/BridgePattern
 [CompositePatternlink]: /DesignPattern/CompositePattern
 [DecoratorPatternlink]: /DesignPattern/DecoratorPattern
+[BridgePatternlink]: /DesignPattern/BridgePattern
 [BehaviorTreelink]: /DesignPattern/MonsterAI/BehaviorTree
 
 [HPBarlink]: /VariousFunctions/HPBar   
