@@ -1,4 +1,4 @@
-	# PublicStudyRecordRepository
+# PublicStudyRecordRepository
  공부한 것들을 모아두는 공개형 저장소
 
 ## 저장소의 목적
@@ -30,8 +30,8 @@
  <details>
  <summary><b><em>디자인 패턴</em></b> </summary>
    
+### GoF   
  Unity:     
-* **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.
 * **[싱글톤 패턴][Singletonlink]**  : 특정 클래스가 단 하나의 인스턴스만 가지도록 하는 디자인 패턴이며 전역 접근이 가능하다, 제네릭으로 구현되어있는 스크립트.
 * **[팩토리 패턴][Factorylink]**  : 객체 생성을 공장(Factory) 클래스로 캡슐화 처리하여 대신 생성하게 하는 생성 디자인 패턴이다.
 * **[추상 팩토리 패턴][AbstractFactorylink]**  : 객체 군을 생성하는 인터페이스 제공과 서로 다른 종류의 팩토리를 사용하여 객체를 생성하는 디자인패턴.
@@ -41,7 +41,14 @@
 * **[브릿지 패턴][BridgePatternlink]**  : 추상화와 구현을 분리하여, 두 요소 간의 결합을 약화시키고, 확장성이 높고 유용한 디자인 패턴.
 * **[컴포지트 패턴][CompositePatternlink]**  : 부분-전체 계층을 나타내기 위해 객체를 트리 구조로 구성하고 개별 객체와 구성을 통일적으로 다룰 수 있는 디자인 패턴입니다.
 * **[데코레이터 패턴][DecoratorPatternlink]**  : 데코레이터 패턴은 객체에 동적으로 새로운 기능을 추가할 수 있는 구조적 디자인 패턴입니다. (객체의 기능을 확장하거나 변경하기 위해 객체의 감싸는 래퍼 클래스를 생성하는 방식으로 작동)
- 
+* **[퍼사드 패턴][FacadePatternlink]** : 복잡한 시스템에 대한 간소화된 인터페이스를 제공하여 복잡성을 클라이언트로부터 숨기는 디자인 패턴입니다.   
+* **[플라이웨이트 패턴][FlyweightPatternlink]** : 유사한 상태를 가진 객체를 공유하여 인스턴스의 수를 줄이고 메모리 사용량을 최소화하여 성능을 향상시키는 디자인 패턴입니다.    
+* **[프록시 패턴][ProxyPatternlink]** : 다른 객체에 대한 대리자 또는 대체물을 제공하여 해당 객체에 대한 접근을 제어하고 추가 기능을 제공하는 디자인 패턴입니다. 예를 들어, 지연 초기화 또는 접근 제어와 같은 기능을 제공할 수 있습니다.     
+* **[책임 연쇄 패턴][ChainOfResponsibilityPatternlink]** : 여러 객체가 연쇄적으로 요청을 처리할 수 있는 디자인 패턴으로, 요청이 처리되거나 체인의 끝에 도달할 때까지 요청이 체인을 따라 전달됩니다.      
+
+### ETC 
+ Unity:     
+* **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.
 * **[몬스터 AI FSM][FSMlink]**  : 객체의 동작을 다양한 상태로 나누고, 이 상태들 간의 전환과 각 상태에서의 행동을 관리하는 패턴.
 * **[몬스터 AI BehaviorTree][BehaviorTreelink]**  : 객체의 동작을 트리 구조 내의 노드로 구성하여 객체의 동작과 결정을 효과적으로 관리하는 디자인패턴.
 
@@ -122,6 +129,10 @@
 [DecoratorPatternlink]: /DesignPattern/DecoratorPattern
 [BridgePatternlink]: /DesignPattern/BridgePattern
 [BehaviorTreelink]: /DesignPattern/MonsterAI/BehaviorTree
+[FacadePatternlink]: /DesignPattern/FacadePattern
+[FlyweightPatternlink]: /DesignPattern/FlyweightPattern
+[ProxyPatternlink]: /DesignPattern/ProxyPattern
+[ChainOfResponsibilityPatternlink]: /DesignPattern/ChainOfResponsibility
 
 [HPBarlink]: /VariousFunctions/HPBar   
 [GrapplingHookslink]: /VariousFunctions/GrapplingHooksAndRopeSwing
