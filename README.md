@@ -45,6 +45,9 @@
 * **[플라이웨이트 패턴][FlyweightPatternlink]** : 유사한 상태를 가진 객체를 공유하여 인스턴스의 수를 줄이고 메모리 사용량을 최소화하여 성능을 향상시키는 디자인 패턴입니다.    
 * **[프록시 패턴][ProxyPatternlink]** : 다른 객체에 대한 대리자 또는 대체물을 제공하여 해당 객체에 대한 접근을 제어하고 추가 기능을 제공하는 디자인 패턴입니다. 예를 들어, 지연 초기화 또는 접근 제어와 같은 기능을 제공할 수 있습니다.     
 * **[책임 연쇄 패턴][ChainOfResponsibilityPatternlink]** : 여러 객체가 연쇄적으로 요청을 처리할 수 있는 디자인 패턴으로, 요청이 처리되거나 체인의 끝에 도달할 때까지 요청이 체인을 따라 전달됩니다.      
+* **[커맨드 패턴][CommandPatternlink]** : 클라이언트의 요청을 객체로 캡슐화하여 다양한 시점에 대기열, 요청 및 작업을 호출할 수 있도록 하는 디자인 패턴.          
+* **[인터프리터 패턴][InterpreterPatternlink]** : 언어의 문법을 정의하고 그 언어의 문장을 해석하는 디자인 패턴으로, 특정 도메인 언어를 해석하고 해당 언어를 실행 가능한 코드나 동작으로 변환하는 데 유용한 패턴입니다.          
+
 
 ### ETC 
  Unity:     
@@ -133,6 +136,8 @@
 [FlyweightPatternlink]: /DesignPattern/FlyweightPattern
 [ProxyPatternlink]: /DesignPattern/ProxyPattern
 [ChainOfResponsibilityPatternlink]: /DesignPattern/ChainOfResponsibility
+[CommandPatternlink]: /DesignPattern/CommandPattern
+[InterpreterPatternlink]: /DesignPattern/InterpreterPattern
 
 [HPBarlink]: /VariousFunctions/HPBar   
 [GrapplingHookslink]: /VariousFunctions/GrapplingHooksAndRopeSwing
