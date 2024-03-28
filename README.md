@@ -28,7 +28,10 @@
  </details>   
 
  <details>
- <summary><b><em>디자인 패턴</em></b> </summary>
+ <summary><b><em> CS </em></b> </summary>
+
+ <details>
+ <summary><b><em>디자인패턴</em></b> </summary>
    
 ### GoF   
    
@@ -77,17 +80,20 @@
 * **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.
 * **[몬스터 AI FSM][FSMlink]**  : 객체의 동작을 다양한 상태로 나누고, 이 상태들 간의 전환과 각 상태에서의 행동을 관리하는 패턴.
 * **[몬스터 AI BehaviorTree][BehaviorTreelink]**  : 객체의 동작을 트리 구조 내의 노드로 구성하여 객체의 동작과 결정을 효과적으로 관리하는 디자인패턴.
+ 
+  
+ </details>
 
 <details>
 <summary><b><em>공부 & 정리 예정(Creational)</em></b> </summary>
    
-* Entity Component System (ECS) : 게임 엔터티의 데이터 및 동작을 구성하기 위해 게임 개발에서 일반적으로 사용되는 패턴입니다. 게임 개체를 더 작은 구성 요소로 분해하여 더 나은 확장성과 재사용성을 가능하게 합니다.    
+* **[Entity Component System (ECS)][ECSlink]** : 게임 엔터티의 데이터 및 동작을 구성하기 위해 게임 개발에서 일반적으로 사용되는 패턴입니다. 게임 개체를 더 작은 구성 요소로 분해하여 더 나은 확장성과 재사용성을 가능하게 합니다.    
 * Dependency Injection (DI) : 클래스 내부에 종속성을 하드 코딩하는 대신 외부에 주입하여 클래스 간의 종속성을 관리하는 방법을 제공합니다.    
 * Data-Driven Design (DDD) : 외부 데이터 파일이나 스크립트를 사용하여 게임의 동작과 콘텐츠를 구동하는 데 중점을 둡니다. DDD는 게임 로직을 데이터와 분리하므로 코드를 수정하지 않고도 더 쉽게 반복하고 사용자 정의할 수 있습니다.      
 * Service Locator Pattern : 서비스의 중앙 관리와 동적 검색을 용이하게 하는 설계 패턴으로, 엔티티가 직접 구현 세부 사항을 알 필요없이 다양한 기능에 액세스할 수 있습니다.   
    
-</details>   
-  
+</details>  
+
  </details>
 
  <details>
@@ -178,6 +184,7 @@
 [StatePatternlink]: /DesignPattern/GoF/Behavioral/StatePattern
 [StrategyPatternlink]: /DesignPattern/GoF/Behavioral/StrategyPattern
 [VisitorPatternlink]: /DesignPattern/GoF/Behavioral/VisitorPattern
+[ECSlink]: /DesignPattern/ECS(EntityComponentSystem)
 
 
 [HPBarlink]: /VariousFunctions/HPBar   
