@@ -78,11 +78,11 @@ Unity:
 		* **[Dependency Injection (DI)][DependencyInjectionlink]** : 클래스 내부에 종속성을 하드 코딩하는 대신 외부에 주입하여 클래스 간의 종속성을 관리하는 방법을 제공합니다.
 	</details>
  
-* <details> <summary><b><em>아키텍처 패턴(Creational)</em></b> </summary>
+* <details> <summary><b><em>아키텍처 패턴</em></b> </summary>
 	
 	* **[Entity Component System (ECS)][ECSlink]** : 게임 엔터티의 데이터 및 동작을 구성하기 위해 게임 개발에서 일반적으로 사용되는 패턴입니다. 게임 개체를 더 작은 구성 요소로 분해하여 더 나은 확장성과 재사용성을 가능하게 합니다.    
    
-* <details> <summary><b><em>공부 & 정리 예정(Creational)</em></b> </summary> 
+* <details> <summary><b><em>공부 & 정리 예정</em></b> </summary> 
 	
 	* Data-Driven Design (DDD) : 외부 데이터 파일이나 스크립트를 사용하여 게임의 동작과 콘텐츠를 구동하는 데 중점을 둡니다. DDD는 게임 로직을 데이터와 분리하므로 코드를 수정하지 않고도 더 쉽게 반복하고 사용자 정의할 수 있습니다.      
 	* Service Locator Pattern : 서비스의 중앙 관리와 동적 검색을 용이하게 하는 설계 패턴으로, 엔티티가 직접 구현 세부 사항을 알 필요없이 다양한 기능에 액세스할 수 있습니다.
