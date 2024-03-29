@@ -7,11 +7,10 @@
 ## 저장소 구조 소개
   카테고리에 맞는 폴더 안에 그에 대한 공부 한 기록들이 저장되어 있습니다.
  * BuildGame 폴더 : 빌드된 게임을 올려두는 폴더입니다.
- * Design Pattern 폴더 : 디자인 패턴을 공부하며 사용한 스크립트를 저장하는 곳입니다.
+ * ComputerScience 폴더 : 디자인 패턴이나 아키택처패턴 같은 CS 공부하며 저장하는 곳입니다.
  * Various Functions 폴더 : 유니티로 다양한 기능을 제작해서 저장하는 곳입니다.
  * CodingTest 폴더 : 알고리즘 간단 정리와 코딩테스트 풀었던 문제 저장하는 장소입니다.
  * TeamProject 폴더 : 팀 프로젝트에 참가해서 사용한 코드들 저장하는 곳입니다.
- * Books 폴더 : 책을 공부하면서 간단히 정리하면서 공부하기 위한 저장소입니다.
  * TemporaryFolder 폴더 : 이 저장소의 양식을 만들어 사용하기 위한 폴더입니다.
 
  각 내부 폴더에 스크립트를 저장하고 리드미를 따로 두어 그 기능이 무엇인지 간단한 소개, 구현할때 어려웠던 점, 해결했던 방법, 느낀점 등을 작성할 예정입니다.
@@ -21,22 +20,21 @@
 
  <details>
  <summary><b><em>빌드된 게임</em></b> </summary>   
-   
- Unity:    
-* **[3D 수박게임][3dsuikagamelink]**  : 수박게임을 3d로 바꿔서 제작     
+
+ &nbsp;&nbsp;&nbsp;Unity:    
+ * **[3D 수박게임][3dsuikagamelink]**  : 수박게임을 3d로 바꿔서 제작     
 
  </details>   
 
  <details>
- <summary><b><em> CS </em></b> </summary>
+ <summary><b><em> CS(ComputerScience) </em></b> </summary>
+ <div style="margin-left: 20px;">
 
- <details>
- <summary><b><em>디자인패턴</em></b> </summary>
-   
-### GoF   
-   
-<details>
-<summary><b><em>생성 패턴(Creational)</em></b> </summary>
+  <details> <summary><b><em>디자인패턴</em></b> </summary>  
+  <div style="margin-left: 20px;">
+   <details> <summary><b><em> GoF </em></b> </summary>    
+     <div style="margin-left: 20px;">
+<details> <summary><b><em>생성 패턴(Creational)</em></b> </summary>
     
 * **[싱글톤 패턴][Singletonlink]**  : 특정 클래스가 단 하나의 인스턴스만 가지도록 하는 디자인 패턴이며 전역 접근이 가능하다, 제네릭으로 구현되어있는 스크립트.    
 * **[팩토리 패턴][Factorylink]**  : 객체 생성을 공장(Factory) 클래스로 캡슐화 처리하여 대신 생성하게 하는 생성 디자인 패턴이다.    
@@ -46,8 +44,7 @@
     
 </details>   
 
-<details>
-<summary><b><em>구조 패턴(Structural)</em></b> </summary>
+   <details> <summary><b><em>구조 패턴(Structural)</em></b> </summary>
     
 * **[어댑터 패턴][AdapterPatternlink]**  : 호환되지 않는 인터페이스를 변환하여 함께 작동하도록 만드는 디자인패턴.    
 * **[브릿지 패턴][BridgePatternlink]**  : 추상화와 구현을 분리하여, 두 요소 간의 결합을 약화시키고, 확장성이 높고 유용한 디자인 패턴.    
@@ -59,8 +56,7 @@
     
 </details>   
 
-<details>
-<summary><b><em>행동 패턴(Behavioral)</em></b> </summary>
+   <details> <summary><b><em>행동 패턴(Behavioral)</em></b> </summary>
     
 * **[책임 연쇄 패턴][ChainOfResponsibilityPatternlink]** : 여러 객체가 연쇄적으로 요청을 처리할 수 있는 디자인 패턴으로, 요청이 처리되거나 체인의 끝에 도달할 때까지 요청이 체인을 따라 전달됩니다.        
 * **[커맨드 패턴][CommandPatternlink]** : 클라이언트의 요청을 객체로 캡슐화하여 다양한 시점에 대기열, 요청 및 작업을 호출할 수 있도록 하는 디자인 패턴.             
@@ -73,33 +69,49 @@
 * **[전략 패턴][StrategyPatternlink]** : 동일 계열의 알고리즘을 정의하고 각 알고리즘을 캡슐화하며, 동일한 계열 내에서 교환 가능하게 만드는 설계 패턴입니다.     
 * **[방문자 패턴][VisitorPatternlink]** : 객체 구조를 수정하지 않고 새로운 작업을 추가하여 알고리즘과 객체를 분리하는 설계 패턴입니다.        
     
+</details>
+</div>
 </details>   
+   
+<details> <summary><b><em> ETC </em></b> </summary>
 
-### ETC 
- Unity:     
+&nbsp;&nbsp;&nbsp;Unity:     
 * **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.
 * **[몬스터 AI FSM][FSMlink]**  : 객체의 동작을 다양한 상태로 나누고, 이 상태들 간의 전환과 각 상태에서의 행동을 관리하는 패턴.
 * **[몬스터 AI BehaviorTree][BehaviorTreelink]**  : 객체의 동작을 트리 구조 내의 노드로 구성하여 객체의 동작과 결정을 효과적으로 관리하는 디자인패턴.
- 
-  
+
+</details>
+  </div>
  </details>
 
 <details>
-<summary><b><em>공부 & 정리 예정(Creational)</em></b> </summary>
-   
+<summary><b><em>아키텍처 패턴(Creational)</em></b> </summary>
+
 * **[Entity Component System (ECS)][ECSlink]** : 게임 엔터티의 데이터 및 동작을 구성하기 위해 게임 개발에서 일반적으로 사용되는 패턴입니다. 게임 개체를 더 작은 구성 요소로 분해하여 더 나은 확장성과 재사용성을 가능하게 합니다.    
+
+</details>    
+
+<details> <summary><b><em>공부 & 정리 예정(Creational)</em></b> </summary>
+   
 * Dependency Injection (DI) : 클래스 내부에 종속성을 하드 코딩하는 대신 외부에 주입하여 클래스 간의 종속성을 관리하는 방법을 제공합니다.    
 * Data-Driven Design (DDD) : 외부 데이터 파일이나 스크립트를 사용하여 게임의 동작과 콘텐츠를 구동하는 데 중점을 둡니다. DDD는 게임 로직을 데이터와 분리하므로 코드를 수정하지 않고도 더 쉽게 반복하고 사용자 정의할 수 있습니다.      
 * Service Locator Pattern : 서비스의 중앙 관리와 동적 검색을 용이하게 하는 설계 패턴으로, 엔티티가 직접 구현 세부 사항을 알 필요없이 다양한 기능에 액세스할 수 있습니다.   
    
 </details>  
 
- </details>
+<details>
+<summary><b><em>Books</em></b> </summary>
 
- <details>
+ * **[Effective C++][EffectiveClink]**
+</div>
+ </details>
+ </details>
+</details>
+ 
+<details>
  <summary><b><em>다양한 기능구현</em></b> </summary>
 
- Unity:    
+&nbsp;&nbsp;&nbsp;Unity:    
 * **[체력바][HPBarlink]**  : 체력을 가진 오브젝트 머리위에 표시되는 막대로 HP상태를 알려주는 기능.
 * **[로프액션][GrapplingHookslink]**  : 마우스 에임 방향으로 로프를 발사해 그 곳으로 직선이동이나 스윙이동하는 기능.
 * **[Json 데이터 관리][JsonDataManagerlink]**  : Json으로 데이터를 관리 및 저장하는 시스템
@@ -142,13 +154,6 @@
  </details>
 
 <details>
-<summary><b><em>Books</em></b> </summary>
-
- * **[Effective C++][EffectiveClink]**
-
- </details>
-
-<details>
 <summary><b><em>팀 프로젝트</em></b> </summary>
 
 * **[TeamDemonStrate][TeamProjectDemonStratelink]**  : 21.04.13 ~ 21.10.12 학교생활 중 진행한 중단된 팀 프로젝트에서 만들었던 코드
@@ -157,34 +162,34 @@
      
 [3dsuikagamelink]: /BuildGame/3DSuikaGame  
 
-[ObjectPoolingBaselink]: /DesignPattern/ObjectPoolingBase
-[FSMlink]: /DesignPattern/MonsterAI/FSM
+[ObjectPoolingBaselink]: /DesignPatterns/ObjectPoolingBase
+[FSMlink]: /DesignPatterns/MonsterAI/FSM
 
-[Singletonlink]: /DesignPattern/GoF/Creational/Singleton
-[Factorylink]: /DesignPattern/GoF/Creational/FactoryPattern
-[AbstractFactorylink]: /DesignPattern/GoF/Creational/AbstractFactoryPattern
-[Builderlink]: /DesignPattern/GoF/Creational/BuilderPattern
-[PrototypePatternlink]: /DesignPattern/GoF/Creational/PrototypePattern
-[AdapterPatternlink]: /DesignPattern/GoF/Structural/AdapterPattern
-[BridgePatternlinklink]: /DesignPattern/GoF/Structural/BridgePattern
-[CompositePatternlink]: /DesignPattern/GoF/Structural/CompositePattern
-[DecoratorPatternlink]: /DesignPattern/GoF/Structural/DecoratorPattern
-[BridgePatternlink]: /DesignPattern/GoF/Structural/BridgePattern
-[BehaviorTreelink]: /DesignPattern/MonsterAI/BehaviorTree
-[FacadePatternlink]: /DesignPattern/GoF/Structural/FacadePattern
-[FlyweightPatternlink]: /DesignPattern/GoF/Structural/FlyweightPattern
-[ProxyPatternlink]: /DesignPattern/GoF/Structural/ProxyPattern
-[ChainOfResponsibilityPatternlink]: /DesignPattern/GoF/Behavioral/ChainOfResponsibility
-[CommandPatternlink]: /DesignPattern/GoF/Behavioral/CommandPattern
-[InterpreterPatternlink]: /DesignPattern/GoF/Behavioral/InterpreterPattern
-[IteratorPatternlink]: /DesignPattern/GoF/Behavioral/IteratorPattern
-[MediatorPatternlink]: /DesignPattern/GoF/Behavioral/MediatorPattern
-[MementoPatternlink]: /DesignPattern/GoF/Behavioral/MementoPattern
-[ObserverPatternlink]: /DesignPattern/GoF/Behavioral/ObserverPattern
-[StatePatternlink]: /DesignPattern/GoF/Behavioral/StatePattern
-[StrategyPatternlink]: /DesignPattern/GoF/Behavioral/StrategyPattern
-[VisitorPatternlink]: /DesignPattern/GoF/Behavioral/VisitorPattern
-[ECSlink]: /DesignPattern/ECS(EntityComponentSystem)
+[Singletonlink]: /ComputerScience/DesignPatterns/GoF/Creational/Singleton
+[Factorylink]: /ComputerScience/DesignPatterns/GoF/Creational/FactoryPattern
+[AbstractFactorylink]: /ComputerScience/DesignPatterns/GoF/Creational/AbstractFactoryPattern
+[Builderlink]: /ComputerScience/DesignPatterns/GoF/Creational/BuilderPattern
+[PrototypePatternlink]: /ComputerScience/DesignPatterns/GoF/Creational/PrototypePattern
+[AdapterPatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/AdapterPattern
+[BridgePatternlinklink]: /ComputerScience/DesignPatterns/GoF/Structural/BridgePattern
+[CompositePatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/CompositePattern
+[DecoratorPatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/DecoratorPattern
+[BridgePatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/BridgePattern
+[BehaviorTreelink]: /ComputerScience/DesignPatterns/MonsterAI/BehaviorTree
+[FacadePatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/FacadePattern
+[FlyweightPatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/FlyweightPattern
+[ProxyPatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/ProxyPattern
+[ChainOfResponsibilityPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/ChainOfResponsibility
+[CommandPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/CommandPattern
+[InterpreterPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/InterpreterPattern
+[IteratorPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/IteratorPattern
+[MediatorPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/MediatorPattern
+[MementoPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/MementoPattern
+[ObserverPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/ObserverPattern
+[StatePatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/StatePattern
+[StrategyPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/StrategyPattern
+[VisitorPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/VisitorPattern
+[ECSlink]: /ComputerScience/ArchitecturePatterns/ECS(EntityComponentSystem)
 
 
 [HPBarlink]: /VariousFunctions/HPBar   
@@ -218,6 +223,6 @@
 [Algorithmllink]: /CodingTest   
 [BAEKJOONllink]: /CodingTest/Baekjoon   
 
-[EffectiveClink]: /Books/EffectiveC++
+[EffectiveClink]: /ComputerScience/Books/EffectiveC++
 
 [TeamProjectDemonStratelink]: /TeamProject/DemonStrate
