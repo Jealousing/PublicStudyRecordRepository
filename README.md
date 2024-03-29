@@ -19,80 +19,83 @@
 ## 폴더별 간단소개
 
  <details>
- <summary><b><em>빌드된 게임</em></b> </summary>   
+ <summary><b><em>빌드된 게임</em></b> </summary>
+	 
  *****
-
 
 Unity:    
  * **[3D 수박게임][3dsuikagamelink]**  : 수박게임을 3d로 바꿔서 제작     
  
-
  *****
+ 
  </details>   
 
  <details>
  <summary><b><em> CS(ComputerScience) </em></b> </summary>
+	 
  *****
 
-
-* <details> <summary><b><em>디자인패턴</em></b> </summary>  
-	* <details> <summary><b><em> GoF </em></b> </summary>    
-		* <details> <summary><b><em>생성 패턴(Creational)</em></b> </summary>
+* <details> <summary><b><em>디자인패턴</em></b> </summary> 
+	
+	* <details> <summary><b><em> GoF </em></b> </summary>
+		
+ 		* <details> <summary><b><em>생성 패턴(Creational)</em></b> </summary>
+			
 			* **[싱글톤 패턴][Singletonlink]**  : 특정 클래스가 단 하나의 인스턴스만 가지도록 하는 디자인 패턴이며 전역 접근이 가능하다, 제네릭으로 구현되어있는 스크립트.    
 			* **[팩토리 패턴][Factorylink]**  : 객체 생성을 공장(Factory) 클래스로 캡슐화 처리하여 대신 생성하게 하는 생성 디자인 패턴이다.    
 			* **[추상 팩토리 패턴][AbstractFactorylink]**  : 객체 군을 생성하는 인터페이스 제공과 서로 다른 종류의 팩토리를 사용하여 객체를 생성하는 디자인패턴.      
 			* **[빌더 패턴][Builderlink]**  : 빌더 패턴은 복잡한 객체의 생성 및 구성을 단순화하고, 객체의 생성 과정을 분리하여 유연성을 제공하는 디자인 패턴이다.    
-			* **[프로토타입 패턴][PrototypePatternlink]**  : 기존 객체를 복사하여 새 객체를 생성하는 디자인 패턴으로, 새로운 객체를 처음부터 만드는 것을 피합니다.        
-		</details>   
-			* <details> <summary><b><em>구조 패턴(Structural)</em></b> </summary>
-				* **[어댑터 패턴][AdapterPatternlink]**  : 호환되지 않는 인터페이스를 변환하여 함께 작동하도록 만드는 디자인패턴.    
-				* **[브릿지 패턴][BridgePatternlink]**  : 추상화와 구현을 분리하여, 두 요소 간의 결합을 약화시키고, 확장성이 높고 유용한 디자인 패턴.    
-				* **[컴포지트 패턴][CompositePatternlink]**  : 부분-전체 계층을 나타내기 위해 객체를 트리 구조로 구성하고 개별 객체와 구성을 통일적으로 다룰 수 있는 디자인 패턴입니다.      
-				* **[데코레이터 패턴][DecoratorPatternlink]**  : 데코레이터 패턴은 객체에 동적으로 새로운 기능을 추가할 수 있는 구조적 디자인 패턴입니다. (객체의 기능을 확장하거나 변경하기 위해 객체의 감싸는 래퍼 클래스를 생성하는 방식으로 작동)     
-				* **[퍼사드 패턴][FacadePatternlink]** : 복잡한 시스템에 대한 간소화된 인터페이스를 제공하여 복잡성을 클라이언트로부터 숨기는 디자인 패턴입니다.       
-				* **[플라이웨이트 패턴][FlyweightPatternlink]** : 유사한 상태를 가진 객체를 공유하여 인스턴스의 수를 줄이고 메모리 사용량을 최소화하여 성능을 향상시키는 디자인 패턴입니다.      
-				* **[프록시 패턴][ProxyPatternlink]** : 다른 객체에 대한 대리자 또는 대체물을 제공하여 해당 객체에 대한 접근을 제어하고 추가 기능을 제공하는 디자인 패턴입니다. 예를 들어, 지연 초기화 또는 접근 제어와 같은 기능을 제공할 수 있습니다.       
-		</details>   
-				* <details> <summary><b><em>행동 패턴(Behavioral)</em></b> </summary>
-					* **[책임 연쇄 패턴][ChainOfResponsibilityPatternlink]** : 여러 객체가 연쇄적으로 요청을 처리할 수 있는 디자인 패턴으로, 요청이 처리되거나 체인의 끝에 도달할 때까지 요청이 체인을 따라 전달됩니다.        
-					* **[커맨드 패턴][CommandPatternlink]** : 클라이언트의 요청을 객체로 캡슐화하여 다양한 시점에 대기열, 요청 및 작업을 호출할 수 있도록 하는 디자인 패턴.             
-					* **[인터프리터 패턴][InterpreterPatternlink]** : 언어의 문법을 정의하고 그 언어의 문장을 해석하는 디자인 패턴으로, 특정 도메인 언어를 해석하고 해당 언어를 실행 가능한 코드나 동작으로 변환하는 데 유용한 패턴입니다.            
-					* **[이터레이터 패턴][IteratorPatternlink]** : 집합 객체의 요소에 순차적으로 액세스하는 방법을 제공하여 내부 표현을 노출하지 않고도 해당 요소에 접근하는 디자인 패턴입니다.            
-					* **[중재자 패턴][MediatorPatternlink]** : 상호작용하는 객체 사이의 결합도를 줄이기 위해 중재자 객체를 통해 통신을 중앙 집중화하는 디자인 패턴입니다.            
-					* **[메멘토 패턴][MementoPatternlink]** : 객체의 특정 상태로 다시 되돌아올 수 있도록 하는 설계 패턴입니다.           
-					* **[옵저버 패턴][ObserverPatternlink]** : 객체가 상태를 변경할 때 관련 객체들이 업데이트를 받는 설계 패턴입니다.      
-					* **[상태 패턴][StatePatternlink]** : 객체가 내부 상태가 변경될 때 동작을 변경할 수 있도록 하며, 상태별 동작을 별도의 클래스로 캡슐화하는 설계 패턴입니다.        
-					* **[전략 패턴][StrategyPatternlink]** : 동일 계열의 알고리즘을 정의하고 각 알고리즘을 캡슐화하며, 동일한 계열 내에서 교환 가능하게 만드는 설계 패턴입니다.     
-					* **[방문자 패턴][VisitorPatternlink]** : 객체 구조를 수정하지 않고 새로운 작업을 추가하여 알고리즘과 객체를 분리하는 설계 패턴입니다.        
-		</details>
-	</details>   
-					*  <details> <summary><b><em> ETC </em></b> </summary>
-					Unity:     
-						* **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.
-						* **[몬스터 AI FSM][FSMlink]**  : 객체의 동작을 다양한 상태로 나누고, 이 상태들 간의 전환과 각 상태에서의 행동을 관리하는 패턴.
-						* **[몬스터 AI BehaviorTree][BehaviorTreelink]**  : 객체의 동작을 트리 구조 내의 노드로 구성하여 객체의 동작과 결정을 효과적으로 관리하는 디자인패턴.
-						* **[Dependency Injection (DI)][DependencyInjectionlink]** : 클래스 내부에 종속성을 하드 코딩하는 대신 외부에 주입하여 클래스 간의 종속성을 관리하는 방법을 제공합니다.
-					</details>
-</details>
-						* <details> <summary><b><em>아키텍처 패턴(Creational)</em></b> </summary>
-							* **[Entity Component System (ECS)][ECSlink]** : 게임 엔터티의 데이터 및 동작을 구성하기 위해 게임 개발에서 일반적으로 사용되는 패턴입니다. 게임 개체를 더 작은 구성 요소로 분해하여 더 나은 확장성과 재사용성을 가능하게 합니다.    
-						</details>    
-							* <details> <summary><b><em>공부 & 정리 예정(Creational)</em></b> </summary> 
-								* Data-Driven Design (DDD) : 외부 데이터 파일이나 스크립트를 사용하여 게임의 동작과 콘텐츠를 구동하는 데 중점을 둡니다. DDD는 게임 로직을 데이터와 분리하므로 코드를 수정하지 않고도 더 쉽게 반복하고 사용자 정의할 수 있습니다.      
-								* Service Locator Pattern : 서비스의 중앙 관리와 동적 검색을 용이하게 하는 설계 패턴으로, 엔티티가 직접 구현 세부 사항을 알 필요없이 다양한 기능에 액세스할 수 있습니다.       
-							</details>   
-                           	 	* <details> <summary><b><em>Books</em></b> </summary>
-                                		* **[Effective C++][EffectiveClink]**    
-							</details>
-
-
- *****   
- </details>
- </details>
+			* **[프로토타입 패턴][PrototypePatternlink]**  : 기존 객체를 복사하여 새 객체를 생성하는 디자인 패턴으로, 새로운 객체를 처음부터 만드는 것을 피합니다.
+     	  	</details>
+		* <details> <summary><b><em>구조 패턴(Structural)</em></b> </summary>
+			
+			* **[어댑터 패턴][AdapterPatternlink]**  : 호환되지 않는 인터페이스를 변환하여 함께 작동하도록 만드는 디자인패턴.    
+			* **[브릿지 패턴][BridgePatternlink]**  : 추상화와 구현을 분리하여, 두 요소 간의 결합을 약화시키고, 확장성이 높고 유용한 디자인 패턴.    
+			* **[컴포지트 패턴][CompositePatternlink]**  : 부분-전체 계층을 나타내기 위해 객체를 트리 구조로 구성하고 개별 객체와 구성을 통일적으로 다룰 수 있는 디자인 패턴입니다.      
+			* **[데코레이터 패턴][DecoratorPatternlink]**  : 데코레이터 패턴은 객체에 동적으로 새로운 기능을 추가할 수 있는 구조적 디자인 패턴입니다. (객체의 기능을 확장하거나 변경하기 위해 객체의 감싸는 래퍼 클래스를 생성하는 방식으로 작동)     
+			* **[퍼사드 패턴][FacadePatternlink]** : 복잡한 시스템에 대한 간소화된 인터페이스를 제공하여 복잡성을 클라이언트로부터 숨기는 디자인 패턴입니다.       
+			* **[플라이웨이트 패턴][FlyweightPatternlink]** : 유사한 상태를 가진 객체를 공유하여 인스턴스의 수를 줄이고 메모리 사용량을 최소화하여 성능을 향상시키는 디자인 패턴입니다.      
+			* **[프록시 패턴][ProxyPatternlink]** : 다른 객체에 대한 대리자 또는 대체물을 제공하여 해당 객체에 대한 접근을 제어하고 추가 기능을 제공하는 디자인 패턴입니다. 예를 들어, 지연 초기화 또는 접근 제어와 같은 기능을 제공할 수 있습니다.
+     		</details> 
+		* <details> <summary><b><em>행동 패턴(Behavioral)</em></b> </summary>
+			
+			* **[책임 연쇄 패턴][ChainOfResponsibilityPatternlink]** : 여러 객체가 연쇄적으로 요청을 처리할 수 있는 디자인 패턴으로, 요청이 처리되거나 체인의 끝에 도달할 때까지 요청이 체인을 따라 전달됩니다.        
+			* **[커맨드 패턴][CommandPatternlink]** : 클라이언트의 요청을 객체로 캡슐화하여 다양한 시점에 대기열, 요청 및 작업을 호출할 수 있도록 하는 디자인 패턴.             
+			* **[인터프리터 패턴][InterpreterPatternlink]** : 언어의 문법을 정의하고 그 언어의 문장을 해석하는 디자인 패턴으로, 특정 도메인 언어를 해석하고 해당 언어를 실행 가능한 코드나 동작으로 변환하는 데 유용한 패턴입니다.            
+			* **[이터레이터 패턴][IteratorPatternlink]** : 집합 객체의 요소에 순차적으로 액세스하는 방법을 제공하여 내부 표현을 노출하지 않고도 해당 요소에 접근하는 디자인 패턴입니다.            
+			* **[중재자 패턴][MediatorPatternlink]** : 상호작용하는 객체 사이의 결합도를 줄이기 위해 중재자 객체를 통해 통신을 중앙 집중화하는 디자인 패턴입니다.            
+			* **[메멘토 패턴][MementoPatternlink]** : 객체의 특정 상태로 다시 되돌아올 수 있도록 하는 설계 패턴입니다.           
+			* **[옵저버 패턴][ObserverPatternlink]** : 객체가 상태를 변경할 때 관련 객체들이 업데이트를 받는 설계 패턴입니다.      
+			* **[상태 패턴][StatePatternlink]** : 객체가 내부 상태가 변경될 때 동작을 변경할 수 있도록 하며, 상태별 동작을 별도의 클래스로 캡슐화하는 설계 패턴입니다.        
+			* **[전략 패턴][StrategyPatternlink]** : 동일 계열의 알고리즘을 정의하고 각 알고리즘을 캡슐화하며, 동일한 계열 내에서 교환 가능하게 만드는 설계 패턴입니다.     
+			* **[방문자 패턴][VisitorPatternlink]** : 객체 구조를 수정하지 않고 새로운 작업을 추가하여 알고리즘과 객체를 분리하는 설계 패턴입니다.
+  		</details>
+     * <details> <summary><b><em> ETC </em></b> </summary>
+     
+		* **[오브젝트풀 패턴][ObjectPoolingBaselink]**  : 객체를 재사용하여 자주 발생하는 가비지 컬렉션 호출을 줄여서 메모리 사용을 효율적으로 개선하는 패턴.
+		* **[몬스터 AI FSM][FSMlink]**  : 객체의 동작을 다양한 상태로 나누고, 이 상태들 간의 전환과 각 상태에서의 행동을 관리하는 패턴.
+		* **[몬스터 AI BehaviorTree][BehaviorTreelink]**  : 객체의 동작을 트리 구조 내의 노드로 구성하여 객체의 동작과 결정을 효과적으로 관리하는 디자인패턴.
+		* **[Dependency Injection (DI)][DependencyInjectionlink]** : 클래스 내부에 종속성을 하드 코딩하는 대신 외부에 주입하여 클래스 간의 종속성을 관리하는 방법을 제공합니다.
+	</details>
  
-<details><summary><b><em>다양한 기능구현</em></b> </summary>
-*****
+* <details> <summary><b><em>아키텍처 패턴(Creational)</em></b> </summary>
+	
+	* **[Entity Component System (ECS)][ECSlink]** : 게임 엔터티의 데이터 및 동작을 구성하기 위해 게임 개발에서 일반적으로 사용되는 패턴입니다. 게임 개체를 더 작은 구성 요소로 분해하여 더 나은 확장성과 재사용성을 가능하게 합니다.    
+   
+* <details> <summary><b><em>공부 & 정리 예정(Creational)</em></b> </summary> 
+	
+	* Data-Driven Design (DDD) : 외부 데이터 파일이나 스크립트를 사용하여 게임의 동작과 콘텐츠를 구동하는 데 중점을 둡니다. DDD는 게임 로직을 데이터와 분리하므로 코드를 수정하지 않고도 더 쉽게 반복하고 사용자 정의할 수 있습니다.      
+	* Service Locator Pattern : 서비스의 중앙 관리와 동적 검색을 용이하게 하는 설계 패턴으로, 엔티티가 직접 구현 세부 사항을 알 필요없이 다양한 기능에 액세스할 수 있습니다.
 
+* <details> <summary><b><em>Books</em></b> </summary>
+        
+	* **[Effective C++][EffectiveClink]**
+   
+*****      
+</details> 
+<details><summary><b><em>다양한 기능구현</em></b> </summary>
+
+*****
 
 Unity:    
 * **[체력바][HPBarlink]**  : 체력을 가진 오브젝트 머리위에 표시되는 막대로 HP상태를 알려주는 기능.
@@ -129,26 +132,23 @@ Unity:
 
 *****
  </details>
-
 <details>
  <summary><b><em> 코딩테스트 및 알고리즘 </em></b> </summary>
-*****
 
+*****
 
 * **[간단한 알고리즘 정리][Algorithmllink]** : 간단하게 알고리즘 정리
 * **[백준][BAEKJOONllink]**  : 코딩테스트 사이트인 백준을 풀고 정리한 폴더
 
 *****
  </details>
-
 <details>
 <summary><b><em>팀 프로젝트</em></b> </summary>
-*****
 
+*****
 
 * **[TeamDemonStrate][TeamProjectDemonStratelink]**  : 21.04.13 ~ 21.10.12 학교생활 중 진행한 중단된 팀 프로젝트에서 만들었던 코드
  
-
 *****
  </details>   
      
