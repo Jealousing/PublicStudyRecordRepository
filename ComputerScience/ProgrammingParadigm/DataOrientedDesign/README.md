@@ -71,7 +71,7 @@ DOD에서는 메모리 접근 패턴을 최적화하여 성능을 향상시킵�
 ### OOP와 DOD의 코드차이
  아래는 OOP와 DOD 접근 방식을 보여주는 간단한 코드 예시입니다.   
 
-* 객체 지향 프로그래밍 (OOP)
+* 객체 지향 프로그래밍 (OOP) : 객체 지향 프로그래밍(OOP)의 관점에서 캐릭터(Character)를 클래스로 정의하고, 해당 클래스의 메서드를 통해 캐릭터의 상태를 변경하는 방식   
 ```cs
 public class Character 
 {
@@ -100,7 +100,7 @@ public class Character
 }
 ```
 
-* 데이터 지향 설계 (DOD)
+* 데이터 지향 설계 (DOD) : 데이터 지향 설계(DOD)의 관점에서 캐릭터(Character)를 클래스가 아닌 데이터 객체로 정의하고, 이를 처리하는 매니저 클래스를 통해 상태를 변경하는 방식   
 ```cs
 public class CharacterManager 
 {
