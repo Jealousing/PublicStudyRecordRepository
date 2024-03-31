@@ -73,23 +73,28 @@ DOD에서는 메모리 접근 패턴을 최적화하여 성능을 향상시킵�
 
 * 객체 지향 프로그래밍 (OOP)
 ```cs
-public class Character {
+public class Character 
+{
     private String name;
     private int health;
 
-    public Character(String name, int health) {
+    public Character(String name, int health) 
+    {
         this.name = name;
         this.health = health;
     }
 
-    public void takeDamage(int damage) {
+    public void takeDamage(int damage) 
+    {
         health -= damage;
-        if (health <= 0) {
+        if (health <= 0) 
+        {
             die();
         }
     }
 
-    private void die() {
+    private void die() 
+    {
         System.out.println(name + " has died.");
     }
 }
@@ -97,30 +102,37 @@ public class Character {
 
 * 데이터 지향 설계 (DOD)
 ```cs
-public class CharacterManager {
+public class CharacterManager 
+{
     private List<CharacterData> characters;
 
-    public CharacterManager() {
+    public CharacterManager() 
+    {
         characters = new ArrayList<>();
     }
 
-    public void takeDamage(int characterIndex, int damage) {
+    public void takeDamage(int characterIndex, int damage) 
+    {
         characters.get(characterIndex).health -= damage;
-        if (characters.get(characterIndex).health <= 0) {
+        if (characters.get(characterIndex).health <= 0) 
+        {
             die(characterIndex);
         }
     }
 
-    private void die(int characterIndex) {
+    private void die(int characterIndex) 
+    {
         System.out.println(characters.get(characterIndex).name + " has died.");
         characters.remove(characterIndex);
     }
 
-    private static class CharacterData {
+    private static class CharacterData 
+    {
         public String name;
         public int health;
 
-        public CharacterData(String name, int health) {
+        public CharacterData(String name, int health) 
+        {
             this.name = name;
             this.health = health;
         }
