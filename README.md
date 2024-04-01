@@ -7,9 +7,8 @@
 ## 저장소 구조 소개
   카테고리에 맞는 폴더 안에 그에 대한 공부 한 기록들이 저장되어 있습니다.
  * BuildGame 폴더 : 빌드된 게임을 올려두는 폴더입니다.
- * ComputerScience 폴더 : 디자인 패턴이나 아키택처패턴 같은 CS 공부하며 저장하는 곳입니다.
+ * ComputerScience 폴더 : CS 공부하며 저장하는 곳입니다. ( 코테자료 및 디자인패턴 등 )
  * Various Functions 폴더 : 유니티로 다양한 기능을 제작해서 저장하는 곳입니다.
- * CodingTest 폴더 : 알고리즘 간단 정리와 코딩테스트 풀었던 문제 저장하는 장소입니다.
  * TeamProject 폴더 : 팀 프로젝트에 참가해서 사용한 코드들 저장하는 곳입니다.
  * TemporaryFolder 폴더 : 이 저장소의 양식을 만들어 사용하기 위한 폴더입니다.
 
@@ -213,8 +212,8 @@ Unity:
 [NpcDialogSystemlink]: /VariousFunctions/NpcDialogSystem
 [QuestSystemlink]: /VariousFunctions/QuestSystem
 
-[Algorithmllink]: /CodingTest   
-[BAEKJOONllink]: /CodingTest/Baekjoon   
+[Algorithmllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest   
+[BAEKJOONllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest/Baekjoon   
 
 [EffectiveClink]: /ComputerScience/Books/EffectiveC++
 
