@@ -84,6 +84,41 @@ Unity:
 * <details> <summary><b><em>아키텍처 패턴</em></b> </summary>
 	
 	* **[Entity Component System (ECS)][ECSlink]** : 게임 엔터티의 데이터 및 동작을 구성하기 위해 게임 개발에서 일반적으로 사용되는 패턴입니다. 게임 개체를 더 작은 구성 요소로 분해하여 더 나은 확장성과 재사용성을 가능하게 합니다.    
+
+* <details> <summary><b><em>자료구조와 알고리즘, 코딩테스트</em></b> </summary>
+
+	* <details> <summary><b><em> 알고리즘 기초 </em></b> </summary>
+
+ 		* **[시간 복잡도][TimeComplexitylink]** : 알고리즘이 문제를 해결하는 데 걸리는 시간을 나타내는 것으로, 입력 크기에 대한 함수로 표현됩니다.   
+ 		* **[공간 복잡도][SpaceComplexitylink]** : 알고리즘이 실행되는 동안 사용되는 메모리 공간의 양을 나타내는 것으로, 입력 크기에 대한 함수로 표현됩니다.   
+ 		* **[Big-O 표기법][BigONotationlink]** : 알고리즘의 시간 복잡도와 공간 복잡도를 간결하게 나타내기 위한 표기법으로, 알고리즘의 최악의 실행 시간을 나타냅니다.   
+ 		* **[재귀][Recursionlink]** : 함수가 자기 자신을 호출하여 반복적으로 작업을 수행하는 프로그래밍 기법으로, 분할 정복이나 동적 프로그래밍과 같은 알고리즘에서 사용됩니다. 
+
+	* <details> <summary><b><em> 자료구조 </em></b> </summary>
+		
+ 		* **[배열,Array][Arraylink]** : 선형 자료구조로, 연속된 메모리 공간에 데이터를 저장하는 자료구조입니다.   
+     	* **[연결 리스트,Linked List][LinkedListlink]** : 각 노드가 데이터와 다음 노드를 가리키는 링크로 구성되어 있는 자료구조입니다.   
+       	* **[스택,Stack][Stacklink]** : 후입선출 구조를 가진 자료구조로, 데이터를 삽입하고 삭제할 수 있습니다.   
+		* **[큐,Queue][Queuelink]** : 선입선출 구조를 가진 자료구조로, 데이터를 삽입하고 삭제할 수 있습니다.   
+        * **[해시 테이블,Hash Table][HashTablelink]** : 키와 값의 쌍으로 데이터를 저장하는 자료구조로, 해시 함수를 사용하여 키를 값의 위치에 매핑합니다.   
+        * 트리 (Tree)
+	    	* **[이진 트리,Binary Tree][BinaryTreelink]** : 각 노드가 최대 두 개의 자식을 가지는 자료구조로, 재귀적으로 정의됩니다.   
+	    	* **[이진 탐색 트리,Binary Search Tree(BST)][BinarySearchTreelink]** : 이진 트리의 한 종류로, 왼쪽 자식은 현재 노드보다 작고 오른쪽 자식은 큰 값을 가집니다.   
+        	* **[힙,Heap][Heaplink]** : 완전 이진 트리의 일종으로, 최대값 또는 최소값을 효율적으로 찾기 위해 사용됩니다.    
+          * **[트라이,Trie][Trielink]** : 각 노드가 문자열의 한 문자를 나타내는 트리 자료구조로, 문자열 검색과 관련된 문제에 사용됩니다.    
+          * **[세그먼트 트리,Segment Tree][SegmentTreelink]** : 구간에 대한 문제를 빠르게 처리하기 위해 사용되는 자료구조입니다.      
+          * **[펜윅 트리,Fenwick Tree][FenwickTreelink]** : 구간 합 문제를 효율적으로 처리하기 위해 사용되는 자료구조입니다.   
+         * **[그래프,Graph][Graphlink]** : 정점과 간선의 집합으로 구성된 자료구조로, 여러 종류의 그래프 알고리즘에 사용됩니다.   
+  
+ 	* <details> <summary><b><em> 알고리즘 </em></b> </summary>
+  
+	
+	* <details> <summary><b><em> 코딩테스트 </em></b> </summary>
+		
+		* **[간단한 알고리즘 정리][Algorithmllink]** : 코딩테스트에서 사용하는 알고리즘 간단정리 
+		* **[백준][BAEKJOONllink]**  : 코딩테스트 사이트인 백준에서 문제를 풀고 정리한 폴더
+ 	
+ 
    
 * <details> <summary><b><em>Books</em></b> </summary>
         
@@ -131,16 +166,6 @@ Unity:
 *****
  </details>
 <details>
- <summary><b><em> 코딩테스트 및 알고리즘 </em></b> </summary>
-
-*****
-
-* **[간단한 알고리즘 정리][Algorithmllink]** : 간단하게 알고리즘 정리
-* **[백준][BAEKJOONllink]**  : 코딩테스트 사이트인 백준을 풀고 정리한 폴더
-
-*****
- </details>
-<details>
 <summary><b><em>팀 프로젝트</em></b> </summary>
 
 *****
@@ -149,6 +174,8 @@ Unity:
  
 *****
  </details>   
+
+ 
      
 [3dsuikagamelink]: /BuildGame/3DSuikaGame  
 
@@ -183,6 +210,28 @@ Unity:
 [DependencyInjectionlink]: /ComputerScience/DesignPatterns/DependencyInjection
 [DODlink]: /ComputerScience/ProgrammingParadigm/DataOrientedDesign
 
+[TimeComplexitylink]:  /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/TimeComplexity
+[SpaceComplexitylink]: /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/SpaceComplexity
+[BigONotationlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/BigONotation
+[Recursionlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/Recursion
+
+[Arraylink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Array
+[LinkedListlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/LinkedList
+[Stacklink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Stack
+[Queuelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Queue
+[HashTablelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/HashTable
+[BinaryTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/BinaryTree
+[BinarySearchTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/BinarySearchTree
+[Heaplink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/Heap
+[Trielink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/Trie
+[SegmentTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/SegmentTree
+[FenwickTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/FenwickTree
+[Graphlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Graph
+
+[Algorithmllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest   
+[BAEKJOONllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest/Baekjoon   
+
+[EffectiveClink]: /ComputerScience/Books/EffectiveC++
 
 [HPBarlink]: /VariousFunctions/HPBar   
 [GrapplingHookslink]: /VariousFunctions/GrapplingHooksAndRopeSwing
@@ -211,10 +260,5 @@ Unity:
 [MiniMaplink]: /VariousFunctions/MiniMap
 [NpcDialogSystemlink]: /VariousFunctions/NpcDialogSystem
 [QuestSystemlink]: /VariousFunctions/QuestSystem
-
-[Algorithmllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest   
-[BAEKJOONllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest/Baekjoon   
-
-[EffectiveClink]: /ComputerScience/Books/EffectiveC++
 
 [TeamProjectDemonStratelink]: /TeamProject/DemonStrate
