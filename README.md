@@ -91,15 +91,15 @@ Unity:
 
  		* **[시간 복잡도][TimeComplexitylink]** : 알고리즘이 문제를 해결하는 데 걸리는 시간을 나타내는 것으로, 입력 크기에 대한 함수로 표현됩니다.   
  		* **[공간 복잡도][SpaceComplexitylink]** : 알고리즘이 실행되는 동안 사용되는 메모리 공간의 양을 나타내는 것으로, 입력 크기에 대한 함수로 표현됩니다.   
- 		* **[Big-O 표기법][BigONotationlink]** : 알고리즘의 시간 복잡도와 공간 복잡도를 간결하게 나타내기 위한 표기법으로, 알고리즘의 최악의 실행 시간을 나타냅니다.   
- 		* **[재귀][Recursionlink]** : 함수가 자기 자신을 호출하여 반복적으로 작업을 수행하는 프로그래밍 기법으로, 분할 정복이나 동적 프로그래밍과 같은 알고리즘에서 사용됩니다. 
+ 		* **[Big-O 표기법][BigONotationlink]** : 알고리즘의 시간 복잡도와 공간 복잡도를 간결하게 나타내기 위한 표기법으로, 알고리즘의 최악의 실행 시간을 나타냅니다.    
 
 	* <details> <summary><b><em> 자료구조 </em></b> </summary>
 		
  		* **[배열,Array][Arraylink]** : 선형 자료구조로, 연속된 메모리 공간에 데이터를 저장하는 자료구조입니다.   
      	* **[연결 리스트,Linked List][LinkedListlink]** : 각 노드가 데이터와 다음 노드를 가리키는 링크로 구성되어 있는 자료구조입니다.   
        	* **[스택,Stack][Stacklink]** : 후입선출 구조를 가진 자료구조로, 데이터를 삽입하고 삭제할 수 있습니다.   
-		* **[큐,Queue][Queuelink]** : 선입선출 구조를 가진 자료구조로, 데이터를 삽입하고 삭제할 수 있습니다.   
+		* **[큐,Queue][Queuelink]** : 선입선출 구조를 가진 자료구조로, 데이터를 삽입하고 삭제할 수 있습니다.
+  		* **[우선순위 큐,Priority Queue][PriorityQueuelink]** : 요소들의 우선순위에 따라 데이터를 저장하고, 가장 높은 우선순위를 가진 요소를 먼저 반환하는 자료구조    
         * **[해시 테이블,Hash Table][HashTablelink]** : 키와 값의 쌍으로 데이터를 저장하는 자료구조로, 해시 함수를 사용하여 키를 값의 위치에 매핑합니다.   
         * 트리 (Tree)
 	    	* **[이진 트리,Binary Tree][BinaryTreelink]** : 각 노드가 최대 두 개의 자식을 가지는 자료구조로, 재귀적으로 정의됩니다.   
@@ -111,8 +111,49 @@ Unity:
          * **[그래프,Graph][Graphlink]** : 정점과 간선의 집합으로 구성된 자료구조로, 여러 종류의 그래프 알고리즘에 사용됩니다.   
   
  	* <details> <summary><b><em> 알고리즘 </em></b> </summary>
-  
-	
+		
+  		* <details> <summary><b><em> 정렬 알고리즘 </em></b> </summary>
+    			
+			* **[선택 정렬][SelectionSortlink]** : 가장 작거나 큰 원소를 선택하여 정해진 위치에 정렬하는 알고리즘이다.    
+    		* **[삽입 정렬][InsertionSort]** : 각 원소를 이미 정렬된 부분에 삽입하는 알고리즘.   
+      		* **[버블 정렬][BubbleSortlink]** : 서로 인접한 두 원소의 크기를 비교하고 조건에 맞지 않다면 교환하며 정렬하는 알고리즘이다.   
+        	* **[합병 정렬][MergeSortlink]** : 병합 정렬 알고리즘은 배열을 반으로 나눈 후 각 부분을 정렬하고 병합하여 정렬하는 알고리즘이다.   
+         	* **[퀵 정렬][QuickSortlink]** : 문제를 작은 2개의 문제로 분리하고 해결 후 결과를 모아서 다시 문제를 해결하는 방식으로 정렬하는 알고리즘이다.   
+          	* **[힙 정렬][HeapSortlink]** : 힙(Heap) 자료구조를 사용하여 배열을 정렬하는 비교 기반 정렬 알고리즘이다.   
+          * **[기수 정렬][RadixSortlink]** : 데이터를 구성하는 기본 요소(라디스)를 이용하여 정렬하는 정렬 알고리즘 중 하나입니다. 이 알고리즘은 숫자 키를 각 자릿수별로 그룹화하여 정렬하는 정수 정렬 알고리즘입니다.   
+          * **[계수 정렬][CountingSortlink]** :  정수나 정수 형태의 키를 가진 데이터를 정렬하는 비교 기반 정렬 알고리즘 중 하나
+
+		* <details> <summary><b><em> 탐색 알고리즘 </em></b> </summary>
+
+  			* **[선형 탐색][LinearSearchlink]** : 리스트를 처음부터 끝까지 순회하면서 원하는 항목을 찾는 가장 간단한 탐색 알고리즘   
+     		* **[이진 탐색][BinarySearchlink]** : 배열을 반으로 나누어 탐색 범위를 줄여나가는 알고리즘 중 하나로, 정렬된 배열에서 사용됨   
+        	* **[해시 탐색][HashSearchlink]** :  해시 테이블을 사용하여 키(key)를 해시값(hash)에 매핑하고 해당 해시값을 인덱스로 사용하여 데이터를 검색하는 방법
+   
+    	* <details> <summary><b><em> 그래프 알고리즘 </em></b> </summary>
+
+  			* **[깊이 우선 탐색,DFS][DepthFirstSearchlink]** : 그래프를 탐색할 때 한 분기(branch)를 끝까지 탐색(깊은 부분을 우선적으로 탐색)한 후 다음 분기로 넘어가는 알고리즘  
+     		* **[너비 우선 탐색,BFS][BreadthFirstSearchlink]** : 그래프를 탐색할 때 인접한 모든 노드를 먼저 탐색(가까운 부분부터 우선적으로 탐색)하는 알고리즘
+        	* **[최단 경로][ShortestPathlink]** : 그래프에서 두 정점 사이의 최단 경로를 찾는 알고리즘
+        	* **[최소 신장 트리][MinimumSpanningTreelink]** : 그래프의 모든 정점을 포함하면서 사이클이 없는 부분 그래프 중에서 간선의 가중치 합이 최소인 트리를 찾는 알고리즘   
+           
+      * <details> <summary><b><em> 동적 프로그래밍 </em></b> </summary>
+
+  		* **[동적계획법,DP][DPlink]** : 복잡한 문제를 간단한 하위 문제로 나누어 해결하고, 그 결과를 저장하여 중복 계산을 줄이는 알고리즘 기법   
+     	* **[최장 증가 부분 수열,LIS][LISlink]** : 주어진 배열에서 숫자들의 순서를 유지하면서 증가하는 부분 수열 중 가장 긴 것을 찾는 동적 프로그래밍 알고리즘   
+      	* **[최장 공통 부분 수열,LCS][LCSlink]** : 주어진 여러개 수열 모두의 부분수열이 되는 수열들 중에 가장 긴 것을 찾는 알고리즘     
+           
+      * <details> <summary><b><em> 그 외 다양한 알고리즘 </em></b> </summary>
+
+  		
+ 		* **[재귀][Recursionlink]** : 함수가 자기 자신을 호출하여 반복적으로 작업을 수행하는 프로그래밍 기법으로, 분할 정복이나 동적 프로그래밍과 같은 알고리즘에서 사용됩니다.
+      	* **[탐욕 알고리즘][GreedyAlgorithmslink]** : 각 단계에서 가장 최선의 선택을 하여 문제를 해결하는 알고리즘     
+     	* **[분할 정복][DivideandConquerlink]** : 문제를 둘 이상의 부분 문제로 나누어 각각을 해결하고, 그 결과를 합쳐 원래 문제의 해를 구하는 알고리즘
+        * **[백트래킹][Backtrackinglink]** : 조건을 만족할 때까지 모든 가능성을 탐색하며, 조건에 맞지 않으면 되돌아가는 알고리즘
+        * **[브루트포스][BruteForcelink]** : 모든 가능한 경우의 수를 시도하여 문제를 해결하는 간단한 방법
+        * **[투포인터][TwoPointerlink]** : 두 개의 포인터를 사용하여 배열 내에서 특정 조건을 만족하는 원소를 찾는 알고리즘
+        * **[다익스트라][Dijkstralink]** : 그래프에서 최단 경로를 찾는 알고리즘으로, 가장 짧은 거리부터 탐색
+        * **[최소 공통 조상,LCA][LowestCommonAncestorlink]** : 트리 구조에서 두 노드의 가장 가까운 공통 조상을 찾는 알고리즘입니다.
+  	
 	* <details> <summary><b><em> 코딩테스트 </em></b> </summary>
 		
 		* **[간단한 알고리즘 정리][Algorithmllink]** : 코딩테스트에서 사용하는 알고리즘 간단정리 
@@ -213,12 +254,11 @@ Unity:
 [TimeComplexitylink]:  /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/TimeComplexity
 [SpaceComplexitylink]: /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/SpaceComplexity
 [BigONotationlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/BigONotation
-[Recursionlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/Recursion
-
 [Arraylink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Array
 [LinkedListlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/LinkedList
 [Stacklink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Stack
 [Queuelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Queue
+[PriorityQueuelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/PriorityQueue
 [HashTablelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/HashTable
 [BinaryTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/BinaryTree
 [BinarySearchTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/BinarySearchTree
@@ -227,6 +267,32 @@ Unity:
 [SegmentTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/SegmentTree
 [FenwickTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/FenwickTree
 [Graphlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Graph
+[SelectionSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/SelectionSort
+[InsertionSort]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/InsertionSort
+[BubbleSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/BubbleSort
+[MergeSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/MergeSort
+[QuickSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/QuickSort
+[HeapSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/HeapSort
+[RadixSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/RadixSort
+[CountingSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/CountingSort
+[LinearSearchlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SearchingAlgorithms/LinearSearch
+[BinarySearchlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SearchingAlgorithms/BinarySearch
+[HashSearchlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SearchingAlgorithms/HashSearch
+[DepthFirstSearchlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/DepthFirstSearch
+[BreadthFirstSearchlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/BreadthFirstSearch
+[ShortestPathlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath
+[MinimumSpanningTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/MinimumSpanningTree
+[DPlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/DP
+[LISlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/LIS
+[LCSlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/LCS
+[Recursionlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/Recursion
+[GreedyAlgorithmslink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/GreedyAlgorithms
+[DivideandConquerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/DivideandConquer
+[Backtrackinglink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/Backtracking
+[BruteForcelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/BruteForce
+[TwoPointerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/TwoPointer
+[Dijkstralink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/Dijkstra
+[LowestCommonAncestorlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/LowestCommonAncestor
 
 [Algorithmllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest   
 [BAEKJOONllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest/Baekjoon   
