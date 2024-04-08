@@ -11,6 +11,39 @@
 ### 해시 함수 (Hash Function)
 해시 함수는 임의의 크기를 가진 데이터를 고정된 크기의 값으로 변환하는 함수입니다. 좋은 해시 함수는 가능한 모든 입력 값을 고르게 분포시켜야 하며, 이는 해시 충돌을 최소화하고 효율적인 검색을 가능하게 합니다.
 
+#### 해시 함수 예시
+해시 함수는 입력 데이터를 고유한 해시 값으로 변환하는 역할을 합니다.
+다음은 문자열 키를 해싱하는 간단한 예시코드입니다.
+
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+// 간단한 문자열 해시 함수
+int simpleHash(const string& key, int tableSize) 
+{
+    int hashValue = 0;
+    for (char ch : key) 
+    {
+        hashValue = (hashValue * 31 + ch) % tableSize; // 31은 일반적으로 사용되는 소수입니다.
+    }
+    return hashValue;
+}
+
+int main() 
+{
+    string key = "apple";
+    int tableSize = 10;
+    int hashValue = simpleHash(key, tableSize);
+    cout << "Hash value for key 'apple': " << hashValue << endl;
+
+    return 0;
+}
+```
+위의 예시 코드에서는 simpleHash함수를 사용하여 문자열의 해시 값을 계산합니다.
+
 ### 해시 충돌 (Hash Collision)
 해시 충돌은 서로 다른 두 개의 키가 같은 해시 값으로 매핑되는 상황을 말합니다.
 
