@@ -287,6 +287,7 @@ Unity:
 [Dijkstralink]:  /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/Dijkstra
 [BellmanFordlink]:  /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/BellmanFord
 [FloydWarshalllink]:  /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/FloydWarshall
+[AStarlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/AStar
 [MinimumSpanningTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/MinimumSpanningTree
 [DPlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/DP
 [LISlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/LIS
