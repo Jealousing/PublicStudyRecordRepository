@@ -127,7 +127,7 @@ public:
         while (idx > 0) 
         {
             maxVal = max(maxVal, tree[idx]);
-            idx -= (idx & -idx); // 다음 구간으로 이동하는 과정
+            idx = getPrev(idx); // 현재 인덱스에서 이전 인덱스로 이동하는 과정
         }
         return maxVal;
     }
@@ -138,8 +138,22 @@ public:
         while (idx < tree.size()) 
         {
             tree[idx] = max(tree[idx], val);
-            idx += (idx & -idx); // 다음 구간으로 이동하는 과정
+            idx = getNext(idx); // 현재 인덱스에서 다음 인덱스로 이동하는 과정
         }
+    }
+private:
+    // 현재 인덱스에서 이전 인덱스를 찾는 함수
+    int getPrev(int idx) 
+    {
+        // 이진 표현에서 가장 오른쪽에 있는 1을 제거하여 이전 인덱스를 찾음
+        return idx - (idx & -idx);
+    }
+
+    // 현재 인덱스에서 다음 인덱스를 찾는 함수
+    int getNext(int idx) 
+    {
+        // 이진 표현에서 가장 오른쪽에 있는 0을 추가하여 다음 인덱스를 찾음
+        return idx + (idx & -idx);
     }
 };
 
