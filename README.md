@@ -292,13 +292,13 @@ Unity:
 [DPlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/DP
 [LISlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/LIS
 [LCSlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/LCS
-[Recursionlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/Recursion
-[GreedyAlgorithmslink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/GreedyAlgorithms
-[DivideandConquerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/DivideandConquer
-[Backtrackinglink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/Backtracking
-[BruteForcelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/BruteForce
-[TwoPointerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/TwoPointer
-[LowestCommonAncestorlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/MiscellaneousAlgorithms/LowestCommonAncestor
+[Recursionlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/Recursion
+[GreedyAlgorithmslink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GreedyAlgorithms
+[DivideandConquerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DivideandConquer
+[Backtrackinglink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/Backtracking
+[BruteForcelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/BruteForce
+[TwoPointerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/TwoPointer
+[LowestCommonAncestorlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/LowestCommonAncestor
 
 [Algorithmllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest   
 [BAEKJOONllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest/Baekjoon   
