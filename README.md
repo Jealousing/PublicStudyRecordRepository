@@ -152,7 +152,7 @@ Unity:
   		
  		* **[재귀][Recursionlink]** : 함수가 자기 자신을 호출하여 반복적으로 작업을 수행하는 프로그래밍 기법으로, 분할 정복이나 동적 프로그래밍과 같은 알고리즘에서 사용됩니다.
       	* **[탐욕 알고리즘][GreedyAlgorithmslink]** : 각 단계에서 가장 최선의 선택을 하여 문제를 해결하는 알고리즘     
-     	* **[분할 정복][DivideandConquerlink]** : 문제를 둘 이상의 부분 문제로 나누어 각각을 해결하고, 그 결과를 합쳐 원래 문제의 해를 구하는 알고리즘
+     	* **[분할 정복][DivideAndConquerlink]** : 문제를 둘 이상의 부분 문제로 나누어 각각을 해결하고, 그 결과를 합쳐 원래 문제의 해를 구하는 알고리즘
         * **[백트래킹][Backtrackinglink]** : 조건을 만족할 때까지 모든 가능성을 탐색하며, 조건에 맞지 않으면 되돌아가는 알고리즘
         * **[브루트포스][BruteForcelink]** : 모든 가능한 경우의 수를 시도하여 문제를 해결하는 간단한 방법
         * **[투포인터][TwoPointerlink]** : 두 개의 포인터를 사용하여 배열 내에서 특정 조건을 만족하는 원소를 찾는 알고리즘
@@ -294,7 +294,7 @@ Unity:
 [LCSlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/LCS
 [Recursionlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/Recursion
 [GreedyAlgorithmslink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GreedyAlgorithms
-[DivideandConquerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DivideandConquer
+[DivideAndConquerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DivideAndConquer
 [Backtrackinglink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/Backtracking
 [BruteForcelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/BruteForce
 [TwoPointerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/TwoPointer
