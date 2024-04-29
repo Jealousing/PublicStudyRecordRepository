@@ -197,6 +197,7 @@ Unity:
 * **[미니맵][MiniMaplink]**  : 플레이어 근처의 오브젝트 정보를 간단하게 UI를 통해 전달하는 시스템    
 * **[NPC 대화 시스템][NpcDialogSystemlink]**  : 대화 스크립트가 담긴 csv를 불러와서 대화를 진행하는 듯한 연출을 해주는 시스템
 * **[퀘스트 시스템][QuestSystemlink]**  : 퀘스트를 통해 플레이어에게 방향성을 제공하는 시스템
+* **[원형(방사형) 메뉴][RadialMenulink]**  : 원형 메뉴를 사용자가 마우스를 이용하여 메뉴를 선택하도록 만드는 기능
 
 아래의 목록은 코드 공개 예정이 없거나 정리가 안돼서 스크립트 업로드가 안된 기능들입니다.
 
@@ -332,5 +333,6 @@ Unity:
 [MiniMaplink]: /VariousFunctions/MiniMap
 [NpcDialogSystemlink]: /VariousFunctions/NpcDialogSystem
 [QuestSystemlink]: /VariousFunctions/QuestSystem
+[RadialMenulink]: /VariousFunctions/RadialMenu
 
 [TeamProjectDemonStratelink]: /TeamProject/DemonStrate
