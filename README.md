@@ -1,7 +1,8 @@
 # PublicStudyRecordRepository
  공부한 것들을 모아두는 공개형 저장소    
  
-**[학교에서 배웠던 내용들은 여기에 있습니다](https://github.com/Jealousing/CurriculumArchive)**   
+**[학교에서 배웠던 내용들은 여기에 있습니다.](https://github.com/Jealousing/CurriculumArchive)**       
+**[개발하면서 올린 영상은 여기에 있습니다.](https://www.youtube.com/channel/UCt0ZnTLCoGqdj9U5uW6Yb-g)**   
 
 ## 저장소의 목적
  다양한 공부한것을 저장하기위해서 만들어진 저장소입니다. 
