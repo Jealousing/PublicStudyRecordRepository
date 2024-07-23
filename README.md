@@ -1,5 +1,6 @@
 # PublicStudyRecordRepository
- 공부한 것들을 모아두는 공개형 저장소 
+ 공부한 것들을 모아두는 공개형 저장소    
+ 
 **[학교에서 배웠던 내용들은 여기에 있습니다](https://github.com/Jealousing/CurriculumArchive)**   
 
 ## 저장소의 목적
