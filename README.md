@@ -1,5 +1,6 @@
 # PublicStudyRecordRepository
- 공부한 것들을 모아두는 공개형 저장소
+ 공부한 것들을 모아두는 공개형 저장소 
+**[학교에서 배웠던 내용들은 여기에 있습니다](https://github.com/Jealousing/CurriculumArchive)**   
 
 ## 저장소의 목적
  다양한 공부한것을 저장하기위해서 만들어진 저장소입니다. 
@@ -17,13 +18,26 @@
 
 ## 폴더별 간단소개
 
+<details>
+<summary><b><em>팀 프로젝트</em></b> </summary>
+
+*****
+![0](https://github.com/user-attachments/assets/396c37be-0f65-4520-90e5-8422f104c3b5)
+
+* **[TeamDemonStrate][TeamProjectDemonStratelink]**  : 2021.04.13 ~ 2021.10.12 학교생활 중 진행한 중단된 팀 프로젝트, 퍼즐 플랫포머식 어드밴처 호러게임
+ 
+*****
+
+ </details>   
+
  <details>
- <summary><b><em>빌드된 게임</em></b> </summary>
+ <summary><b><em>개인 프로젝트</em></b> </summary>
 	 
  *****
 
 Unity:    
- * **[3D 수박게임][3dsuikagamelink]**  : 수박게임을 3d로 바꿔서 제작     
+ * **[3D 수박게임][3dsuikagamelink]**  : 수박게임을 3d로 바꿔서 제작 2024.02.04 ~ 2024.02.18
+ * **[Archero](https://github.com/Jealousing/CurriculumArchive/tree/main/2nd_Year_2nd_Semester/C%23/Archero)**  : 과제로 만들어본 궁수의 전설 2020.11.01 ~ 2020.12.10 
  
  *****
  
@@ -210,19 +224,10 @@ Unity:
 
 *****
  </details>
-<details>
-<summary><b><em>팀 프로젝트</em></b> </summary>
-
-*****
-
-* **[TeamDemonStrate][TeamProjectDemonStratelink]**  : 21.04.13 ~ 21.10.12 학교생활 중 진행한 중단된 팀 프로젝트에서 만들었던 코드
- 
-*****
- </details>   
 
  
      
-[3dsuikagamelink]: /BuildGame/3DSuikaGame  
+[3dsuikagamelink]: /BuildGame/3DSuikaGame 
 
 [ObjectPoolingBaselink]: /DesignPatterns/ObjectPoolingBase
 [FSMlink]: /DesignPatterns/MonsterAI/FSM
