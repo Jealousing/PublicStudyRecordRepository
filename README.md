@@ -39,7 +39,7 @@
 
 Unity:    
  * **[3D 수박게임][3dsuikagamelink]**  : 수박게임을 3d로 바꿔서 제작 2024.02.04 ~ 2024.02.18
- * **[Archero](https://github.com/Jealousing/CurriculumArchive/tree/main/2nd_Year_2nd_Semester/C%23/Archero)**  : 과제로 만들어본 궁수의 전설 2020.11.01 ~ 2020.12.10 
+ * **[Archero](https://github.com/Jealousing/CurriculumArchive/tree/main/2nd_Year_2nd_Semester/C%23/Archero)**  : 과제로 만들어본 궁수의 전설 **[영상링크](https://youtu.be/H--yQ3NhpR4)** 2020.11.01 ~ 2020.12.10 
  
  *****
  
