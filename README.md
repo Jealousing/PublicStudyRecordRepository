@@ -45,6 +45,48 @@ Unity:
  
  </details>   
 
+<details>
+	<summary><b><em>다양한 기능구현</em></b> </summary>
+
+*****
+
+Unity:    
+* **[체력바][HPBarlink]**  : 체력을 가진 오브젝트 머리위에 표시되는 막대로 HP상태를 알려주는 기능.
+* **[로프액션][GrapplingHookslink]**  : 마우스 에임 방향으로 로프를 발사해 그 곳으로 직선이동이나 스윙이동하는 기능.
+* **[Json 데이터 관리][JsonDataManagerlink]**  : Json으로 데이터를 관리 및 저장하는 시스템
+* **[메쉬로 도형그리기][DrawShapeMeshlink]**  : Unity Graphics 시스템을 이용해서 도형모양의 메쉬를 생성해 보여주는 기능
+* **[범위공격 시스템][RangeHitSystemlink]**  : 메쉬로 도형을 그리면서 그 구역내에 있는 오브젝트에 대미지를 주는 방식.
+* **[캐릭터 이동관련 스크립트][Movementlink]**  :  캐릭터가 이동하는 방식에 대한 스크립트.
+* **[파쿠르 시스템][Parkourlink]**  :  캐릭터가 특정 오브젝트와 상호작용해서 구조물을 활용해 이동하는 시스템.
+* **[IK][IKlink]**  : 손과 발의 IK(역운동학) 사용해보는 스크립트.
+* **[스킬트리][SkillTreelink]**  : Path of Exile 스킬트리처럼 나무가지가 뻣어나가는 형태의 스킬트리 구현
+* **[퀵슬롯스킬][QuickSlotSkilllink]**  : UI에 스킬을 등록해서 스킬을 사용하고 쿨타임같은 사용경험을 높여주는 기능 구현
+* **[반응형UI][UIResolutionAdaptationlink]**  : 해상도가 변경됨에 따라 UI의 위치조정
+* **[카메라][Cameralink]**  : 플레이어의 카메라 구현
+* **[전투시스템][CombatSystemlink]**  : 플레이어의 전투시스템 관련 스크립트 모음    
+* **[플레이어스킬구현][PlayerSkilllink]**  : 플레이어가 사용하는 스킬을 구현해보는 부분    
+* **[월드 생성 시스템][WorldSystemlink]**  : 청크 단위로 월드를 시드 값을 통해 절차적으로 생성하고 풀링을 통해 관리하는 기능
+* **[스캔 시스템][ScanSystemlink]**  : 플레이어 기준으로 특정 오브젝트를 탐지하는 시스템
+* **[씬 전환 시스템][ScenManagerlink]**  : 씬 전환시 로딩 씬으로 진입해 비동기 로딩 및 로딩 화면을 통한 부드러운 씬 전환 구현
+* **[시네머신을 활용한 타이틀씬][CinemachineTitleScreenlink]**  : 시작, 옵션, 끝내기
+* **[게임 사용자 설정 화면][SettingScreenlink]**  : 사용자가 옵션을 설정할 수 있도록 하는 화면  
+* **[미니맵][MiniMaplink]**  : 플레이어 근처의 오브젝트 정보를 간단하게 UI를 통해 전달하는 시스템    
+* **[NPC 대화 시스템][NpcDialogSystemlink]**  : 대화 스크립트가 담긴 csv를 불러와서 대화를 진행하는 듯한 연출을 해주는 시스템
+* **[퀘스트 시스템][QuestSystemlink]**  : 퀘스트를 통해 플레이어에게 방향성을 제공하는 시스템
+* **[원형(방사형) 메뉴][RadialMenulink]**  : 원형 메뉴를 사용자가 마우스를 이용하여 메뉴를 선택하도록 만드는 기능
+
+아래의 목록은 코드 공개 예정이 없거나 정리가 안돼서 스크립트 업로드가 안된 기능들입니다.
+
+* **[인벤토리][InventorySystemlink]**  : 흔히 플레이어가 사용하는 인벤토리를 구현 ( 정렬, 슬롯 추가 및 슬롯 잠금, 아이템 스왑 등 )
+* **[공중섬 조종 및 건설][IslandSystemlink]**  : 레프트라는 게임의 배처럼 플레이어가 땅을 늘리고 그 땅덩어리를 방향과 속도 등을 조절할 수 있는 시스템
+* **[포탈 저장서 및 포탈][PortalSystemlink]**  : 플레이어가 저장한 포탈을 관리하고 생성하는 시스템, 포탈은 이동할 위치를 이미지를 통해 보여줌 (수정)
+* **[글라이딩 시스템][GlidingSystemlink]**  : 날개 비행 시스템
+* **[뱀서라이크 만들어보기][GamesLikeVampireSurvivorslink]**  : 몹 소환, 레벨링시스템, 스킬관련 등
+
+
+*****
+ </details>
+
  <details>
  <summary><b><em> CS(ComputerScience) </em></b> </summary>
 	 
@@ -186,48 +228,6 @@ Unity:
    
 *****      
 </details> 
-<details><summary><b><em>다양한 기능구현</em></b> </summary>
-
-*****
-
-Unity:    
-* **[체력바][HPBarlink]**  : 체력을 가진 오브젝트 머리위에 표시되는 막대로 HP상태를 알려주는 기능.
-* **[로프액션][GrapplingHookslink]**  : 마우스 에임 방향으로 로프를 발사해 그 곳으로 직선이동이나 스윙이동하는 기능.
-* **[Json 데이터 관리][JsonDataManagerlink]**  : Json으로 데이터를 관리 및 저장하는 시스템
-* **[메쉬로 도형그리기][DrawShapeMeshlink]**  : Unity Graphics 시스템을 이용해서 도형모양의 메쉬를 생성해 보여주는 기능
-* **[범위공격 시스템][RangeHitSystemlink]**  : 메쉬로 도형을 그리면서 그 구역내에 있는 오브젝트에 대미지를 주는 방식.
-* **[캐릭터 이동관련 스크립트][Movementlink]**  :  캐릭터가 이동하는 방식에 대한 스크립트.
-* **[파쿠르 시스템][Parkourlink]**  :  캐릭터가 특정 오브젝트와 상호작용해서 구조물을 활용해 이동하는 시스템.
-* **[IK][IKlink]**  : 손과 발의 IK(역운동학) 사용해보는 스크립트.
-* **[스킬트리][SkillTreelink]**  : Path of Exile 스킬트리처럼 나무가지가 뻣어나가는 형태의 스킬트리 구현
-* **[퀵슬롯스킬][QuickSlotSkilllink]**  : UI에 스킬을 등록해서 스킬을 사용하고 쿨타임같은 사용경험을 높여주는 기능 구현
-* **[반응형UI][UIResolutionAdaptationlink]**  : 해상도가 변경됨에 따라 UI의 위치조정
-* **[카메라][Cameralink]**  : 플레이어의 카메라 구현
-* **[전투시스템][CombatSystemlink]**  : 플레이어의 전투시스템 관련 스크립트 모음    
-* **[플레이어스킬구현][PlayerSkilllink]**  : 플레이어가 사용하는 스킬을 구현해보는 부분    
-* **[월드 생성 시스템][WorldSystemlink]**  : 청크 단위로 월드를 시드 값을 통해 절차적으로 생성하고 풀링을 통해 관리하는 기능
-* **[스캔 시스템][ScanSystemlink]**  : 플레이어 기준으로 특정 오브젝트를 탐지하는 시스템
-* **[씬 전환 시스템][ScenManagerlink]**  : 씬 전환시 로딩 씬으로 진입해 비동기 로딩 및 로딩 화면을 통한 부드러운 씬 전환 구현
-* **[시네머신을 활용한 타이틀씬][CinemachineTitleScreenlink]**  : 시작, 옵션, 끝내기
-* **[게임 사용자 설정 화면][SettingScreenlink]**  : 사용자가 옵션을 설정할 수 있도록 하는 화면  
-* **[미니맵][MiniMaplink]**  : 플레이어 근처의 오브젝트 정보를 간단하게 UI를 통해 전달하는 시스템    
-* **[NPC 대화 시스템][NpcDialogSystemlink]**  : 대화 스크립트가 담긴 csv를 불러와서 대화를 진행하는 듯한 연출을 해주는 시스템
-* **[퀘스트 시스템][QuestSystemlink]**  : 퀘스트를 통해 플레이어에게 방향성을 제공하는 시스템
-* **[원형(방사형) 메뉴][RadialMenulink]**  : 원형 메뉴를 사용자가 마우스를 이용하여 메뉴를 선택하도록 만드는 기능
-
-아래의 목록은 코드 공개 예정이 없거나 정리가 안돼서 스크립트 업로드가 안된 기능들입니다.
-
-* **[인벤토리][InventorySystemlink]**  : 흔히 플레이어가 사용하는 인벤토리를 구현 ( 정렬, 슬롯 추가 및 슬롯 잠금, 아이템 스왑 등 )
-* **[공중섬 조종 및 건설][IslandSystemlink]**  : 레프트라는 게임의 배처럼 플레이어가 땅을 늘리고 그 땅덩어리를 방향과 속도 등을 조절할 수 있는 시스템
-* **[포탈 저장서 및 포탈][PortalSystemlink]**  : 플레이어가 저장한 포탈을 관리하고 생성하는 시스템, 포탈은 이동할 위치를 이미지를 통해 보여줌 (수정)
-* **[글라이딩 시스템][GlidingSystemlink]**  : 날개 비행 시스템
-* **[뱀서라이크 만들어보기][GamesLikeVampireSurvivorslink]**  : 몹 소환, 레벨링시스템, 스킬관련 등
-
-
-*****
- </details>
-
- 
      
 [3dsuikagamelink]: /BuildGame/3DSuikaGame 
 
