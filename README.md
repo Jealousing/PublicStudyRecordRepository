@@ -231,7 +231,7 @@ Unity:
 [3dsuikagamelink]: /BuildGame/3DSuikaGame 
 
 [ObjectPoolingBaselink]: /DesignPatterns/ObjectPoolingBase
-[FSMlink]: /DesignPatterns/MonsterAI/FSM
+[FSMlink]: /ComputerScience/DesignPatterns/MonsterAI/FSM
 
 [Singletonlink]: /ComputerScience/DesignPatterns/GoF/Creational/Singleton
 [Factorylink]: /ComputerScience/DesignPatterns/GoF/Creational/FactoryPattern
