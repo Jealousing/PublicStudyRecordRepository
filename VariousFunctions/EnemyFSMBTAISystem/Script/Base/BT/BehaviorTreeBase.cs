@@ -18,8 +18,11 @@ public abstract class BehaviorTreeNode
 
 public abstract class BehaviorTree : MonoBehaviour
 {
+    protected bool isInit = false;
+    protected Blackboard blackboard;
     protected BehaviorTreeNode rootNode; 
-    public abstract void InitializeTree(Blackboard blackboard);  
+    public abstract void InitializeTree(Blackboard blackboard);
+    public virtual void Exit() { }
     public virtual void Evaluate() => rootNode.Evaluate();
 }
  

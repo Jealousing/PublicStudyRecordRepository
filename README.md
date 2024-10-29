@@ -52,7 +52,7 @@ Unity:
 코드가 정리되어 공개되어 있는 문서가 있고 아닌 문서도 있습니다.
  
 Unity:    
-* **[Enemy Hybrid(FSM+BT) AI][EnemyFSMBTAISystemlink]** : 제작중 [2024. 10. 11~]
+* **[Enemy Hybrid(FSM+BT) AI][EnemyFSMBTAISystemlink]** : FSM & Behavior Tree 통합 몬스터 AI 시스템 [2024. 10.29]
 * **[개선된 이동관련 시스템들][ImprovedMovementSystemslink]** : 기존의 후크샷or그래필링건(로프액션)과 파쿠르시스템, 이동방식을 개선 [2024. 10. 8]
 * **[원형(방사형) 메뉴][RadialMenulink]**  : 원형 메뉴를 사용자가 마우스를 이용하여 메뉴를 선택하도록 만드는 기능 [2024. 4. 29]
 * **[퀘스트 시스템][QuestSystemlink]**  : 퀘스트를 통해 플레이어에게 방향성을 제공하는 시스템 [2024. 3. 11]

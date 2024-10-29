@@ -8,7 +8,10 @@ public class SearchState : FSMState
         base.blackboard = blackboard;
         behaviorTree.InitializeTree(blackboard);
     }
-    public override void Exit() { }
+    public override void Exit()
+    {
+        behaviorTree.Exit();
+    }
     public override void FixedUpdate() { }
     public override void LateUpdate() { }
 }

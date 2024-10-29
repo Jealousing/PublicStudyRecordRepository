@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
 using UnityEngine.AI;
-
+ 
 public class ChaseBTExample : BehaviorTree
 {
-    /* BlackBoard에서 받아올 데이터 */
-    Blackboard blackboard;
+    /* BlackBoard에서 받아올 데이터 */ 
     BasicInfo target;
 
     /* 인스펙터에서 설정할 옵션 */
@@ -14,26 +13,49 @@ public class ChaseBTExample : BehaviorTree
     public float maxChaseDistace;
 
     /* 나머지 */
-    NavMeshAgent navMeshAgent;
+    NavMeshAgent navMeshAgent; 
+    FSMBase info;
 
     private void Start()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent = GetComponent<NavMeshAgent>();  
+        info = GetComponent<FSMBase>();
+    }
+
+    public override void Evaluate()
+    {
+        base.Evaluate();
+
+        info.animator.SetFloat("Speed", navMeshAgent.velocity.magnitude);
     }
 
     public override void InitializeTree(Blackboard blackboard)
     {
-        if(blackboard==null) this.blackboard = blackboard;
-        target = blackboard.Get<BasicInfo>("target");
+        // 한번만 갱신하면 되는 부분
+        if (!isInit)
+        {
+            isInit = true;
+            this.blackboard = blackboard;
 
-        // 행동 트리 구성
-        rootNode = new SequenceNode(
-            new ConditionNode(() => TargetValidation()),
-            new ActionNode(() => RotateTowardsPlayer()),
-            new ActionNode(() => MoveTowardsPlayer())
-        );
+            // 행동 트리 구성
+            rootNode = new SequenceNode(
+                new ConditionNode(() => TargetValidation()),
+                new ActionNode(() => RotateTowardsPlayer()),
+                new ActionNode(() => MoveTowardsPlayer())
+            );
+
+            blackboard.Set("maxChaseDistace", maxChaseDistace);
+        }
+
+        // 진입마다 체크해야 되는 부분
+        target = blackboard.Get<BasicInfo>("target");
+        navMeshAgent.speed = 5;
     }
 
+    public override void Exit()
+    {
+       target = null;
+    }
 
     bool TargetValidation()
     {
@@ -43,8 +65,8 @@ public class ChaseBTExample : BehaviorTree
             if (distance <minChaseDistace)
             { 
                 if(this.TryGetComponent(out CombatState state))
-                { 
-                    blackboard.Get<FSMBase>("State").ChangeState(state);
+                {
+                    info.ChangeState(state);
                     return false;
                 }  
             }
@@ -52,7 +74,10 @@ public class ChaseBTExample : BehaviorTree
             { 
                 if (this.TryGetComponent(out SearchState state))
                 {
-                    blackboard.Get<FSMBase>("State").ChangeState(state);
+                    target = null;
+                    blackboard.Set("target", target);
+                    navMeshAgent.ResetPath();
+                    info.ChangeState(state);
                     return false;
                 }  
             }
@@ -62,7 +87,7 @@ public class ChaseBTExample : BehaviorTree
         { 
             if (this.TryGetComponent(out SearchState state))
             {
-                blackboard.Get<FSMBase>("State").ChangeState(state);
+                info.ChangeState(state);
                 return false;
             }
             else
@@ -84,4 +109,5 @@ public class ChaseBTExample : BehaviorTree
         navMeshAgent.isStopped = false;
         navMeshAgent.SetDestination(target.transform.position); 
     }
+
 }
