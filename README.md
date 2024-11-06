@@ -52,6 +52,7 @@ Unity:
 코드가 정리되어 공개되어 있는 문서가 있고 아닌 문서도 있습니다.
  
 Unity:     
+* **[회피 (Dodge)][Dodgelink]** : 적의 공격 회피관련 처리 [2024. 11.06]
 * **[잔상 효과(MotionTrail)][MotionTraillink]** : 메쉬 복사를 통한 잔상 효과 구현  [2024. 11.05]
 * **[Enemy Hybrid(FSM+BT) AI][EnemyFSMBTAISystemlink]** : FSM & Behavior Tree 통합 몬스터 AI 시스템 [2024. 10.29]
 * **[개선된 이동관련 시스템들][ImprovedMovementSystemslink]** : 기존의 후크샷or그래필링건(로프액션)과 파쿠르시스템, 이동방식을 개선 [2024. 10. 8]
