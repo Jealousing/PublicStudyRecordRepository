@@ -97,4 +97,4 @@ private IEnumerator FlashEffect()
 ## 유튜브
  [![Video Label](http://img.youtube.com/vi/yIT-iTqE1tA/0.jpg)](https://youtu.be/yIT-iTqE1tA)
   
- [Dodgelink]: /VariousFunctions/Dodge
+ [Dodgelink]: /VariousFunctions/MotionTrail
