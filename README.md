@@ -51,7 +51,8 @@ Unity:
  리드미 작성일 기준으로 정리되어 최근에 작성또는 수정한 문서가 위로 가도록 작성되어 있습니다.
 코드가 정리되어 공개되어 있는 문서가 있고 아닌 문서도 있습니다.
  
-Unity:     
+Unity:    
+* **[유니티 폴더 툴팁 시스템][FolderTooltipSystemlink]** : 폴더 에디터 만들어보기 [2024. 11. 28]
 * **[회피 (Dodge)][Dodgelink]** : 적의 공격 회피관련 처리 [2024. 11.06]
 * **[잔상 효과(MotionTrail)][MotionTraillink]** : 메쉬 복사를 통한 잔상 효과 구현  [2024. 11.05]
 * **[Enemy Hybrid(FSM+BT) AI][EnemyFSMBTAISystemlink]** : FSM & Behavior Tree 통합 몬스터 AI 시스템 [2024. 10.29]
@@ -347,5 +348,6 @@ Unity:
 [EnemyFSMBTAISystemlink]: /VariousFunctions/EnemyFSMBTAISystem
 [Dodgelink]: /VariousFunctions/Dodge
 [MotionTraillink]: /VariousFunctions/MotionTrail
+[FolderTooltipSystemlink]: /VariousFunctions/FolderTooltipSystem
 
 [TeamProjectDemonStratelink]: /TeamProject/DemonStrate
