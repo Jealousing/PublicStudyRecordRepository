@@ -51,7 +51,8 @@ Unity:
  리드미 작성일 기준으로 정리되어 최근에 작성또는 수정한 문서가 위로 가도록 작성되어 있습니다.
 코드가 정리되어 공개되어 있는 문서가 있고 아닌 문서도 있습니다.
  
-Unity:    
+Unity:     
+* **[인스펙터 스크립트 카데고리 시스템][InspectorCategorySystemlink]** : 오브젝트에 있는 스크립트들을 카데고리별로 정리해보자 [2025. 03. 08]
 * **[유니티 폴더 툴팁 시스템][FolderTooltipSystemlink]** : 폴더 에디터 만들어보기 [2024. 11. 28]
 * **[회피 (Dodge)][Dodgelink]** : 적의 공격 회피관련 처리 [2024. 11.06]
 * **[잔상 효과(MotionTrail)][MotionTraillink]** : 메쉬 복사를 통한 잔상 효과 구현  [2024. 11.05]
@@ -349,5 +350,6 @@ Unity:
 [Dodgelink]: /VariousFunctions/Dodge
 [MotionTraillink]: /VariousFunctions/MotionTrail
 [FolderTooltipSystemlink]: /VariousFunctions/FolderTooltipSystem
+[InspectorCategorySystemlink]: /VariousFunctions/InspectorCategory
 
 [TeamProjectDemonStratelink]: /TeamProject/DemonStrate
