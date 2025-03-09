@@ -22,12 +22,21 @@ public static class InspectorCategoryHider
     private const string SessionKey = "InspectorCategoryHider_Executed"; // 실행 여부를 저장할 키
     static InspectorCategoryHider()
     { 
-        // 에디터를 처음 켰을 때만 실행
-        if (!EditorPrefs.GetBool(SessionKey, false))
+        // 유니티 실행 후 호출
+        EditorApplication.delayCall += TryHideScripts;
+    }
+
+    [InitializeOnLoadMethod]
+    private static void TryHideScripts()
+    {
+        if (!SessionState.GetBool(SessionKey, false))
         {
-            EditorApplication.delayCall += HideScriptsInCategories;
-            SessionState.SetBool(SessionKey, true); // 실행됨을 기록
-        } 
+            EditorApplication.delayCall += () =>
+            {
+                HideScriptsInCategories();
+                SessionState.SetBool(SessionKey, true);
+            };
+        }
     }
 
     private static void HideScriptsInCategories()
@@ -35,11 +44,17 @@ public static class InspectorCategoryHider
         // 모든 InspectorCategory 오브젝트 찾기 2023이전 : FindObjectsByType -> FindObjectsOfType
         InspectorCategory[] allCategories = Object.FindObjectsByType<InspectorCategory>(FindObjectsSortMode.None);
 
+        if (allCategories.Length == 0)
+        {
+            Debug.LogWarning("InspectorCategory 객체를 찾을 수 없습니다.");
+            return;
+        }
+
         foreach (var category in allCategories)
         {
             HideScriptsRecursively(category.categories);
         }
-        Debug.Log("잉");
+        Debug.Log("잉?");
     }
 
     private static void HideScriptsRecursively(List<InspectorCategory.Category> categories)
@@ -54,7 +69,9 @@ public static class InspectorCategoryHider
                 if (script != null)
                 {
                     script.hideFlags = HideFlags.HideInInspector;
-                    EditorUtility.SetDirty(script); // 변경 사항 적용
+                    SerializedObject so = new SerializedObject(script);
+                    so.ApplyModifiedProperties();
+                    EditorUtility.SetDirty(script);
                 }
             }
 
