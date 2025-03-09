@@ -19,14 +19,14 @@ public static class CategoryNameConstants
 [InitializeOnLoad]
 public static class InspectorCategoryHider
 {
-    private const string PrefKey = "InspectorCategoryHider_Executed"; // 실행 여부를 저장할 키
+    private const string SessionKey = "InspectorCategoryHider_Executed"; // 실행 여부를 저장할 키
     static InspectorCategoryHider()
     { 
         // 에디터를 처음 켰을 때만 실행
-        if (!EditorPrefs.GetBool(PrefKey, false))
+        if (!EditorPrefs.GetBool(SessionKey, false))
         {
             EditorApplication.delayCall += HideScriptsInCategories;
-            EditorPrefs.SetBool(PrefKey, true); // 실행됨을 기록
+            SessionState.SetBool(SessionKey, true); // 실행됨을 기록
         } 
     }
 
