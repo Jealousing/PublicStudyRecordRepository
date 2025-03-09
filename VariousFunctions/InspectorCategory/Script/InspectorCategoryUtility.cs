@@ -43,18 +43,11 @@ public static class InspectorCategoryHider
     {
         // 모든 InspectorCategory 오브젝트 찾기 2023이전 : FindObjectsByType -> FindObjectsOfType
         InspectorCategory[] allCategories = Object.FindObjectsByType<InspectorCategory>(FindObjectsSortMode.None);
-
-        if (allCategories.Length == 0)
-        {
-            Debug.LogWarning("InspectorCategory 객체를 찾을 수 없습니다.");
-            return;
-        }
-
+          
         foreach (var category in allCategories)
         {
             HideScriptsRecursively(category.categories);
-        }
-        Debug.Log("잉?");
+        } 
     }
 
     private static void HideScriptsRecursively(List<InspectorCategory.Category> categories)
