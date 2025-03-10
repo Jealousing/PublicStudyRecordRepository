@@ -14,36 +14,20 @@ public static class CategoryNameConstants
     public const string CategoryOrderKey = "CategoryOrder";
     public const string PlaceholderText = " 검색할 스크립트 이름을 입력하세요. ";
 }
- 
+
 // 유니티 실행시 카데고리에 등록된 스크립트 안보이게 처리
 [InitializeOnLoad]
 public static class InspectorCategoryHider
 {
-    private const string SessionKey = "InspectorCategoryHider_Executed"; // 실행 여부를 저장할 키
     static InspectorCategoryHider()
-    { 
-        // 유니티 실행 후 호출
-        EditorApplication.delayCall += TryHideScripts;
-    }
-
-    [InitializeOnLoadMethod]
-    private static void TryHideScripts()
     {
-        if (!SessionState.GetBool(SessionKey, false))
-        {
-            EditorApplication.delayCall += () =>
-            {
-                HideScriptsInCategories();
-                SessionState.SetBool(SessionKey, true);
-            };
-        }
+        EditorApplication.delayCall += HideScriptsInCategories;
     }
 
     private static void HideScriptsInCategories()
-    {
-        // 모든 InspectorCategory 오브젝트 찾기 2023이전 : FindObjectsByType -> FindObjectsOfType
+    { 
         InspectorCategory[] allCategories = Object.FindObjectsByType<InspectorCategory>(FindObjectsSortMode.None);
-          
+
         foreach (var category in allCategories)
         {
             HideScriptsRecursively(category.categories);
@@ -55,8 +39,7 @@ public static class InspectorCategoryHider
         if (categories == null) return;
 
         foreach (var category in categories)
-        {
-            // 해당 카테고리의 스크립트 숨기기
+        { 
             foreach (var script in category.scripts)
             {
                 if (script != null)
@@ -64,15 +47,15 @@ public static class InspectorCategoryHider
                     script.hideFlags = HideFlags.HideInInspector;
                     SerializedObject so = new SerializedObject(script);
                     so.ApplyModifiedProperties();
-                    EditorUtility.SetDirty(script);
+                    EditorUtility.SetDirty(script); 
                 }
             }
-
-            // 하위 카테고리도 재귀적으로 처리
+             
             HideScriptsRecursively(category.subCategories);
         }
     }
 }
+ 
 
 // 이름을 입력받는 대화창을 제공하는 클래스
 public class CategoryNameDialog : EditorWindow
