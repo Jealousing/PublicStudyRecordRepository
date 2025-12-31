@@ -11,7 +11,8 @@
  * BuildGame 폴더 : 빌드된 게임을 올려두는 폴더입니다.
  * ComputerScience 폴더 : CS 공부하며 저장하는 곳입니다. ( 코테자료 및 디자인패턴 등 )
  * Various Functions 폴더 : 유니티로 다양한 기능을 제작해서 저장하는 곳입니다.
- * TeamProject 폴더 : 팀 프로젝트에 참가해서 사용한 코드들 저장하는 곳입니다.
+ * TeamProject 폴더 : 팀 프로젝트에 참가해서 사용한 코드들 저장하는 곳입니다. 
+ * StudyDetours 폴더 : 공부 도중 본래 목적과는 무관하게 생긴 의문 중, 정리해두면 재미있겠다 싶은 생각들을 기록합니다.
  * TemporaryFolder 폴더 : 이 저장소의 양식을 만들어 사용하기 위한 폴더입니다.
 
  각 내부 폴더에 스크립트를 저장하고 리드미를 따로 두어 그 기능이 무엇인지 간단한 소개, 구현할때 어려웠던 점, 해결했던 방법, 느낀점 등을 작성할 예정입니다.
@@ -48,9 +49,9 @@ Unity:
 	<summary><b><em>다양한 기능구현</em></b> </summary>
 
 *****
- 리드미 작성일 기준으로 정리되어 최근에 작성또는 수정한 문서가 위로 가도록 작성되어 있습니다.
-코드가 정리되어 공개되어 있는 문서가 있고 아닌 문서도 있습니다.
- 
+  > 리드미 작성일 기준으로 정리되어 최근에 작성또는 수정한 문서가 위로 가도록 작성되어 있습니다. <br>
+  > 코드가 정리되어 공개되어 있는 문서가 있고 아닌 문서도 있습니다.
+
 Unity:     
 * **[끈을 통한 살의 눌림 효과 ProceduralMeshDeformer][ProceduralMeshDeformerlink]** : 리본이 허벅지를 눌러서 변형 효과를 주는 실시간 메시 변형 시스템입니다.  [2025. 04. 13]
 * **[인스펙터 스크립트 카데고리 시스템][InspectorCategorySystemlink]** : 오브젝트에 있는 스크립트들을 카데고리별로 정리해보자 [2025. 03. 08]
@@ -233,6 +234,21 @@ Unity:
    
 *****      
 </details> 
+
+<details>
+<summary><b><em>공부하다 딴길로 새버린 궁금증</em></b> </summary>
+
+***** 
+>이 시리즈는 정답을 빠르게 찾는 기록이 아니라, <br>
+>공부 도중 생긴 의문을 끝까지 따라가며 사고가 어떻게 변형되는지를 남기는 것을 목표로 합니다. <br>
+>결론보다 질문이 길고, 계산보다 판단이 중요해지는 순간을 기록합니다.
+
+* **[공정한 사다리 게임이 만들어질 수 있을까][CanAFairLadderGameExistlink]** 
+      : [2026.01.01] 사다리 게임의 공정성에 대한 생각
+ 
+*****
+
+ </details>  
      
 [3dsuikagamelink]: /BuildGame/3DSuikaGame 
 
@@ -355,3 +371,5 @@ Unity:
 [ProceduralMeshDeformerlink]: /VariousFunctions/ProceduralMeshDeformer
 
 [TeamProjectDemonStratelink]: /TeamProject/DemonStrate
+
+[CanAFairLadderGameExistlink]: /StudyDetours/CanAFairLadderGameExist
