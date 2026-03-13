@@ -153,31 +153,21 @@ Unity:
 		* **[Dependency Injection (DI)][DependencyInjectionlink]** : 클래스 내부에 종속성을 하드 코딩하는 대신 외부에 주입하여 클래스 간의 종속성을 관리하는 방법을 제공합니다.
 	</details>
 
-	</details>
-
- </details>
-
  * <details> <summary><b><em>프로그래밍 패러다임</em></b> </summary>
 	
 	* **[데이터 지향 설계, Data Oriented Design (DOD)][DODlink]** : 프로그램을 데이터의 구조와 접근 방식을 중심으로 설계하여 성능 향상과 메모리 사용 최적화를 목표로 하는 개발 방법론.    
    
-	</details>
-
- * <details> <summary><b><em>아키텍처 패턴</em></b> </summary>
+* <details> <summary><b><em>아키텍처 패턴</em></b> </summary>
 	
 	* **[Entity Component System (ECS)][ECSlink]** : 게임 엔터티의 데이터 및 동작을 구성하기 위해 게임 개발에서 일반적으로 사용되는 패턴입니다. 게임 개체를 더 작은 구성 요소로 분해하여 더 나은 확장성과 재사용성을 가능하게 합니다.    
 
-	</details>
-
- * <details> <summary><b><em>자료구조와 알고리즘, 코딩테스트</em></b> </summary>
+* <details> <summary><b><em>자료구조와 알고리즘, 코딩테스트</em></b> </summary>
 
 	* <details> <summary><b><em> 알고리즘 기초 </em></b> </summary>
 
  		* **[시간 복잡도][TimeComplexitylink]** : 알고리즘이 문제를 해결하는 데 걸리는 시간을 나타내는 것으로, 입력 크기에 대한 함수로 표현됩니다.   
  		* **[공간 복잡도][SpaceComplexitylink]** : 알고리즘이 실행되는 동안 사용되는 메모리 공간의 양을 나타내는 것으로, 입력 크기에 대한 함수로 표현됩니다.   
  		* **[Big-O 표기법][BigONotationlink]** : 알고리즘의 시간 복잡도와 공간 복잡도를 간결하게 나타내기 위한 표기법으로, 알고리즘의 최악의 실행 시간을 나타냅니다.    
-
-	</details>
 
 	* <details> <summary><b><em> 자료구조 </em></b> </summary>
 		
@@ -195,9 +185,7 @@ Unity:
           * **[세그먼트 트리,Segment Tree][SegmentTreelink]** : 구간에 대한 문제를 빠르게 처리하기 위해 사용되는 자료구조입니다.      
           * **[펜윅 트리,Fenwick Tree][FenwickTreelink]** : 구간 합 문제를 효율적으로 처리하기 위해 사용되는 자료구조입니다.   
          * **[그래프,Graph][Graphlink]** : 정점과 간선의 집합으로 구성된 자료구조로, 여러 종류의 그래프 알고리즘에 사용됩니다.   
-
-	</details>
-
+  
  	* <details> <summary><b><em> 알고리즘 </em></b> </summary>
 		
   		* <details> <summary><b><em> 정렬 알고리즘 </em></b> </summary>
@@ -211,16 +199,12 @@ Unity:
           * **[기수 정렬][RadixSortlink]** : 입력된 숫자들의 자릿수를 기반으로 정렬하는 알고리즘입니다.   
           * **[계수 정렬][CountingSortlink]** :  정수나 정수 형태의 키를 가진 데이터를 정렬하는 비교 기반 정렬 알고리즘 중 하나
 
-		</details>
-
 		* <details> <summary><b><em> 탐색 알고리즘 </em></b> </summary>
 
   			* **[선형 탐색][LinearSearchlink]** : 리스트를 처음부터 끝까지 순회하면서 원하는 항목을 찾는 가장 간단한 탐색 알고리즘   
      		* **[이진 탐색][BinarySearchlink]** : 배열을 반으로 나누어 탐색 범위를 줄여나가는 알고리즘 중 하나로, 정렬된 배열에서 사용됨   
         	* **[해시 탐색][HashSearchlink]** :  해시 테이블을 사용하여 키(key)를 해시값(hash)에 매핑하고 해당 해시값을 인덱스로 사용하여 데이터를 검색하는 방법
    
-		</details>
-
     	* <details> <summary><b><em> 그래프 알고리즘 </em></b> </summary>
 
   			* **[깊이 우선 탐색,DFS][DepthFirstSearchlink]** : 그래프를 탐색할 때 한 분기(branch)를 끝까지 탐색(깊은 부분을 우선적으로 탐색)한 후 다음 분기로 넘어가는 알고리즘  
@@ -233,16 +217,12 @@ Unity:
         	* **[최소 신장 트리][MinimumSpanningTreelink]** : 그래프의 모든 정점을 포함하면서 사이클이 없는 부분 그래프 중에서 간선의 가중치 합이 최소인 트리를 찾는 알고리즘
           	* **[최소 공통 조상,LCA][LowestCommonAncestorlink]** : 트리 구조에서 두 노드의 가장 가까운 공통 조상을 찾는 알고리즘입니다.
            
-		</details>
-
       * <details> <summary><b><em> 동적 프로그래밍 </em></b> </summary>
 
   		* **[동적계획법,DP][DPlink]** : 복잡한 문제를 간단한 하위 문제로 나누어 해결하고, 그 결과를 저장하여 중복 계산을 줄이는 알고리즘 기법   
      	* **[최장 증가 부분 수열,LIS][LISlink]** : 주어진 배열에서 숫자들의 순서를 유지하면서 증가하는 부분 수열 중 가장 긴 것을 찾는 동적 프로그래밍 알고리즘   
       	* **[최장 공통 부분 수열,LCS][LCSlink]** : 주어진 여러개 수열 모두의 부분수열이 되는 수열들 중에 가장 긴 것을 찾는 알고리즘     
            
-		</details>
-
       * <details> <summary><b><em> 그 외 다양한 알고리즘 </em></b> </summary>
 
  		* **[재귀][Recursionlink]** : 함수가 자기 자신을 호출하여 반복적으로 작업을 수행하는 프로그래밍 기법으로, 분할 정복이나 동적 프로그래밍과 같은 알고리즘에서 사용됩니다.
@@ -251,28 +231,20 @@ Unity:
         * **[백트래킹][Backtrackinglink]** : 조건을 만족할 때까지 모든 가능성을 탐색하며, 조건에 맞지 않으면 되돌아가는 알고리즘
         * **[브루트포스][BruteForcelink]** : 모든 가능한 경우의 수를 시도하여 문제를 해결하는 간단한 방법
         * **[투포인터][TwoPointerlink]** : 두 개의 포인터를 사용하여 배열 내에서 특정 조건을 만족하는 원소를 찾는 알고리즘
-
-		</details>
-
-	</details>
-
+  	
 	* <details> <summary><b><em> 코딩테스트 </em></b> </summary>
 		
 		* **[간단한 알고리즘 정리][Algorithmlink]** : 코딩테스트에서 사용하는 알고리즘 간단정리 
 		* **[백준][BAEKJOONllink]**  : 코딩테스트 사이트인 백준에서 문제를 풀고 정리한 폴더
-
-	</details>
-
- </details>
-
- * <details> <summary><b><em>Books</em></b> </summary>
+ 	
+ 
+   
+* <details> <summary><b><em>Books</em></b> </summary>
         
 	* **[Effective C++][EffectiveClink]**
    
- </details>
-
 *****      
-</details> 
+</details>  
 
 <a id="studydetours"></a>
 <details>
