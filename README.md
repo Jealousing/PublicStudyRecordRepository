@@ -195,7 +195,7 @@ Unity:
           * **[세그먼트 트리,Segment Tree][SegmentTreelink]** : 구간에 대한 문제를 빠르게 처리하기 위해 사용되는 자료구조입니다.      
           * **[펜윅 트리,Fenwick Tree][FenwickTreelink]** : 구간 합 문제를 효율적으로 처리하기 위해 사용되는 자료구조입니다.   
          * **[그래프,Graph][Graphlink]** : 정점과 간선의 집합으로 구성된 자료구조로, 여러 종류의 그래프 알고리즘에 사용됩니다.   
-  
+
 	</details>
 
  	* <details> <summary><b><em> 알고리즘 </em></b> </summary>
@@ -252,7 +252,7 @@ Unity:
         * **[브루트포스][BruteForcelink]** : 모든 가능한 경우의 수를 시도하여 문제를 해결하는 간단한 방법
         * **[투포인터][TwoPointerlink]** : 두 개의 포인터를 사용하여 배열 내에서 특정 조건을 만족하는 원소를 찾는 알고리즘
 
-	</details>
+		</details>
 
 	</details>
 
