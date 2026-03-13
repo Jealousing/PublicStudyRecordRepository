@@ -1,100 +1,112 @@
-# PublicStudyRecordRepository 
- 
-**[학교에서 배웠던 내용들은 여기에 있습니다.](https://github.com/Jealousing/CurriculumArchive)**       
-**[개발하면서 올린 영상은 여기에 있습니다.](https://www.youtube.com/channel/UCt0ZnTLCoGqdj9U5uW6Yb-g)**   
+# PublicStudyRecordRepository
 
-## 저장소의 목적
- 다양한 공부한것을 저장하기위해서 만들어진 저장소입니다. 
+게임 개발과 Computer Science 공부 기록을 정리하는 개인 학습 저장소입니다.
+Unity 시스템 구현, 알고리즘 공부, 프로젝트 기록 등을 포함합니다.
+ 
+📚 **[학교에서 배웠던 내용들은 여기에 있습니다.](https://github.com/Jealousing/CurriculumArchive)**       
+🎥 **[개발하면서 올린 영상은 여기에 있습니다.](https://www.youtube.com/channel/UCt0ZnTLCoGqdj9U5uW6Yb-g)**   
+
+## 저장소의 목적 
+  이 저장소는 게임 개발 과정에서 공부하거나 구현한 내용들을 정리하기 위한 개인 학습 기록 저장소입니다.
+
+  주로 다음과 같은 내용을 기록합니다.
+- Unity 기능 구현 및 시스템 개발
+- Computer Science 및 디자인 패턴 정리
+- 개인 및 팀 프로젝트 기록
+- 공부 과정에서 발생한 다양한 의문과 사고 과정 기록
  
 ## 저장소 구조 소개
-  카테고리에 맞는 폴더 안에 그에 대한 공부 한 기록들이 저장되어 있습니다.
- * BuildGame 폴더 : 빌드된 게임을 올려두는 폴더입니다.
- * ComputerScience 폴더 : CS 공부하며 저장하는 곳입니다. ( 코테자료 및 디자인패턴 등 )
- * Various Functions 폴더 : 유니티로 다양한 기능을 제작해서 저장하는 곳입니다.
- * TeamProject 폴더 : 팀 프로젝트에 참가해서 사용한 코드들 저장하는 곳입니다. 
- * StudyDetours 폴더 : 공부 도중 본래 목적과는 무관하게 생긴 의문 중, 정리해두면 재미있겠다 싶은 생각들을 기록합니다.
- * TemporaryFolder 폴더 : 이 저장소의 양식을 만들어 사용하기 위한 폴더입니다.
+  이 저장소는 카테고리별 폴더 구조로 정리되어 있으며,
+  각 폴더에는 해당 주제에 대한 코드, 정리 문서, 또는 프로젝트 기록이 포함되어 있습니다.
+
+* **[BuildGame](#buildgame)** : 빌드된 게임을 보관하는 폴더입니다.
+* **[ComputerScience](#computersciencecs)** : CS 공부 내용을 정리한 폴더입니다. (코딩 테스트, 디자인 패턴, 자료구조 등)
+* **[GameSystems](#gamesystems)** : 게임 개발 공부중에서 다양한 기능이나 시스템을 구현한 코드들을 정리한 폴더입니다.
+* **[TeamProject](#teamproject)** : 팀 프로젝트에서 사용했던 코드와 기록을 저장하는 폴더입니다.
+* **[StudyDetours](#studydetours)** : 공부 과정에서 본래 주제와는 다른 궁금증이 생겼을 때 그 사고 과정을 기록하는 폴더입니다.
 
  각 내부 폴더에 스크립트를 저장하고 리드미를 따로 두어 그 기능이 무엇인지 간단한 소개, 구현할때 어려웠던 점, 해결했던 방법, 느낀점 등을 작성할 예정입니다.
 
+## 폴더별 작성한 내용 소개
 
-## 폴더별 간단소개
+<a id="gamesystems"></a>
+<details>
+<summary><b><em>다양한 기능구현</em></b> </summary>
 
+*****
+  > 최근에 작성또는 수정한 문서가 위로 가도록 작성되어 있습니다. <br>
+  > 코드가 정리되어 공개되어 있는 문서가 있고 아닌 문서도 있습니다.
+
+Unity:     
+* **[끈을 통한 살의 눌림 효과 ProceduralMeshDeformer][ProceduralMeshDeformerlink]** : 리본이 허벅지를 눌러서 변형 효과를 주는 실시간 메시 변형 시스템입니다.
+* **[인스펙터 스크립트 카테고리 시스템][InspectorCategorySystemlink]** : 오브젝트에 있는 스크립트들을 카테고리별로 정리해보자
+* **[유니티 폴더 툴팁 시스템][FolderTooltipSystemlink]** : 폴더 에디터 만들어보기
+* **[회피 (Dodge)][Dodgelink]** : 적의 공격 회피관련 처리
+* **[잔상 효과(MotionTrail)][MotionTraillink]** : 메쉬 복사를 통한 잔상 효과 구현
+* **[Enemy Hybrid(FSM+BT) AI][EnemyFSMBTAISystemlink]** : FSM & Behavior Tree 통합 몬스터 AI 시스템
+* **[개선된 이동관련 시스템들][ImprovedMovementSystemslink]** : 기존의 후크샷or그래필링건(로프액션)과 파쿠르시스템, 이동방식을 개선
+* **[원형(방사형) 메뉴][RadialMenulink]**  : 원형 메뉴를 사용자가 마우스를 이용하여 메뉴를 선택하도록 만드는 기능
+* **[퀘스트 시스템][QuestSystemlink]**  : 퀘스트를 통해 플레이어에게 방향성을 제공하는 시스템
+* **[NPC 대화 시스템][NpcDialogSystemlink]**  : 대화 스크립트가 담긴 csv를 불러와서 대화를 진행하는 듯한 연출을 해주는 시스템
+* **[미니맵][MiniMaplink]**  : 플레이어 근처의 오브젝트 정보를 간단하게 UI를 통해 전달하는 시스템
+* **[뱀서라이크 만들어보기][GamesLikeVampireSurvivorslink]**  : 몹 소환, 레벨링시스템, 스킬관련 등
+* **[포탈 저장서 및 포탈][PortalSystemlink]**  : 플레이어가 저장한 포탈을 관리하고 생성하는 시스템, 포탈은 이동할 위치를 이미지를 통해 보여줌
+* **[게임 사용자 설정 화면][SettingScreenlink]**  : 사용자가 옵션을 설정할 수 있도록 하는 화면
+* **[시네머신을 활용한 타이틀씬][CinemachineTitleScreenlink]**  : 시작, 옵션, 끝내기
+* **[글라이딩 시스템][GlidingSystemlink]**  : 날개 비행 시스템
+* **[공중섬 조종 및 건설][IslandSystemlink]**  : 레프트라는 게임의 배처럼 플레이어가 땅을 늘리고 그 땅덩어리를 방향과 속도 등을 조절할 수 있는 시스템
+* **[인벤토리][InventorySystemlink]**  : 흔히 플레이어가 사용하는 인벤토리를 구현 ( 정렬, 슬롯 추가 및 슬롯 잠금, 아이템 스왑 등 )
+* **[스캔 시스템][ScanSystemlink]**  : 플레이어 기준으로 특정 오브젝트를 탐지하는 시스템
+* **[씬 전환 시스템][SceneManagerlink]**  : 씬 전환시 로딩 씬으로 진입해 비동기 로딩 및 로딩 화면을 통한 부드러운 씬 전환 구현
+* **[월드 생성 시스템][WorldSystemlink]**  : 청크 단위로 월드를 시드 값을 통해 절차적으로 생성하고 풀링을 통해 관리하는 기능
+* **[카메라][Cameralink]**  : 플레이어의 카메라 구현
+* **[반응형UI][UIResolutionAdaptationlink]**  : 해상도가 변경됨에 따라 UI의 위치조정
+* **[Json 데이터 관리][JsonDataManagerlink]**  : Json으로 데이터를 관리 및 저장하는 시스템
+* **[플레이어 스킬구현][PlayerSkilllink]**  : 플레이어가 사용하는 스킬을 구현해보는 부분
+* **[전투시스템][CombatSystemlink]**  : 플레이어의 전투시스템 관련 스크립트 모음
+* **[퀵슬롯스킬][QuickSlotSkilllink]**  : UI에 스킬을 등록해서 스킬을 사용하고 쿨타임같은 사용경험을 높여주는 기능 구현
+* **[스킬트리][SkillTreelink]**  : Path of Exile 스킬트리처럼 나무가지가 뻣어나가는 형태의 스킬트리 구현
+* **[IK][IKlink]**  : 손과 발의 IK(역운동학) 사용해보는 스크립트.
+* **[범위공격 시스템][RangeHitSystemlink]**  : 메쉬로 도형을 그리면서 그 구역내에 있는 오브젝트에 대미지를 주는 방식.
+* **[메쉬로 도형그리기][DrawShapeMeshlink]**  : Unity Graphics 시스템을 이용해서 도형모양의 메쉬를 생성해 보여주는 기능.
+* **[체력바][HPBarlink]**  : 체력을 가진 오브젝트 머리위에 표시되는 막대로 HP상태를 알려주는 기능.
+* **[로프액션][GrapplingHookslink]**  : 마우스 에임 방향으로 로프를 발사해 그 곳으로 직선이동이나 스윙이동하는 기능.
+* **[캐릭터 이동관련 스크립트][Movementlink]**  :  캐릭터가 이동하는 방식에 대한 스크립트.
+* **[파쿠르 시스템][Parkourlink]**  :  캐릭터가 특정 오브젝트와 상호작용해서 구조물을 활용해 이동하는 시스템.
+
+*****
+ </details>
+
+<a id="teamproject"></a>
 <details>
 <summary><b><em>팀 프로젝트</em></b> </summary>
 
 *****
 ![0](https://github.com/user-attachments/assets/396c37be-0f65-4520-90e5-8422f104c3b5)
 
-* **[TeamDemonStrate][TeamProjectDemonStratelink]**  : [2021.04.13 ~ 2021.10.12] 학교생활 중 진행한 중단된 팀 프로젝트, 퍼즐 플랫포머식 어드밴처 호러게임
+* **[TeamDemonStrate][TeamProjectDemonStratelink]**  : 학교생활 중 진행한 중단된 팀 프로젝트, 퍼즐 플랫포머식 어드밴처 호러게임
  
 *****
 
  </details>   
 
+<a id="buildgame"></a>
  <details>
  <summary><b><em>개인 프로젝트</em></b> </summary>
 	 
  *****
 
 Unity:    
- * **[3D 수박게임][3dsuikagamelink]**  : 수박게임을 3d로 바꿔서 제작 [2024.02.04 ~ 2024.02.18]
- * **[Archero](https://github.com/Jealousing/CurriculumArchive/tree/main/2nd_Year_2nd_Semester/C%23/Archero)**  : 과제로 만들어본 궁수의 전설 **[영상링크](https://youtu.be/H--yQ3NhpR4)** [2020.11.01 ~ 2020.12.10]
+ * **[3D 수박게임][3dsuikagamelink]**  : 기존 2D 수박 게임을 3D 환경으로 구현한 프로젝트
+ * **[Archero](https://github.com/Jealousing/CurriculumArchive/tree/main/2nd_Year_2nd_Semester/C%23/Archero)**  : 모바일 게임 Archero를 참고하여 제작한 과제 프로젝트**[영상링크](https://youtu.be/H--yQ3NhpR4)**
  
  *****
  
  </details>   
 
+<a id="computersciencecs"></a>
 <details>
-	<summary><b><em>다양한 기능구현</em></b> </summary>
-
-*****
-  > 리드미 작성일 기준으로 정리되어 최근에 작성또는 수정한 문서가 위로 가도록 작성되어 있습니다. <br>
-  > 코드가 정리되어 공개되어 있는 문서가 있고 아닌 문서도 있습니다.
-
-Unity:     
-* **[끈을 통한 살의 눌림 효과 ProceduralMeshDeformer][ProceduralMeshDeformerlink]** : 리본이 허벅지를 눌러서 변형 효과를 주는 실시간 메시 변형 시스템입니다.  [2025. 04. 13]
-* **[인스펙터 스크립트 카데고리 시스템][InspectorCategorySystemlink]** : 오브젝트에 있는 스크립트들을 카데고리별로 정리해보자 [2025. 03. 08]
-* **[유니티 폴더 툴팁 시스템][FolderTooltipSystemlink]** : 폴더 에디터 만들어보기 [2024. 11. 28]
-* **[회피 (Dodge)][Dodgelink]** : 적의 공격 회피관련 처리 [2024. 11.06]
-* **[잔상 효과(MotionTrail)][MotionTraillink]** : 메쉬 복사를 통한 잔상 효과 구현  [2024. 11.05]
-* **[Enemy Hybrid(FSM+BT) AI][EnemyFSMBTAISystemlink]** : FSM & Behavior Tree 통합 몬스터 AI 시스템 [2024. 10.29]
-* **[개선된 이동관련 시스템들][ImprovedMovementSystemslink]** : 기존의 후크샷or그래필링건(로프액션)과 파쿠르시스템, 이동방식을 개선 [2024. 10. 8]
-* **[원형(방사형) 메뉴][RadialMenulink]**  : 원형 메뉴를 사용자가 마우스를 이용하여 메뉴를 선택하도록 만드는 기능 [2024. 4. 29]
-* **[퀘스트 시스템][QuestSystemlink]**  : 퀘스트를 통해 플레이어에게 방향성을 제공하는 시스템 [2024. 3. 11]
-* **[NPC 대화 시스템][NpcDialogSystemlink]**  : 대화 스크립트가 담긴 csv를 불러와서 대화를 진행하는 듯한 연출을 해주는 시스템 [2024. 3. 11]
-* **[미니맵][MiniMaplink]**  : 플레이어 근처의 오브젝트 정보를 간단하게 UI를 통해 전달하는 시스템 [2024. 3. 11]
-* **[뱀서라이크 만들어보기][GamesLikeVampireSurvivorslink]**  : 몹 소환, 레벨링시스템, 스킬관련 등 [2024. 2. 1]
-* **[포탈 저장서 및 포탈][PortalSystemlink]**  : 플레이어가 저장한 포탈을 관리하고 생성하는 시스템, 포탈은 이동할 위치를 이미지를 통해 보여줌 [v1.1 - 2024.02.01]
-* **[게임 사용자 설정 화면][SettingScreenlink]**  : 사용자가 옵션을 설정할 수 있도록 하는 화면 [2024. 2. 1]
-* **[시네머신을 활용한 타이틀씬][CinemachineTitleScreenlink]**  : 시작, 옵션, 끝내기 [2024. 2. 1]
-* **[글라이딩 시스템][GlidingSystemlink]**  : 날개 비행 시스템 [2023. 11. 16]
-* **[공중섬 조종 및 건설][IslandSystemlink]**  : 레프트라는 게임의 배처럼 플레이어가 땅을 늘리고 그 땅덩어리를 방향과 속도 등을 조절할 수 있는 시스템 [2023. 11. 16]
-* **[인벤토리][InventorySystemlink]**  : 흔히 플레이어가 사용하는 인벤토리를 구현 ( 정렬, 슬롯 추가 및 슬롯 잠금, 아이템 스왑 등 ) [2023. 11. 16]
-* **[스캔 시스템][ScanSystemlink]**  : 플레이어 기준으로 특정 오브젝트를 탐지하는 시스템 [2023. 11. 16]
-* **[씬 전환 시스템][ScenManagerlink]**  : 씬 전환시 로딩 씬으로 진입해 비동기 로딩 및 로딩 화면을 통한 부드러운 씬 전환 구현 [2023. 10. 16]
-* **[월드 생성 시스템][WorldSystemlink]**  : 청크 단위로 월드를 시드 값을 통해 절차적으로 생성하고 풀링을 통해 관리하는 기능 [2023. 10. 15]
-* **[카메라][Cameralink]**  : 플레이어의 카메라 구현 [2023. 9. 7]
-* **[반응형UI][UIResolutionAdaptationlink]**  : 해상도가 변경됨에 따라 UI의 위치조정 [2023. 9. 5]
-* **[Json 데이터 관리][JsonDataManagerlink]**  : Json으로 데이터를 관리 및 저장하는 시스템 [2023. 9. 5]
-* **[플레이어 스킬구현][PlayerSkilllink]**  : 플레이어가 사용하는 스킬을 구현해보는 부분  [2023. 8. 21]
-* **[전투시스템][CombatSystemlink]**  : 플레이어의 전투시스템 관련 스크립트 모음 [2023. 8. 21.]
-* **[퀵슬롯스킬][QuickSlotSkilllink]**  : UI에 스킬을 등록해서 스킬을 사용하고 쿨타임같은 사용경험을 높여주는 기능 구현 [2023. 8. 21]
-* **[스킬트리][SkillTreelink]**  : Path of Exile 스킬트리처럼 나무가지가 뻣어나가는 형태의 스킬트리 구현 [2023. 8. 21]
-* **[IK][IKlink]**  : 손과 발의 IK(역운동학) 사용해보는 스크립트. [2023. 8. 21]
-* **[범위공격 시스템][RangeHitSystemlink]**  : 메쉬로 도형을 그리면서 그 구역내에 있는 오브젝트에 대미지를 주는 방식. [2023. 8. 21]
-* **[메쉬로 도형그리기][DrawShapeMeshlink]**  : Unity Graphics 시스템을 이용해서 도형모양의 메쉬를 생성해 보여주는 기능. [2023. 8. 21]
-* **[체력바][HPBarlink]**  : 체력을 가진 오브젝트 머리위에 표시되는 막대로 HP상태를 알려주는 기능. [2023. 8. 15]
-* **[로프액션][GrapplingHookslink]**  : 마우스 에임 방향으로 로프를 발사해 그 곳으로 직선이동이나 스윙이동하는 기능. [2022. 10. 26]
-* **[캐릭터 이동관련 스크립트][Movementlink]**  :  캐릭터가 이동하는 방식에 대한 스크립트. [2022. 10. 11]
-* **[파쿠르 시스템][Parkourlink]**  :  캐릭터가 특정 오브젝트와 상호작용해서 구조물을 활용해 이동하는 시스템. [2022. 10. 11]
-   
-
-*****
- </details>
-
- <details>
- <summary><b><em> CS(ComputerScience) </em></b> </summary>
+	<summary><b><em> CS(ComputerScience) </em></b> </summary>
 	 
  *****
 
@@ -141,21 +153,31 @@ Unity:
 		* **[Dependency Injection (DI)][DependencyInjectionlink]** : 클래스 내부에 종속성을 하드 코딩하는 대신 외부에 주입하여 클래스 간의 종속성을 관리하는 방법을 제공합니다.
 	</details>
 
+	</details>
+
+ </details>
+
  * <details> <summary><b><em>프로그래밍 패러다임</em></b> </summary>
 	
 	* **[데이터 지향 설계, Data Oriented Design (DOD)][DODlink]** : 프로그램을 데이터의 구조와 접근 방식을 중심으로 설계하여 성능 향상과 메모리 사용 최적화를 목표로 하는 개발 방법론.    
    
-* <details> <summary><b><em>아키텍처 패턴</em></b> </summary>
+	</details>
+
+ * <details> <summary><b><em>아키텍처 패턴</em></b> </summary>
 	
 	* **[Entity Component System (ECS)][ECSlink]** : 게임 엔터티의 데이터 및 동작을 구성하기 위해 게임 개발에서 일반적으로 사용되는 패턴입니다. 게임 개체를 더 작은 구성 요소로 분해하여 더 나은 확장성과 재사용성을 가능하게 합니다.    
 
-* <details> <summary><b><em>자료구조와 알고리즘, 코딩테스트</em></b> </summary>
+	</details>
+
+ * <details> <summary><b><em>자료구조와 알고리즘, 코딩테스트</em></b> </summary>
 
 	* <details> <summary><b><em> 알고리즘 기초 </em></b> </summary>
 
  		* **[시간 복잡도][TimeComplexitylink]** : 알고리즘이 문제를 해결하는 데 걸리는 시간을 나타내는 것으로, 입력 크기에 대한 함수로 표현됩니다.   
  		* **[공간 복잡도][SpaceComplexitylink]** : 알고리즘이 실행되는 동안 사용되는 메모리 공간의 양을 나타내는 것으로, 입력 크기에 대한 함수로 표현됩니다.   
  		* **[Big-O 표기법][BigONotationlink]** : 알고리즘의 시간 복잡도와 공간 복잡도를 간결하게 나타내기 위한 표기법으로, 알고리즘의 최악의 실행 시간을 나타냅니다.    
+
+	</details>
 
 	* <details> <summary><b><em> 자료구조 </em></b> </summary>
 		
@@ -174,12 +196,14 @@ Unity:
           * **[펜윅 트리,Fenwick Tree][FenwickTreelink]** : 구간 합 문제를 효율적으로 처리하기 위해 사용되는 자료구조입니다.   
          * **[그래프,Graph][Graphlink]** : 정점과 간선의 집합으로 구성된 자료구조로, 여러 종류의 그래프 알고리즘에 사용됩니다.   
   
+	</details>
+
  	* <details> <summary><b><em> 알고리즘 </em></b> </summary>
 		
   		* <details> <summary><b><em> 정렬 알고리즘 </em></b> </summary>
     			
 			* **[선택 정렬][SelectionSortlink]** : 가장 작거나 큰 원소를 선택하여 정해진 위치에 정렬하는 알고리즘이다.    
-    		* **[삽입 정렬][InsertionSort]** : 각 원소를 이미 정렬된 부분에 삽입하는 알고리즘.   
+    		* **[삽입 정렬][InsertionSortlink]** : 각 원소를 이미 정렬된 부분에 삽입하는 알고리즘.   
       		* **[버블 정렬][BubbleSortlink]** : 서로 인접한 두 원소의 크기를 비교하고 조건에 맞지 않다면 교환하며 정렬하는 알고리즘이다.   
         	* **[병합 정렬][MergeSortlink]** : 병합 정렬 알고리즘은 배열을 반으로 나눈 후 각 부분을 정렬하고 병합하여 정렬하는 알고리즘이다.   
          	* **[퀵 정렬][QuickSortlink]** : 문제를 작은 2개의 문제로 분리하고 해결 후 결과를 모아서 다시 문제를 해결하는 방식으로 정렬하는 알고리즘이다.   
@@ -187,12 +211,16 @@ Unity:
           * **[기수 정렬][RadixSortlink]** : 입력된 숫자들의 자릿수를 기반으로 정렬하는 알고리즘입니다.   
           * **[계수 정렬][CountingSortlink]** :  정수나 정수 형태의 키를 가진 데이터를 정렬하는 비교 기반 정렬 알고리즘 중 하나
 
+		</details>
+
 		* <details> <summary><b><em> 탐색 알고리즘 </em></b> </summary>
 
   			* **[선형 탐색][LinearSearchlink]** : 리스트를 처음부터 끝까지 순회하면서 원하는 항목을 찾는 가장 간단한 탐색 알고리즘   
      		* **[이진 탐색][BinarySearchlink]** : 배열을 반으로 나누어 탐색 범위를 줄여나가는 알고리즘 중 하나로, 정렬된 배열에서 사용됨   
         	* **[해시 탐색][HashSearchlink]** :  해시 테이블을 사용하여 키(key)를 해시값(hash)에 매핑하고 해당 해시값을 인덱스로 사용하여 데이터를 검색하는 방법
    
+		</details>
+
     	* <details> <summary><b><em> 그래프 알고리즘 </em></b> </summary>
 
   			* **[깊이 우선 탐색,DFS][DepthFirstSearchlink]** : 그래프를 탐색할 때 한 분기(branch)를 끝까지 탐색(깊은 부분을 우선적으로 탐색)한 후 다음 분기로 넘어가는 알고리즘  
@@ -205,70 +233,96 @@ Unity:
         	* **[최소 신장 트리][MinimumSpanningTreelink]** : 그래프의 모든 정점을 포함하면서 사이클이 없는 부분 그래프 중에서 간선의 가중치 합이 최소인 트리를 찾는 알고리즘
           	* **[최소 공통 조상,LCA][LowestCommonAncestorlink]** : 트리 구조에서 두 노드의 가장 가까운 공통 조상을 찾는 알고리즘입니다.
            
+		</details>
+
       * <details> <summary><b><em> 동적 프로그래밍 </em></b> </summary>
 
   		* **[동적계획법,DP][DPlink]** : 복잡한 문제를 간단한 하위 문제로 나누어 해결하고, 그 결과를 저장하여 중복 계산을 줄이는 알고리즘 기법   
      	* **[최장 증가 부분 수열,LIS][LISlink]** : 주어진 배열에서 숫자들의 순서를 유지하면서 증가하는 부분 수열 중 가장 긴 것을 찾는 동적 프로그래밍 알고리즘   
       	* **[최장 공통 부분 수열,LCS][LCSlink]** : 주어진 여러개 수열 모두의 부분수열이 되는 수열들 중에 가장 긴 것을 찾는 알고리즘     
            
+		</details>
+
       * <details> <summary><b><em> 그 외 다양한 알고리즘 </em></b> </summary>
 
-  		
  		* **[재귀][Recursionlink]** : 함수가 자기 자신을 호출하여 반복적으로 작업을 수행하는 프로그래밍 기법으로, 분할 정복이나 동적 프로그래밍과 같은 알고리즘에서 사용됩니다.
       	* **[탐욕 알고리즘][GreedyAlgorithmslink]** : 각 단계에서 가장 최선의 선택을 하여 문제를 해결하는 알고리즘     
      	* **[분할 정복][DivideAndConquerlink]** : 문제를 둘 이상의 부분 문제로 나누어 각각을 해결하고, 그 결과를 합쳐 원래 문제의 해를 구하는 알고리즘
         * **[백트래킹][Backtrackinglink]** : 조건을 만족할 때까지 모든 가능성을 탐색하며, 조건에 맞지 않으면 되돌아가는 알고리즘
         * **[브루트포스][BruteForcelink]** : 모든 가능한 경우의 수를 시도하여 문제를 해결하는 간단한 방법
         * **[투포인터][TwoPointerlink]** : 두 개의 포인터를 사용하여 배열 내에서 특정 조건을 만족하는 원소를 찾는 알고리즘
-  	
+
+	</details>
+
+	</details>
+
 	* <details> <summary><b><em> 코딩테스트 </em></b> </summary>
 		
-		* **[간단한 알고리즘 정리][Algorithmllink]** : 코딩테스트에서 사용하는 알고리즘 간단정리 
+		* **[간단한 알고리즘 정리][Algorithmlink]** : 코딩테스트에서 사용하는 알고리즘 간단정리 
 		* **[백준][BAEKJOONllink]**  : 코딩테스트 사이트인 백준에서 문제를 풀고 정리한 폴더
- 	
- 
-   
-* <details> <summary><b><em>Books</em></b> </summary>
+
+	</details>
+
+ </details>
+
+ * <details> <summary><b><em>Books</em></b> </summary>
         
 	* **[Effective C++][EffectiveClink]**
    
+ </details>
+
 *****      
 </details> 
 
+<a id="studydetours"></a>
 <details>
 <summary><b><em>공부하다 딴길로 새버린 궁금증</em></b> </summary>
 
 ***** 
->이 시리즈는 정답을 빠르게 찾는 기록이 아니라, <br>
->공부 도중 생긴 의문을 끝까지 따라가며 사고가 어떻게 변형되는지를 남기는 것을 목표로 합니다. <br>
->결론보다 질문이 길고, 계산보다 판단이 중요해지는 순간을 기록합니다.
+> 이 시리즈는 정답을 빠르게 찾는 기록이 아니라  
+> 공부 도중 생긴 의문을 끝까지 따라가며  
+> 사고 과정이 어떻게 변하는지를 기록하는 것을 목표로 합니다.
+
+> 결론보다 질문이 길어질 수도 있으며  
+> 계산보다 판단이 중요해지는 순간을 기록합니다.
 
 * **[공정한 사다리 게임이 만들어질 수 있을까][CanAFairLadderGameExistlink]** 
-      : [2026.01.01] 사다리 게임의 공정성에 대한 생각
+      : 사다리 게임의 공정성에 대한 생각
  
 *****
 
  </details>  
-     
-[3dsuikagamelink]: /BuildGame/3DSuikaGame 
 
-[ObjectPoolingBaselink]: /DesignPatterns/ObjectPoolingBase
+
+<!-- ========== 링크 정의 ========== -->
+
+<!-- 개인/팀 프로젝트 -->
+[3dsuikagamelink]: /BuildGame/3DSuikaGame
+[TeamProjectDemonStratelink]: /TeamProject/DemonStrate
+
+<!-- 디자인 패턴 - 기타 -->
+[ObjectPoolingBaselink]: /ComputerScience/DesignPatterns/ObjectPoolingBase
 [FSMlink]: /ComputerScience/DesignPatterns/MonsterAI/FSM
+[BehaviorTreelink]: /ComputerScience/DesignPatterns/MonsterAI/BehaviorTree
+[DependencyInjectionlink]: /ComputerScience/DesignPatterns/DependencyInjection
 
+<!-- 디자인 패턴 - GoF 생성 -->
 [Singletonlink]: /ComputerScience/DesignPatterns/GoF/Creational/Singleton
 [Factorylink]: /ComputerScience/DesignPatterns/GoF/Creational/FactoryPattern
 [AbstractFactorylink]: /ComputerScience/DesignPatterns/GoF/Creational/AbstractFactoryPattern
 [Builderlink]: /ComputerScience/DesignPatterns/GoF/Creational/BuilderPattern
 [PrototypePatternlink]: /ComputerScience/DesignPatterns/GoF/Creational/PrototypePattern
+
+<!-- 디자인 패턴 - GoF 구조 -->
 [AdapterPatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/AdapterPattern
-[BridgePatternlinklink]: /ComputerScience/DesignPatterns/GoF/Structural/BridgePattern
+[BridgePatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/BridgePattern
 [CompositePatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/CompositePattern
 [DecoratorPatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/DecoratorPattern
-[BridgePatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/BridgePattern
-[BehaviorTreelink]: /ComputerScience/DesignPatterns/MonsterAI/BehaviorTree
 [FacadePatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/FacadePattern
 [FlyweightPatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/FlyweightPattern
 [ProxyPatternlink]: /ComputerScience/DesignPatterns/GoF/Structural/ProxyPattern
+
+<!-- 디자인 패턴 - GoF 행동 -->
 [ChainOfResponsibilityPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/ChainOfResponsibility
 [CommandPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/CommandPattern
 [InterpreterPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/InterpreterPattern
@@ -279,13 +333,17 @@ Unity:
 [StatePatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/StatePattern
 [StrategyPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/StrategyPattern
 [VisitorPatternlink]: /ComputerScience/DesignPatterns/GoF/Behavioral/VisitorPattern
+
+<!-- 아키텍처 / 패러다임 -->
 [ECSlink]: /ComputerScience/ArchitecturePatterns/ECS(EntityComponentSystem)
-[DependencyInjectionlink]: /ComputerScience/DesignPatterns/DependencyInjection
 [DODlink]: /ComputerScience/ProgrammingParadigm/DataOrientedDesign
 
-[TimeComplexitylink]:  /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/TimeComplexity
+<!-- 알고리즘 기초 -->
+[TimeComplexitylink]: /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/TimeComplexity
 [SpaceComplexitylink]: /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/SpaceComplexity
 [BigONotationlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/AlgorithmFundamentals/BigONotation
+
+<!-- 자료구조 -->
 [Arraylink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Array
 [LinkedListlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/LinkedList
 [Stacklink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Stack
@@ -299,77 +357,89 @@ Unity:
 [SegmentTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/SegmentTree
 [FenwickTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Tree/FenwickTree
 [Graphlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/DataStructures/Graph
+
+<!-- 정렬 알고리즘 -->
 [SelectionSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/SelectionSort
-[InsertionSort]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/InsertionSort
+[InsertionSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/InsertionSort
 [BubbleSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/BubbleSort
 [MergeSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/MergeSort
 [QuickSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/QuickSort
 [HeapSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/HeapSort
 [RadixSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/RadixSort
 [CountingSortlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SortingAlgorithms/CountingSort
+
+<!-- 탐색 알고리즘 -->
 [LinearSearchlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SearchingAlgorithms/LinearSearch
 [BinarySearchlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SearchingAlgorithms/BinarySearch
 [HashSearchlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/SearchingAlgorithms/HashSearch
+
+<!-- 그래프 알고리즘 -->
 [DepthFirstSearchlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/DepthFirstSearch
 [BreadthFirstSearchlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/BreadthFirstSearch
 [ShortestPathlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath
-[Dijkstralink]:  /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/Dijkstra
-[BellmanFordlink]:  /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/BellmanFord
-[FloydWarshalllink]:  /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/FloydWarshall
+[Dijkstralink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/Dijkstra
+[BellmanFordlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/BellmanFord
+[FloydWarshalllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/FloydWarshall
 [AStarlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/ShortestPath/AStar
 [MinimumSpanningTreelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/MinimumSpanningTree
+[LowestCommonAncestorlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/LowestCommonAncestor
+
+<!-- 동적 프로그래밍 -->
 [DPlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/DP
 [LISlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/LIS
 [LCSlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DynamicProgramming/LCS
+
+<!-- 기타 알고리즘 -->
 [Recursionlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/Recursion
 [GreedyAlgorithmslink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GreedyAlgorithms
 [DivideAndConquerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/DivideAndConquer
 [Backtrackinglink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/Backtracking
 [BruteForcelink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/BruteForce
 [TwoPointerlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/TwoPointer
-[LowestCommonAncestorlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/Algorithms/GraphAlgorithms/LowestCommonAncestor
 
-[Algorithmllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest   
-[BAEKJOONllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest/Baekjoon   
+<!-- 코딩테스트 -->
+[Algorithmlink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest
+[BAEKJOONllink]: /ComputerScience/DataStructure_Algorithm_CodingTest/CodingTest/Baekjoon
 
+<!-- 도서 -->
 [EffectiveClink]: /ComputerScience/Books/EffectiveC++
 
-[HPBarlink]: /VariousFunctions/HPBar   
-[GrapplingHookslink]: /VariousFunctions/GrapplingHooksAndRopeSwing
-[JsonDataManagerlink]: /VariousFunctions/JsonDataManager
-[DrawShapeMeshlink]: /VariousFunctions/DrawShapeMesh
-[RangeHitSystemlink]: /VariousFunctions/RangeHitSystem
-[Movementlink]: /VariousFunctions/Movement&Parkour/Movement
-[Parkourlink]: /VariousFunctions/Movement&Parkour/Parkour
-[IKlink]: /VariousFunctions/IK(InverseKinematics)
-[SkillTreelink]: /VariousFunctions/SkillSystem/SkillTree
-[QuickSlotSkilllink]: /VariousFunctions/SkillSystem/QuickSlotSkill
-[UIResolutionAdaptationlink]: /VariousFunctions/UIResolutionAdaptation
-[Cameralink]: /VariousFunctions/Camera
-[CombatSystemlink]: /VariousFunctions/CombatSystem
-[PlayerSkilllink]: /VariousFunctions/SkillSystem/PlayerSkill
-[WorldSystemlink]: /VariousFunctions/WorldSystem
-[ScenManagerlink]: /VariousFunctions/ScenManager
-[InventorySystemlink]: /VariousFunctions/InventorySystem
-[ScanSystemlink]: /VariousFunctions/WorldScan
-[IslandSystemlink]: /VariousFunctions/IslandSystem
-[PortalSystemlink]: /VariousFunctions/PortalSystem
-[GlidingSystemlink]: /VariousFunctions/Gliding
-[CinemachineTitleScreenlink]: /VariousFunctions/CinemachineTitleScreen
-[SettingScreenlink]: /VariousFunctions/SettingScreen
-[GamesLikeVampireSurvivorslink]: /VariousFunctions/GamesLikeVampireSurvivors
-[MiniMaplink]: /VariousFunctions/MiniMap
-[NpcDialogSystemlink]: /VariousFunctions/NpcDialogSystem
-[QuestSystemlink]: /VariousFunctions/QuestSystem
-[RadialMenulink]: /VariousFunctions/RadialMenu
-[ImprovedMovementSystemslink]: /VariousFunctions/ImprovedMovementSystems
-[EnemyFSMBTAISystemlink]: /VariousFunctions/EnemyFSMBTAISystem
-[Dodgelink]: /VariousFunctions/Dodge
-[MotionTraillink]: /VariousFunctions/MotionTrail
-[FolderTooltipSystemlink]: /VariousFunctions/FolderTooltipSystem
-[InspectorCategorySystemlink]: /VariousFunctions/InspectorCategory
-[ProceduralMeshDeformerlink]: /VariousFunctions/ProceduralMeshDeformer
+<!-- GameSystems (구 VariousFunctions) -->
+[HPBarlink]: /GameSystems/HPBar
+[GrapplingHookslink]: /GameSystems/GrapplingHooksAndRopeSwing
+[JsonDataManagerlink]: /GameSystems/JsonDataManager
+[DrawShapeMeshlink]: /GameSystems/DrawShapeMesh
+[RangeHitSystemlink]: /GameSystems/RangeHitSystem
+[Movementlink]: /GameSystems/Movement&Parkour/Movement
+[Parkourlink]: /GameSystems/Movement&Parkour/Parkour
+[IKlink]: /GameSystems/IK(InverseKinematics)
+[SkillTreelink]: /GameSystems/SkillSystem/SkillTree
+[QuickSlotSkilllink]: /GameSystems/SkillSystem/QuickSlotSkill
+[UIResolutionAdaptationlink]: /GameSystems/UIResolutionAdaptation
+[Cameralink]: /GameSystems/Camera
+[CombatSystemlink]: /GameSystems/CombatSystem
+[PlayerSkilllink]: /GameSystems/SkillSystem/PlayerSkill
+[WorldSystemlink]: /GameSystems/WorldSystem
+[SceneManagerlink]: /GameSystems/SceneManager
+[InventorySystemlink]: /GameSystems/InventorySystem
+[ScanSystemlink]: /GameSystems/WorldScan
+[IslandSystemlink]: /GameSystems/IslandSystem
+[PortalSystemlink]: /GameSystems/PortalSystem
+[GlidingSystemlink]: /GameSystems/Gliding
+[CinemachineTitleScreenlink]: /GameSystems/CinemachineTitleScreen
+[SettingScreenlink]: /GameSystems/SettingScreen
+[GamesLikeVampireSurvivorslink]: /GameSystems/GamesLikeVampireSurvivors
+[MiniMaplink]: /GameSystems/MiniMap
+[NpcDialogSystemlink]: /GameSystems/NpcDialogSystem
+[QuestSystemlink]: /GameSystems/QuestSystem
+[RadialMenulink]: /GameSystems/RadialMenu
+[ImprovedMovementSystemslink]: /GameSystems/ImprovedMovementSystems
+[EnemyFSMBTAISystemlink]: /GameSystems/EnemyFSMBTAISystem
+[Dodgelink]: /GameSystems/Dodge
+[MotionTraillink]: /GameSystems/MotionTrail
+[FolderTooltipSystemlink]: /GameSystems/FolderTooltipSystem
+[InspectorCategorySystemlink]: /GameSystems/InspectorCategory
+[ProceduralMeshDeformerlink]: /GameSystems/ProceduralMeshDeformer
 
-[TeamProjectDemonStratelink]: /TeamProject/DemonStrate
-
+<!-- 공부하다 딴길로 -->
 [CanAFairLadderGameExistlink]: /StudyDetours/CanAFairLadderGameExist
