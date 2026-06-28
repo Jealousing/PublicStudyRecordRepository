@@ -3,8 +3,13 @@
 > Unity URP 기반 **눈 · 비 · 시간** 환경 시스템.
 > 적설 표현을 **메시 정점 변형 방식에서 RenderTexture 기반 방식으로 전환**하며 설계했습니다.
 
-<!-- mesh, RT 비교 gif -->
-<!-- 전체 시연 영상 (YouTube) -->
+[![전체 시연 영상](https://img.youtube.com/vi/wuaxVYmSaWo/maxresdefault.jpg)](https://youtu.be/wuaxVYmSaWo)
+
+▲ **전체 시연 영상** — 눈·비·시간·날씨 전반 (클릭하면 YouTube로 이동)
+
+**mesh → RT 전환 비교**
+
+![mesh 방식과 RT 방식 비교](https://github.com/user-attachments/assets/d93e8b95-c7aa-4e36-84b7-c8a02351e8fd)
 
 ---
 
@@ -12,7 +17,7 @@
 
 지형 위에 눈이 쌓이고, 발자국이 찍히고, 비가 표면을 적십니다. 시간이 흐르며 태양 · 조명 · 날씨가 전환됩니다.
 
-시스템의 핵심은 **눈(snow)** 이며, 이를 구현하던 중 부딪힌 **성능 한계 때문에 mesh에서 RT(RenderTexture) 방식으로 전환**한 과정이 이 프로젝트의 중심입니다. 자세한 내용은 아래에서 다룹니다.
+시스템의 핵심은 **적설(snow)** 이며, 이를 구현하던 중 부딪힌 **성능 한계 때문에 mesh에서 RT(RenderTexture) 방식으로 전환**한 과정이 이 프로젝트의 중심입니다. 자세한 내용은 아래에서 다룹니다.
 
 이 문서는 전체 개요이며, 모듈별 상세는 각 폴더의 README로 연결됩니다.
 
@@ -26,7 +31,7 @@
 |---|---|---|
 | **TimeSystem** | 태양 각도를 진행시켜 시간대(일출/낮/일몰/밤)를 정하고, 조명 색온도·세기를 보간합니다. | [README](./TimeSystem/README.md) |
 | **Weather** | 날씨 상태(눈/비/맑음)를 전환하고, 전환 시 강도를 페이드합니다. | [README](./Weather/README.md) |
-| **Snow** (핵심) | 눈쌓임을 표현합니다. 천장 밑 눈 제거(occlusion), 발자국, 표면 변위를 RT 기반으로 처리합니다. | [README](./Weather/Snow/README.md) |
+| **Snow** (핵심) | 눈을 표현합니다. 천장 밑 눈 제거(occlusion), 발자국, 표면 변위를 RT 기반으로 처리합니다. | [README](./Weather/Snow/README.md) |
 | **Rain** | RT occlusion을 공유해 비가 닿는 표면만 젖게 만듭니다. | [README](./Weather/Rain/README.md) |
 
 ---
@@ -42,8 +47,8 @@ flowchart TD
     EM --> TD["TimeDriver<br/>시간 · 태양 · 조명 보간"]
     EM --> WSM["WeatherStateMachine<br/>날씨 상태 · 전환"]
 
-    WSM --> SNOW["Snow (적설)"]
-    WSM --> RAIN["Rain (젖음)"]
+    WSM --> SNOW["Snow"]
+    WSM --> RAIN["Rain"]
 
     SNOW --> SRTM["SnowRenderTextureManager<br/>occlusion · 발자국 RT 생성"]
     SNOW --> SRF["SnowRendererFeature<br/>URP 렌더 패스"]
@@ -79,20 +84,20 @@ flowchart LR
 
 ### 부딪힌 벽: CPU 비용
 
-가장 큰 문제는 **CPU 비용**이었습니다. 메시 세분화와 정점 처리가 CPU에 집중되었고, 작업을 **멀티코어로 분산해도 프레임 저하가 해소되지 않았습니다.** 눈이 쌓이는 범위가 넓어질수록 CPU가 병목이 되어, 이 방향으로는 한계가 분명했습니다.
+가장 큰 문제는 **CPU 비용**이었습니다. 메시 세분화와 정점 처리가 CPU에 집중되었고, 작업을 **멀티코어로 분산해도 프레임 저하가 해소되지 않았습니다.** 눈 쌓이는 범위가 넓어질수록 CPU가 병목이 되어, 이 방향으로는 한계가 분명했습니다.
 
 (청크 경계의 이음새, 세분화 과정의 T-junction 균열 같은 문제도 있었지만 부차적이었고, 핵심은 성능이었습니다.)
 
 ### 해결: 작업을 GPU로 옮기다
 
-그래서 눈쌓임을 "메시"가 아니라 **"텍스처(RT) + 셰이더 변위"** 로 재설계했습니다.
+그래서 눈을 "메시"가 아니라 **"텍스처(RT) + 셰이더 변위"** 로 재설계했습니다.
 
 - 적설량 · 발자국을 **RenderTexture에 그리고**, 셰이더가 이 텍스처를 읽어 **GPU에서 정점을 변위**시킵니다.
 - CPU가 매 프레임 메시를 깎던 작업이 사라지고, **GPU가 병렬로 표면을 변형**합니다.
 
 | | mesh 방식 (이전) | RT 방식 (현재) |
 |---|---|---|
-| 눈 표현 | 메시 정점을 CPU에서 변형 | RT를 읽어 GPU 셰이더에서 변위 |
+| 적설 표현 | 메시 정점을 CPU에서 변형 | RT를 읽어 GPU 셰이더에서 변위 |
 | 주 부하 | **CPU** (멀티코어로도 병목) | **GPU** |
 | 발자국 | 메시에 직접 반영 | RT에 누적 (stamp/fade/shift) |
 | occlusion | 개별 처리 | RT 파이프라인으로 통합 |
@@ -107,7 +112,7 @@ flowchart LR
 두 방식 모두 *메인 스레드 시간 ≈ 프레임 시간* 이라 **CPU가 병목**임이 확인되며, 눈 처리를 GPU로 옮겨 그 병목을 완화했습니다.
 
 > 측정 방법과 전체 수치 → **[Snow의 mesh vs RT 성능 비교](./Benchmark/README.md)**
-> 눈 시스템의 상세 구현 → **[Weather/Snow/README.md](./Weather/Snow/README.md)**
+> 적설 시스템의 상세 구현 → **[Weather/Snow/README.md](./Weather/Snow/README.md)**
 >
 > 두 방식 모두 유지하고 있어 시연 영상에서 직접 비교합니다.
 

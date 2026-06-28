@@ -4,20 +4,19 @@
 
 [상위 README](../../README.md)에서 요약한 **mesh → RT 전환**의 상세와, 그 위에서 동작하는 적설 기능 전체를 이 문서에 정리합니다.
 
-<!-- 눈쌓임 과정 전체 gif -->
-
 ---
 
 ## 목차
 
 - [mesh에서 RT로](#mesh에서-rt로) — 접근 방식 전환 (핵심)
-- [적설 누적](#적설-누적) — 시간에 따라 쌓이는 눈
+- [적설 누적](#적설-누적) — 시간에 따라 쌓이는 눈 · 초기 흩뿌림
 - [Sky Occlusion](#sky-occlusion) — 천장 아래엔 눈이 닿지 않게
 - [동적 천장](#동적-천장) — 움직이는 천장 대응
 - [발자국 RT 파이프라인](#발자국-rt-파이프라인) — stamp / fade / shift
 - [계단 적설](#계단-적설) — 계단 측면·윗면 처리
 - [표면 셰이딩](#표면-셰이딩) — 능선 음영 · SSS · 발자국 음영
 - [테셀레이션과 T-junction](#테셀레이션과-t-junction) — mesh 방식의 과제
+- [터레인 지원](#터레인-지원) — Unity Terrain에 눈 적용
 - [관련 코드](#관련-코드)
 
 ---
@@ -77,13 +76,15 @@ public float CalculateSpeed(float minValue, float maxValue)
 
 이 구조 덕분에 적설 컨트롤러(mesh·RT 양쪽)는 "얼마나 빨리 쌓일지"를 직접 알 필요 없이, 공통 베이스(`SnowAccumulatorBase`)에서 동일하게 누적 로직을 공유합니다.
 
+**초기 흩뿌림** — 눈이 0에서 차오를 때 처음부터 전체가 균일하게 깔리면 어색합니다. 그래서 적설 진행도(현재 적설량)에 따라 **잘게 흩뿌려진 점**으로 시작해, 쌓일수록 빈 곳을 메우고, 충분히 쌓이면 흩뿌림 영향이 사라져 균일해집니다. 흩뿌림은 월드 좌표 기반 노이즈를 픽셀 단위로 평가하므로, 화면을 움직여도 패턴이 표면에 고정됩니다.
+
 ---
 
 ## Sky Occlusion
 
 실내나 다리 밑처럼 **하늘이 가려진 곳**에는 눈이 쌓이면 안 됩니다. 각 지점이 "하늘에 얼마나 노출됐는가"를 구해 셰이더에 넘기고, 셰이더는 가려진 곳의 눈을 잘라냅니다.
 
-<!-- occlusion on/off 비교 gif -->
+![occlusion on/off 비교 — 끄면 천장 밑까지 눈이 쌓인다](https://github.com/user-attachments/assets/0b94fb15-b0ed-49d2-a285-687c8313428b)
 
 **접근** — 위에서 레이캐스트해 천장에 가려진 셀(occluded)을 찾고, 그 경계로부터 **바깥으로 거리장(distance field)을 BFS로 전파**합니다. 천장 경계에서 멀어질수록 적설량이 0→1로 차오르게 해, 천장 밑에서 노출 영역으로 넘어갈 때 눈이 자연스럽게 경사지며 생깁니다.
 
@@ -189,6 +190,14 @@ cache[edgeKey] = newIdx;
 
 ---
 
+## 터레인 지원
+
+눈 렌더링은 각 오브젝트의 `MeshFilter`를 읽어 메시를 다시 그리는 방식이라, **`MeshFilter`가 없는 Unity Terrain**은 그대로는 눈이 닿지 않습니다. 이를 위해 `TerrainSnowMesh`가 터레인 하이트맵에서 **적설용 메시를 만들어** 렌더 패스에 넘깁니다.
+
+정점 예산을 아끼려고 **곡률 적응 세분화**를 씁니다 — 평지는 거친 셀로, 언덕·능선은 더 잘게 나눕니다. 거친 셀과 잘게 나뉜 셀이 만나는 경계는 center-fan 삼각화로 꿰매 T-junction 균열이 생기지 않습니다. 생성 메시는 월드 좌표가 정확하므로, 월드 좌표로 샘플링하는 occlusion(눈·비 공유)이 그대로 동작합니다.
+
+---
+
 ## 관련 코드
 
 | 역할 | 클래스 / 셰이더 |
@@ -200,5 +209,6 @@ cache[edgeKey] = newIdx;
 | 계단 발판 추출 | `StairBoundsExtractor` |
 | 눈 표면 변위 · 음영 | `SnowSurface.shader`, `SnowTessellation.hlsl` |
 | occlusion 공통 계산(눈·비 공유) | `SkyOcclusionCommon.hlsl` |
+| 터레인 → 적설 메시 변환(곡률 적응) | `TerrainSnowMesh` |
 | 발자국 RT 패스 | `SnowFootprintStamp / Fade / Shift.shader` |
 | (레거시) mesh 적설 · 세분화 | `SnowPlaneController`, `SnowObjectController` |
