@@ -27,8 +27,8 @@ Unity(클라) ↔ C# 콘솔 서버(.NET 8) ↔ MySQL(DB) 구조로 간단한 멀
 | 2 | MySQL DB 연결 | 스키마 설계 + 저장/조회 | ✅ 완료 | [Step2](docs/Step2_MySQL.md) |
 | 3 | 로그인 / 회원가입 | 비밀번호 해싱(bcrypt), 세션 | ✅ 완료 | [Step3](docs/Step3_Auth.md) |
 | 4 | 게임 데이터 저장 | 위치(3D)·재접속 복원 | ✅ 완료 | [Step4](docs/Step4_GameData.md) |
-| 5 | 멀티플레이 | 다중 접속, 위치 동기화·보간, 채팅 | ⬜ 예정 | — |
-| + | 확장 | AES 암호화, 자동 재연결, 서버 로그, 매치메이킹 | ⬜ 선택 | — |
+| 5 | 멀티플레이 | 다중 접속, 위치 동기화·보간, 채팅, 치팅 방지 | ✅ 완료 | [Step5](docs/Step5_Multiplayer.md) |
+| + | 확장 (설계) | 자동 재연결, 전송 암호화, 서버 로그, 매치메이킹 | 📄 설계 문서 | [Extensions](docs/Extensions.md) |
 
 **최종 목표 기능:** 회원가입/로그인 → 캐릭터 이름 DB 저장 → 맵 이동 → 타 플레이어 실시간 표시 → 채팅 → 재접속 시 위치 복원
 
@@ -43,7 +43,8 @@ BackendStudy/
     ├── Step1_TCP.md       ← 1단계: TCP 소켓·프레이밍
     ├── Step2_MySQL.md      ← 2단계: MySQL 연결
     ├── Step3_Auth.md       ← 3단계: 회원가입·로그인·세션
-    └── Step4_GameData.md   ← 4단계: 위치 저장·재접속 복원
+    ├── Step4_GameData.md   ← 4단계: 위치 저장·재접속 복원
+    └── Step5_Multiplayer.md ← 5단계: 멀티플레이(동기화·보간·채팅·치팅방지)
     └── ...
 
 (코드 위치 — 레포 내 기존 Unity 프로젝트 기준)
@@ -79,3 +80,5 @@ dotnet run
   비밀번호 해싱(bcrypt·솔트), 해시 검증 로그인, 세션 기반 신원 관리, 계정 열거 방지.
 - **[4단계 — 게임 데이터 저장 / 재접속 복원](docs/Step4_GameData.md)** ✅
   characters 테이블(외래 키), 3D 위치·회전 저장(UPSERT), 세션 기반 소유권, 재접속 복원, 값 검증.
+- **[5단계 — 멀티플레이](docs/Step5_Multiplayer.md)** ✅
+  다중 접속·공유 상태(ConcurrentDictionary), 위치 동기화(틱레이트), 보간, 채팅, 이동 속도 검증·서버 교정(치팅 방지).
