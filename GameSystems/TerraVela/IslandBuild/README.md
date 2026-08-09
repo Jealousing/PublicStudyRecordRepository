@@ -80,7 +80,7 @@ flowchart TB
     SPAWN -.->|Rebuild = 로드 복원| GRID
 ```
 
-![토대·벽·계단·바닥판 배치와 염색](https://github.com/user-attachments/assets/d1ebb687-5da3-4d4e-aea7-2df59ae9b89a)
+![토대·벽·계단·바닥판 배치와 염색](https://github.com/user-attachments/assets/5923fba9-9168-4195-9308-cf01575084e2)
 <!-- GIF 자리: 토대 → 벽(스택·반벽) → 바닥판(다층) → 계단 배치, 염색 드래그까지 -->
 
 ---
