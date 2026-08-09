@@ -38,6 +38,7 @@ Unity 시스템 구현, 알고리즘 공부, 프로젝트 기록 등을 포함�
   > 코드가 정리되어 공개되어 있는 문서가 있고 아닌 문서도 있습니다.
 
 Unity:     
+* **[지형·건축 시스템 IslandBuild][IslandBuildlink]** : 섬 위에 모듈러 건축을 짓는 시스템. 섬을 브러시로 조각하고(마칭 스퀘어), 그 위에 건축하는 시스템
 * **[멀티플레이 백엔드 (TCP·DB·서버) BackendStudy][BackendStudylink]** : Unity 클라 ↔ C# 서버 ↔ MySQL 풀스택을 TCP 소켓부터 직접 구현하는 단계별 학습
 * **[환경(날씨,시간) 시스템 EnvironmentSystem][EnvironmentSystemlink]** : 날씨(눈,비)와 시간을 다루는 시스템입니다.
 * **[끈을 통한 살의 눌림 효과 ProceduralMeshDeformer][ProceduralMeshDeformerlink]** : 리본이 허벅지를 눌러서 변형 효과를 주는 실시간 메시 변형 시스템입니다.
@@ -416,6 +417,7 @@ Unity:
 [ProceduralMeshDeformerlink]: /GameSystems/ProceduralMeshDeformer
 [EnvironmentSystemlink]: /GameSystems/Environment
 [BackendStudylink]: /GameSystems/BackendStudy
+[IslandBuildlink]: /GameSystems/TerraVela/IslandBuild
 
 <!-- 공부하다 딴길로 -->
 [CanAFairLadderGameExistlink]: /StudyDetours/CanAFairLadderGameExist
