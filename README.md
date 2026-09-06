@@ -38,6 +38,8 @@ Unity 시스템 구현, 알고리즘 공부, 프로젝트 기록 등을 포함�
   > 코드가 정리되어 공개되어 있는 문서가 있고 아닌 문서도 있습니다.
 
 Unity:     
+* **[캐릭터 이동·파쿠르 CharacterMovement][CharacterMovementlink]** : Rigidbody FSM을 CharacterController로 재설계한 이동 시스템. 단일 이동 채널 + enum 없는 상태머신 위에 활공·클라이밍·벽점프·파쿠르 6종을 얹음
+* **[하늘섬 조종 (상대이동 part1) IslandSteering][IslandSteeringlink]** : 섬을 움직이면 그 위 플레이어·건축이 함께 실려 가는 탈것 기반. dynamic Rigidbody 잔떨림을 CharacterController 전환으로 해결한 상대이동 시스템 
 * **[지형·건축 시스템 IslandBuild][IslandBuildlink]** : 섬 위에 모듈러 건축을 짓는 시스템. 섬을 브러시로 조각하고(마칭 스퀘어), 그 위에 건축하는 시스템
 * **[멀티플레이 백엔드 (TCP·DB·서버) BackendStudy][BackendStudylink]** : Unity 클라 ↔ C# 서버 ↔ MySQL 풀스택을 TCP 소켓부터 직접 구현하는 단계별 학습
 * **[환경(날씨,시간) 시스템 EnvironmentSystem][EnvironmentSystemlink]** : 날씨(눈,비)와 시간을 다루는 시스템입니다.
@@ -418,6 +420,8 @@ Unity:
 [EnvironmentSystemlink]: /GameSystems/Environment
 [BackendStudylink]: /GameSystems/BackendStudy
 [IslandBuildlink]: /GameSystems/TerraVela/IslandBuild
+[IslandSteeringlink]: /GameSystems/TerraVela/IslandSteering
+[CharacterMovementlink]: /GameSystems/TerraVela/CharacterMovement
 
 <!-- 공부하다 딴길로 -->
 [CanAFairLadderGameExistlink]: /StudyDetours/CanAFairLadderGameExist
